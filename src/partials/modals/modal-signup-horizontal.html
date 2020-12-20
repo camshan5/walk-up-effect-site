@@ -1,29 +1,50 @@
-<div class="modal fade" id="modalSignupHorizontal" tabindex="-1" role="dialog" aria-labelledby="modalSignupHorizontalTitle" aria-hidden="true">
+<div
+  class="modal fade"
+  id="modalSignupHorizontal"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="modalSignupHorizontalTitle"
+  aria-hidden="true"
+>
   <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="card card-row">
         <div class="row gx-0">
-          <div class="col-12 col-md-6 bg-cover card-img-left" style="background-image: url({{webRoot}}/assets/img/photos/photo-8.jpg);">
-
+          <div
+            class="col-12 col-md-6 bg-cover card-img-left"
+            style="background-image: url({{webRoot}}/assets/img/photos/photo-8.jpg);"
+          >
             <!-- Image (placeholder) -->
-            <img src="{{webRoot}}/assets/img/photos/photo-8.jpg" alt="..." class="img-fluid d-md-none invisible">
+            <img
+              src="{{webRoot}}/assets/img/photos/photo-8.jpg"
+              alt="..."
+              class="img-fluid d-md-none invisible"
+            />
 
             <!-- Shape -->
-            <div class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block">
+            <div
+              class="shape shape-right shape-fluid-y svg-shim text-white d-none d-md-block"
+            >
               {{> curves/curve-4}}
             </div>
-
           </div>
           <div class="col-12 col-md-6">
             <div class="card-body">
-
               <!-- Close -->
-              <button type="button" class="modal-close close" data-dismiss="modal" aria-label="Close">
+              <button
+                type="button"
+                class="modal-close close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
                 <span aria-hidden="true">×</span>
               </button>
 
               <!-- Heading -->
-              <h2 class="mb-0 font-weight-bold text-center" id="modalSignupHorizontalTitle">
+              <h2
+                class="mb-0 font-weight-bold text-center"
+                id="modalSignupHorizontalTitle"
+              >
                 Sign Up
               </h2>
 
@@ -34,13 +55,17 @@
 
               <!-- Form -->
               <form class="mb-6">
-
                 <!-- Email -->
                 <div class="form-group">
                   <label class="sr-only" for="modalSignupHorizontalEmail">
                     Your email
                   </label>
-                  <input type="email" class="form-control" id="modalSignupHorizontalEmail" placeholder="Your email">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="modalSignupHorizontalEmail"
+                    placeholder="Your email"
+                  />
                 </div>
 
                 <!-- Password -->
@@ -48,25 +73,29 @@
                   <label class="sr-only" for="modalSignupHorizontalPassword">
                     Create a password
                   </label>
-                  <input type="password" class="form-control" id="modalSignupHorizontalPassword" placeholder="Create a password">
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="modalSignupHorizontalPassword"
+                    placeholder="Create a password"
+                  />
                 </div>
 
                 <!-- Submit -->
                 <button class="btn btn-block btn-primary" type="submit">
                   Sign up
                 </button>
-
               </form>
 
               <!-- Text -->
               <p class="mb-0 font-size-sm text-center text-muted">
-                Already have an account? <a href="{{webRoot}}/signin-illustration.html">Log in</a>.
+                Already have an account?
+                <a href="{{webRoot}}/signin-illustration.html">Log in</a>.
               </p>
-
             </div>
           </div>
-
-        </div> <!-- / .row -->
+        </div>
+        <!-- / .row -->
       </div>
     </div>
   </div>

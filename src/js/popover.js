@@ -3,10 +3,10 @@
 // Theme module
 //
 
-import { Popover } from 'bootstrap';
+import { Popover } from "bootstrap";
 
 const popovers = document.querySelectorAll('[data-toggle="popover"]');
 
-popovers.forEach(popover => {
+popovers.forEach((popover) => {
   new Popover(popover);
 });

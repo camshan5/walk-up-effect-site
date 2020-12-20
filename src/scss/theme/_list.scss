@@ -20,7 +20,8 @@
   font-size: $list-link-font-size;
   color: $list-link-color;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     text-decoration: none;
     color: $list-link-hover-color;
   }

@@ -4,7 +4,6 @@
 //
 
 .sidenav {
-
   @include media-breakpoint-up(lg) {
     position: fixed;
     top: 84px;
@@ -14,14 +13,12 @@
 }
 
 .sidenav-left {
-
   @include media-breakpoint-up(lg) {
     left: 0;
   }
 }
 
 .sidenav-right {
-
   @include media-breakpoint-up(lg) {
     right: 0;
   }

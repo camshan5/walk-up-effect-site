@@ -41,9 +41,7 @@
   @if $enable-rounded {
     // Manually use the if/else instead of the mixin to account for iOS override
     border-radius: $input-border-radius;
-  }
-
-  @else {
+  } @else {
     // Otherwise undo the iOS default
     border-radius: 0;
   }
@@ -67,7 +65,6 @@
   transform: scale(0);
 }
 
-
 // Placeholder
 
 .ql-editor.ql-blank::before {
@@ -81,12 +78,11 @@
   display: none;
 }
 
-
 // Toolbar
 
 .ql-formats {
-  padding-left: .5rem;
-  padding-right: .5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 
   &:first-child {
     padding-left: 0;
@@ -98,7 +94,7 @@
 }
 
 .ql-toolbar button {
-  padding: 0 .25rem;
+  padding: 0 0.25rem;
   background: none;
   border: none;
   color: $body-color;
@@ -110,7 +106,7 @@
   }
 
   &:first-child {
-    margin-left: -.25rem;
+    margin-left: -0.25rem;
   }
 }
 
@@ -144,7 +140,6 @@
   transform: scale(0);
 }
 
-
 // Tooltip
 
 .ql-tooltip {
@@ -156,13 +151,14 @@
   border: $popover-border-width solid $popover-border-color;
   border-radius: $popover-border-radius;
   padding: $input-padding-y $input-padding-x;
-  margin-top: .6rem; // arrow width
+  margin-top: 0.6rem; // arrow width
   box-shadow: $popover-box-shadow;
 
   // Arrow
 
-  &:before, &:after {
-    content: '';
+  &:before,
+  &:after {
+    content: "";
     position: absolute;
     left: 50%;
     bottom: 100%;
@@ -170,15 +166,15 @@
   }
 
   &:before {
-    border-bottom: .6rem solid $popover-border-color;
-    border-left: .6rem solid transparent;
-    border-right: .6rem solid transparent;
+    border-bottom: 0.6rem solid $popover-border-color;
+    border-left: 0.6rem solid transparent;
+    border-right: 0.6rem solid transparent;
   }
 
   &:after {
-    border-bottom: .5rem solid $popover-bg;
-    border-left: .5rem solid transparent;
-    border-right: .5rem solid transparent;
+    border-bottom: 0.5rem solid $popover-bg;
+    border-left: 0.5rem solid transparent;
+    border-right: 0.5rem solid transparent;
   }
 }
 
@@ -188,7 +184,12 @@
 
 .ql-tooltip .ql-preview {
   width: 100%;
-  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-border-radius-sm);
+  @include button-size(
+    $btn-padding-y-sm,
+    $btn-padding-x-sm,
+    $font-size-sm,
+    $btn-border-radius-sm
+  );
   @include transition($btn-transition);
 }
 
@@ -216,10 +217,9 @@
   display: block;
 }
 
-
 .ql-tooltip .ql-action,
 .ql-tooltip .ql-remove {
-  margin-left: .25rem;
+  margin-left: 0.25rem;
 }
 
 .ql-tooltip .ql-action::before,
@@ -232,11 +232,17 @@
   user-select: none;
   border: $btn-border-width solid transparent;
   cursor: pointer;
-  @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $btn-border-radius-sm);
+  @include button-size(
+    $btn-padding-y-sm,
+    $btn-padding-x-sm,
+    $font-size-sm,
+    $btn-border-radius-sm
+  );
   @include transition($btn-transition);
 
   // Share hover and focus styles
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     text-decoration: none;
   }
 
@@ -253,23 +259,22 @@
 }
 
 .ql-tooltip .ql-action::before {
-  content: 'Edit';
+  content: "Edit";
 }
 
 .ql-tooltip.ql-editing .ql-action::before {
-  content: 'Save';
+  content: "Save";
 }
 
 .ql-tooltip .ql-remove::before {
   @include button-variant($white, $white);
-  content: 'Remove';
+  content: "Remove";
   border-color: $gray-300;
 }
 
 .ql-tooltip.ql-editing .ql-remove::before {
   display: none;
 }
-
 
 // Formatting
 

@@ -3,25 +3,27 @@
 // Theme module
 //
 
-import Choices from 'choices.js';
+import Choices from "choices.js";
 
-const toggles = document.querySelectorAll('[data-choices]');
+const toggles = document.querySelectorAll("[data-choices]");
 
 toggles.forEach((toggle) => {
-  const elementOptions = toggle.dataset.choices ? JSON.parse(toggle.dataset.choices) : {};
+  const elementOptions = toggle.dataset.choices
+    ? JSON.parse(toggle.dataset.choices)
+    : {};
 
   const defaultOptions = {
     shouldSort: false,
     searchEnabled: false,
     classNames: {
       containerInner: toggle.className,
-      input: 'form-control',
-      inputCloned: 'form-control-xs',
-      listDropdown: 'dropdown-menu',
-      itemChoice: 'dropdown-item',
-      activeState: 'show',
-      selectedState: 'active'
-    }
+      input: "form-control",
+      inputCloned: "form-control-xs",
+      listDropdown: "dropdown-menu",
+      itemChoice: "dropdown-item",
+      activeState: "show",
+      selectedState: "active",
+    },
   };
 
   const options = {

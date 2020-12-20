@@ -3,3 +3,9 @@
 node_modules/
 dist/
 .DS_Store
+
+# Jetbrains Settings
+.idea/
+
+# VS Code Settings
+.vscode/

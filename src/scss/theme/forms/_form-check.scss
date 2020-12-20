@@ -1,7 +1,7 @@
-// 
+//
 // form-check.scss
 // Extended from Bootstrap
-// 
+//
 
 //
 // Check
@@ -25,7 +25,6 @@
   background-color: $form-check-input-checked-bg-color-dark;
 }
 
-
 //
 // Switch
 //
@@ -39,7 +38,9 @@
 }
 
 .form-switch > .form-check-label {
-  margin-top: calc((#{$form-switch-min-height} - #{$line-height-base} * 1em) / 2);
+  margin-top: calc(
+    (#{$form-switch-min-height} - #{$line-height-base} * 1em) / 2
+  );
 }
 
 // Dark
