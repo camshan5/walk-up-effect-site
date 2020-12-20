@@ -1,0 +1,795 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {{> partials/head title="Landkit"}}
+  </head>
+  <body class="bg-light">
+
+    <!-- MODALS -->
+    {{> partials/modals}}
+
+    <!-- NAVBAR -->
+    {{> partials/navbar classList="navbar-light bg-white" container="container"}}
+
+    <!-- BREADCRUMB -->
+    <nav class="bg-gray-200">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb breadcrumb-scroll">
+              <li class="breadcrumb-item">
+                <a href="#!" class="text-gray-700">
+                  Help Center
+                </a>
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Account
+              </li>
+            </ol>
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </nav>
+
+    <!-- CONTENT -->
+    <section class="pt-6 pt-md-8 pb-8 mb-md-8">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <div class="row mb-6 mb-md-8">
+              <div class="col-auto">
+
+                <!-- Icon -->
+                <div class="icon-circle bg-primary text-white">
+                  <i class="fe fe-users"></i>
+                </div>
+
+              </div>
+              <div class="col ml-n4">
+
+                <!-- Heading -->
+                <h2 class="font-weight-bold mb-0">
+                  Account
+                </h2>
+
+                <!-- Text -->
+                <p class="font-size-lg text-gray-700 mb-0">
+                  Let’s try to fix your account issues.
+                </p>
+
+              </div>
+            </div> <!-- / .row -->
+
+            <!-- Card -->
+            <div class="card shadow-light-lg accordion mb-5 mb-md-6" id="helpAccordionOne">
+              <div class="list-group">
+                <div class="list-group-item">
+
+                  <!-- Header -->
+                  <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+
+                      <!-- Heading -->
+                      <h4 class="font-weight-bold mb-0">
+                        Authentication Issues
+                      </h4>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Issues related to logging in, out, or about multiple devices.
+                      </p>
+
+                    </div>
+
+                    <!-- Badge -->
+                    <span class="badge rounded-pill bg-success-soft ml-4">
+                      <span class="h6 text-uppercase">
+                        4 answers
+                      </span>
+                    </span>
+
+                  </div>
+
+                </div>
+                <div class="list-group-item">
+
+                  <!-- Toggle -->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpOne" role="button" aria-expanded="false" aria-controls="helpOne">
+
+                    <!-- Title -->
+                    <span class="mr-4">
+                      Why doesn’t my account stay logged in?
+                    </span>
+
+                    <!-- Metadata -->
+                    <div class="text-muted ml-auto">
+
+                      <!-- Text -->
+                      <span class="font-size-sm mr-4 d-none d-md-inline">
+                        Updated last week
+                      </span>
+
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </div>
+
+                  </a>
+
+                  <!-- Collapse -->
+                  <div class="collapse" id="helpOne" data-parent="#helpAccordionOne">
+                    <div class="py-5">
+
+                      <!-- Text -->
+                      <p class="text-gray-700">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                      </p>
+
+                      <div class="d-flex align-items-center">
+
+                        <!-- Vote -->
+                        <div class="btn-group mr-4">
+
+                          <!-- Thumb down -->
+                          <input type="radio" class="btn-check" name="helpOneVote" id="helpOneDown" autocomplete="off" checked>
+                          <label class="btn btn-sm btn-white" for="helpOneDown">
+                            <i class="fe fe-thumbs-down"></i>
+                          </label>
+
+                          <!-- Thumb up -->
+                          <input type="radio" class="btn-check" name="helpOneVote" id="helpOneUp" autocomplete="off">
+                          <label class="btn btn-sm btn-white" for="helpOneUp">
+                            <i class="fe fe-thumbs-up"></i>
+                          </label>
+
+                        </div>
+
+                        <!-- Text -->
+                        <span class="font-size-sm text-muted">
+                          Did this help solve your issue?
+                        </span>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="list-group-item">
+
+                  <!-- Toggle -->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpTwo" role="button" aria-expanded="false" aria-controls="helpTwo">
+
+                    <!-- Title -->
+                    <span class="mr-4">
+                      I'd like to renew but I am getting a 404 error
+                    </span>
+
+                    <!-- Metadata -->
+                    <div class="text-muted ml-auto">
+
+                      <!-- Text -->
+                      <span class="font-size-sm mr-4 d-none d-md-inline">
+                        Updated 2 weeks ago
+                      </span>
+
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </div>
+
+                  </a> <!-- / .row -->
+
+                  <!-- Collapse -->
+                  <div class="collapse" id="helpTwo" data-parent="#helpAccordionOne">
+                    <div class="py-5">
+
+                      <!-- Text -->
+                      <p class="text-gray-700">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                      </p>
+
+                      <div class="d-flex align-items-center">
+
+                        <!-- Vote -->
+                        <div class="btn-group mr-4">
+
+                          <!-- Thumb down -->
+                          <input type="radio" class="btn-check" name="helpTwoVote" id="helpTwoDown" autocomplete="off" checked>
+                          <label class="btn btn-sm btn-white" for="helpTwoDown">
+                            <i class="fe fe-thumbs-down"></i>
+                          </label>
+
+                          <!-- Thumb up -->
+                          <input type="radio" class="btn-check" name="helpTwoVote" id="helpTwoUp" autocomplete="off">
+                          <label class="btn btn-sm btn-white" for="helpTwoUp">
+                            <i class="fe fe-thumbs-up"></i>
+                          </label>
+
+                        </div>
+
+                        <!-- Text -->
+                        <span class="font-size-sm text-muted">
+                          Did this help solve your issue?
+                        </span>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="list-group-item">
+
+                  <!-- Toggle -->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpThree" role="button" aria-expanded="false" aria-controls="helpThree">
+
+                    <!-- Title -->
+                    <span class="mr-4">
+                      Why can't I upgrade for free?
+                    </span>
+
+                    <!-- Metadata -->
+                    <div class="text-muted ml-auto">
+
+                      <!-- Text -->
+                      <span class="font-size-sm mr-4 d-none d-md-inline">
+                        Updated yesterday
+                      </span>
+
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </div>
+
+                  </a> <!-- / .row -->
+
+                  <!-- Collapse -->
+                  <div class="collapse" id="helpThree" data-parent="#helpAccordionOne">
+                    <div class="py-5">
+
+                      <!-- Text -->
+                      <p class="text-gray-700">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                      </p>
+
+                      <div class="d-flex align-items-center">
+
+                        <!-- Vote -->
+                        <div class="btn-group mr-4">
+
+                          <!-- Thumb down -->
+                          <input type="radio" class="btn-check" name="helpThreeVote" id="helpThreeDown" autocomplete="off" checked>
+                          <label class="btn btn-sm btn-white" for="helpThreeDown">
+                            <i class="fe fe-thumbs-down"></i>
+                          </label>
+
+                          <!-- Thumb up -->
+                          <input type="radio" class="btn-check" name="helpThreeVote" id="helpThreeUp" autocomplete="off">
+                          <label class="btn btn-sm btn-white" for="helpThreeUp">
+                            <i class="fe fe-thumbs-up"></i>
+                          </label>
+
+                        </div>
+
+                        <!-- Text -->
+                        <span class="font-size-sm text-muted">
+                          Did this help solve your issue?
+                        </span>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="list-group-item">
+
+                  <!-- Toggle -->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpFour" role="button" aria-expanded="false" aria-controls="helpFour">
+
+                    <!-- Title -->
+                    <span class="mr-4">
+                      Why doesn't my account stay logged in?
+                    </span>
+
+                    <!-- Metadata -->
+                    <div class="text-muted ml-auto">
+
+                      <!-- Text -->
+                      <span class="font-size-sm mr-4 d-none d-md-inline">
+                        Updated last month
+                      </span>
+
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </div>
+
+                  </a> <!-- / .row -->
+
+                  <!-- Collapse -->
+                  <div class="collapse" id="helpFour" data-parent="#helpAccordionOne">
+                    <div class="py-5">
+
+                      <!-- Text -->
+                      <p class="text-gray-700">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                      </p>
+
+                      <div class="d-flex align-items-center">
+
+                        <!-- Vote -->
+                        <div class="btn-group mr-4">
+
+                          <!-- Thumb down -->
+                          <input type="radio" class="btn-check" name="helpFourVote" id="helpFourDown" autocomplete="off" checked>
+                          <label class="btn btn-sm btn-white" for="helpFourDown">
+                            <i class="fe fe-thumbs-down"></i>
+                          </label>
+
+                          <!-- Thumb up -->
+                          <input type="radio" class="btn-check" name="helpFourVote" id="helpFourUp" autocomplete="off">
+                          <label class="btn btn-sm btn-white" for="helpFourUp">
+                            <i class="fe fe-thumbs-up"></i>
+                          </label>
+
+                        </div>
+
+                        <!-- Text -->
+                        <span class="font-size-sm text-muted">
+                          Did this help solve your issue?
+                        </span>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Card -->
+            <div class="card shadow-light-lg accordion" id="helpAccordionTwo">
+              <div class="list-group">
+                <div class="list-group-item">
+
+                  <!-- Header -->
+                  <div class="d-flex align-items-center">
+                    <div class="mr-auto">
+
+                      <!-- Heading -->
+                      <h4 class="font-weight-bold mb-0">
+                        Billing
+                      </h4>
+
+                      <!-- Text -->
+                      <p class="font-size-sm text-muted mb-0">
+                        Issues related to payments or invoicing.
+                      </p>
+
+                    </div>
+
+                    <!-- Badge -->
+                    <span class="badge rounded-pill bg-success-soft ml-4">
+                      <span class="h6 text-uppercase">
+                        4 answers
+                      </span>
+                    </span>
+
+                  </div> <!-- / .row -->
+
+                </div>
+                <div class="list-group-item">
+
+                  <!-- Toggle -->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpFive" role="button" aria-expanded="false" aria-controls="helpFive">
+
+                    <!-- Title -->
+                    <span class="mr-4">
+                      I was double charged last month. Why is that?
+                    </span>
+
+                    <!-- Metadata -->
+                    <div class="text-muted ml-auto">
+
+                      <!-- Text -->
+                      <span class="font-size-sm mr-4 d-none d-md-inline">
+                        Updated 3 months ago
+                      </span>
+
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </div>
+
+                  </a> <!-- / .row -->
+
+                  <!-- Collapse -->
+                  <div class="collapse" id="helpFive" data-parent="#helpAccordionTwo">
+                    <div class="py-5">
+
+                      <!-- Text -->
+                      <p class="text-gray-700">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                      </p>
+
+                      <div class="d-flex align-items-center">
+
+                        <!-- Vote -->
+                        <div class="btn-group mr-4">
+
+                          <!-- Thumb down -->
+                          <input type="radio" class="btn-check" name="helpFiveVote" id="helpFiveDown" autocomplete="off" checked>
+                          <label class="btn btn-sm btn-white" for="helpFiveDown">
+                            <i class="fe fe-thumbs-down"></i>
+                          </label>
+
+                          <!-- Thumb up -->
+                          <input type="radio" class="btn-check" name="helpFiveVote" id="helpFiveUp" autocomplete="off">
+                          <label class="btn btn-sm btn-white" for="helpFiveUp">
+                            <i class="fe fe-thumbs-up"></i>
+                          </label>
+
+                        </div>
+
+                        <!-- Text -->
+                        <span class="font-size-sm text-muted">
+                          Did this help solve your issue?
+                        </span>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="list-group-item">
+
+                  <!-- Toggle -->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpSix" role="button" aria-expanded="false" aria-controls="helpSix">
+
+                    <!-- Title -->
+                    <span class="mr-4">
+                      How do I change my default payment option?
+                    </span>
+
+                    <!-- Metadata -->
+                    <div class="text-muted ml-auto">
+
+                      <!-- Text -->
+                      <span class="font-size-sm mr-4 d-none d-md-inline">
+                        Updated today
+                      </span>
+
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </div>
+
+                  </a> <!-- / .row -->
+
+                  <!-- Collapse -->
+                  <div class="collapse" id="helpSix" data-parent="#helpAccordionTwo">
+                    <div class="py-5">
+
+                      <!-- Text -->
+                      <p class="text-gray-700">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                      </p>
+
+                      <div class="d-flex align-items-center">
+
+                        <!-- Vote -->
+                        <div class="btn-group mr-4">
+
+                          <!-- Thumb down -->
+                          <input type="radio" class="btn-check" name="helpSixVote" id="helpSixDown" autocomplete="off" checked>
+                          <label class="btn btn-sm btn-white" for="helpSixDown">
+                            <i class="fe fe-thumbs-down"></i>
+                          </label>
+
+                          <!-- Thumb up -->
+                          <input type="radio" class="btn-check" name="helpSixVote" id="helpSixUp" autocomplete="off">
+                          <label class="btn btn-sm btn-white" for="helpSixUp">
+                            <i class="fe fe-thumbs-up"></i>
+                          </label>
+
+                        </div>
+
+                        <!-- Text -->
+                        <span class="font-size-sm text-muted">
+                          Did this help solve your issue?
+                        </span>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="list-group-item">
+
+                  <!-- Toggle -->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpSeven" role="button" aria-expanded="false" aria-controls="helpSeven">
+
+                    <!-- Title -->
+                    <span class="mr-4">
+                      Can I still pay with PayPal?
+                    </span>
+
+                    <!-- Metadata -->
+                    <div class="text-muted ml-auto">
+
+                      <!-- Text -->
+                      <span class="font-size-sm mr-4 d-none d-md-inline">
+                        Updated last week
+                      </span>
+
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </div>
+
+                  </a> <!-- / .row -->
+
+                  <!-- Collapse -->
+                  <div class="collapse" id="helpSeven" data-parent="#helpAccordionTwo">
+                    <div class="py-5">
+
+                      <!-- Text -->
+                      <p class="text-gray-700">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                      </p>
+
+                      <div class="d-flex align-items-center">
+
+                        <!-- Vote -->
+                        <div class="btn-group mr-4">
+
+                          <!-- Thumb down -->
+                          <input type="radio" class="btn-check" name="helpSevenVote" id="helpSevenDown" autocomplete="off" checked>
+                          <label class="btn btn-sm btn-white" for="helpSevenDown">
+                            <i class="fe fe-thumbs-down"></i>
+                          </label>
+
+                          <!-- Thumb up -->
+                          <input type="radio" class="btn-check" name="helpSevenVote" id="helpSevenUp" autocomplete="off">
+                          <label class="btn btn-sm btn-white" for="helpSevenUp">
+                            <i class="fe fe-thumbs-up"></i>
+                          </label>
+
+                        </div>
+
+                        <!-- Text -->
+                        <span class="font-size-sm text-muted">
+                          Did this help solve your issue?
+                        </span>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+                <div class="list-group-item">
+
+                  <!-- Toggle -->
+                  <a class="d-flex align-items-center text-reset text-decoration-none" data-toggle="collapse" href="#helpEight" role="button" aria-expanded="false" aria-controls="helpEight">
+
+                    <!-- Title -->
+                    <span class="mr-4">
+                      Can I use referral code to decrease my monthly fees?
+                    </span>
+
+                    <!-- Metadata -->
+                    <div class="text-muted ml-auto">
+
+                      <!-- Text -->
+                      <span class="font-size-sm mr-4 d-none d-md-inline">
+                        Updated 3 weeks ago
+                      </span>
+
+                      <!-- Chevron -->
+                      <span class="collapse-chevron text-muted">
+                        <i class="fe fe-lg fe-chevron-down"></i>
+                      </span>
+
+                    </div>
+
+                  </a> <!-- / .row -->
+
+                  <!-- Collapse -->
+                  <div class="collapse" id="helpEight" data-parent="#helpAccordionTwo">
+                    <div class="py-5">
+
+                      <!-- Text -->
+                      <p class="text-gray-700">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt rerum minima a possimus, amet perferendis, temporibus obcaecati pariatur. Reprehenderit magnam necessitatibus vel culpa provident quas nesciunt sunt aut cupiditate fugiat!
+                      </p>
+
+                      <div class="d-flex align-items-center">
+
+                        <!-- Vote -->
+                        <div class="btn-group mr-4">
+
+                          <!-- Thumb down -->
+                          <input type="radio" class="btn-check" name="helpEightVote" id="helpEightDown" autocomplete="off" checked>
+                          <label class="btn btn-sm btn-white" for="helpEightDown">
+                            <i class="fe fe-thumbs-down"></i>
+                          </label>
+
+                          <!-- Thumb up -->
+                          <input type="radio" class="btn-check" name="helpEightVote" id="helpEightUp" autocomplete="off">
+                          <label class="btn btn-sm btn-white" for="helpEightUp">
+                            <i class="fe fe-thumbs-up"></i>
+                          </label>
+
+                        </div>
+
+                        <!-- Text -->
+                        <span class="font-size-sm text-muted">
+                          Did this help solve your issue?
+                        </span>
+
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Divider -->
+            <hr class="border-gray-300 my-6 my-md-8">
+
+            <!-- Header -->
+            <h3 class="font-weight-bold">
+              Related Help Center Categories
+            </h3>
+
+            <!-- Text -->
+            <p class="text-muted mb-6 mb-md-8">
+              If you didn’t find what you needed, these could help!
+            </p>
+
+            <!-- Categories -->
+            <div class="row">
+              <div class="col-12 col-md-6 col-lg-4">
+
+                <!-- Card -->
+                <div class="card card-border border-dark shadow-lg mb-6 mb-md-8 mb-lg-0 lift lift-lg">
+                  <div class="card-body text-center">
+
+                    <!-- Icon -->
+                    <div class="icon-circle bg-dark text-white mb-5">
+                      <i class="fe fe-users"></i>
+                    </div>
+
+                    <!-- Heading -->
+                    <h4 class="font-weight-bold">
+                      Organizations
+                    </h4>
+
+                    <!-- Text -->
+                    <p class="text-gray-700 mb-5">
+                      Setting up and managing collections of users.
+                    </p>
+
+                    <!-- Badge -->
+                    <span class="badge rounded-pill bg-dark-soft">
+                      <span class="h6 text-uppercase">
+                        11 entries
+                      </span>
+                    </span>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+
+                <!-- Card -->
+                <div class="card card-border border-primary-desat shadow-lg mb-6 mb-md-8 mb-lg-0 lift lift-lg">
+                  <div class="card-body text-center">
+
+                    <!-- Icon -->
+                    <div class="icon-circle bg-primary-desat text-white mb-5">
+                      <i class="fe fe-users"></i>
+                    </div>
+
+                    <!-- Heading -->
+                    <h4 class="font-weight-bold">
+                      Performance
+                    </h4>
+
+                    <!-- Text -->
+                    <p class="text-gray-700 mb-5">
+                      Improving your system's speed and reliability.
+                    </p>
+
+                    <!-- Badge -->
+                    <span class="badge rounded-pill bg-dark-soft">
+                      <span class="h6 text-uppercase">
+                        7 entries
+                      </span>
+                    </span>
+
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-12 col-md-6 col-lg-4">
+
+                <!-- Card -->
+                <div class="card card-border border-danger shadow-lg lift lift-lg">
+                  <div class="card-body text-center">
+
+                    <!-- Icon -->
+                    <div class="icon-circle bg-danger text-white mb-5">
+                      <i class="fe fe-users"></i>
+                    </div>
+
+                    <!-- Heading -->
+                    <h4 class="font-weight-bold">
+                      Customizing
+                    </h4>
+
+                    <!-- Text -->
+                    <p class="text-gray-700 mb-5">
+                      Building custom modules on top of our platform.
+                    </p>
+
+                    <!-- Badge -->
+                    <span class="badge rounded-pill bg-dark-soft">
+                      <span class="h6 text-uppercase">
+                        14 entries
+                      </span>
+                    </span>
+
+                  </div>
+                </div>
+
+              </div>
+            </div> <!-- / .row -->
+
+          </div>
+        </div> <!-- / .row -->
+      </div> <!-- / .container -->
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    {{> partials/footer classList="bg-dark"}}
+
+    <!-- JAVASCRIPT -->
+    {{> partials/scripts}}
+
+  </body>
+</html>

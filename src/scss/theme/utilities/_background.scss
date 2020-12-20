@@ -1,0 +1,31 @@
+//
+// background.scss
+// Extended from Bootstrap
+//
+
+.bg-cover {
+  background: no-repeat center center / cover;
+}
+
+
+// Between
+
+.bg-between {
+
+  @include media-breakpoint-down(lg) {
+    background-image: none !important;
+  }
+
+  @include media-breakpoint-up(md) {
+    background-repeat: no-repeat;
+    background-position: left center, right center;
+    background-size: auto 70%;
+  }
+}
+
+
+// Gradients
+
+.bg-gradient-light {
+  background-image: linear-gradient(to bottom, $light 0%, $white 100%);
+}
