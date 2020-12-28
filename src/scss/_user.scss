@@ -175,16 +175,6 @@
   }
 }
 
-.parent-card {
-  background: rgba(15, 14, 71, 0.25);
-  border: 0.5px solid rgba(255, 255, 255, 0.2);
-  box-sizing: border-box;
-  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(40px);
-  /* Note: backdrop-filter has minimal browser support */
-  border-radius: 20px;
-}
-
 .section-header {
   @include font-style-mixin($primary, 3rem, $font-weight-bold, uppercase);
 }
