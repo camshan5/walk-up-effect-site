@@ -1,4 +1,223 @@
-//
 // user.scss
-// Use this to write your custom SCSS
+// Use this to write custom SCSS
+// $enable-responsive-font-sizes: true;
+
+// Custom Colors
+.text-oxford-blue {
+  color: $oxford-blue;
+}
+
+.text-black-coral {
+  color: $black-coral;
+}
+
+.text-ua-red {
+  color: $ua-red;
+}
+
+.border-ua-red {
+  border-color: $ua-red;
+}
+
+.text-black-olive {
+  color: $black-olive;
+}
+
+.text-ghost-white {
+  color: $ghost-white;
+}
+
+.bg-ghost-white {
+  background-color: $ghost-white;
+}
+
+.bg-oxford-blue {
+  background-color: $oxford-blue;
+}
+
+.hide-sm {
+  @include media-breakpoint-down(sm) {
+    display: none;
+  }
+}
+
+//.carousel {
+//  background: #EEE;
+//}
 //
+///* flickity on by default */
+//.carousel:after {
+//  content: 'flickity';
+//  display: none;
+//}
+//
+//@media screen and ( min-width: 768px ) {
+//  /* disable Flickity for large devices */
+//  .carousel:after {
+//    content: '';
+//  }
+//}
+//
+//.carousel-cell {
+//  width: 66%;
+//  height: 200px;
+//  margin-right: 10px;
+//  margin-bottom: 10px;
+//  background: #8C8;
+//  border-radius: 5px;
+//  counter-increment: carousel-cell;
+//}
+//
+///* no margin bottom when Flickity enabled */
+//.flickity-enabled .carousel-cell {
+//  margin-bottom: 0;
+//}
+//
+///* cell number */
+//.carousel-cell:before {
+//  display: block;
+//  text-align: center;
+//  line-height: 200px;
+//  font-size: 80px;
+//  color: white;
+//}
+
+@media screen and (min-width: 768px) {
+  /* disable Flickity for large devices */
+  .carousel:after {
+    content: "";
+  }
+}
+
+.show-md {
+  @include media-breakpoint-up(sm) {
+    display: none;
+  }
+}
+
+.font-900 {
+  // Black
+  font-family: $font-family-base;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.font-700 {
+  // Bold
+  font-family: $font-family-base;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.font-500 {
+  // Medium
+  font-family: $font-family-base;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.font-300 {
+  // Light
+  font-family: $font-family-base;
+  font-weight: 300;
+  font-style: normal;
+}
+
+@mixin font-style-mixin($color, $font-size, $font-weight, $text-style) {
+  font-style: normal;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  color: $color;
+  text-transform: $text-style;
+}
+
+@mixin card-bg-mixin($color) {
+  background: $color;
+}
+
+@mixin card-mixin($color) {
+  @include card-bg-mixin($color);
+}
+
+@mixin card-icon-mixin($width, $padding) {
+  width: $width;
+  align-self: center;
+  padding-top: $padding;
+}
+
+@mixin card-title-mixin($color, $font-size) {
+  font-size: $font-size;
+  color: $color;
+  text-transform: uppercase;
+}
+
+.card-gradient-fill {
+  @include card-mixin(var(--gradient));
+}
+
+.card-img-icon {
+  @include card-icon-mixin(50%, 0.75rem);
+}
+
+.card-title-dark {
+  @include card-title-mixin($white, 1.65rem);
+
+  @include media-breakpoint-up(xl) {
+    @include card-title-mixin($white, 1.75vw);
+  }
+}
+
+.card-title-light {
+  @include card-title-mixin($black, 1.65rem);
+
+  @include media-breakpoint-up(xl) {
+    @include card-title-mixin($white, 1.75vw);
+  }
+}
+
+.parent-card {
+  background: rgba(15, 14, 71, 0.25);
+  border: 0.5px solid rgba(255, 255, 255, 0.2);
+  box-sizing: border-box;
+  box-shadow: 0 50px 100px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(40px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 20px;
+}
+
+.section-header {
+  @include font-style-mixin($primary, 3rem, $font-weight-bold, uppercase);
+}
+
+.group-container {
+  @include media-breakpoint-up(lg) {
+    @include make-container(8.5rem);
+  }
+  // Medium
+  @include media-breakpoint-between(sm, lg) {
+    @include make-container(4.5rem);
+  }
+  // Small, X-Small
+  @include media-breakpoint-down(sm) {
+    @include make-container(2.5rem);
+  }
+}
+
+.group-item {
+  @include make-col-ready();
+  @include media-breakpoint-up(xl) {
+    max-width: 20%;
+    padding-right: calc(var(--bs-gutter-x) / 3);
+    padding-left: calc(var(--bs-gutter-x) / 3);
+  }
+  @include media-breakpoint-between(md, xl) {
+    @include make-col(4);
+  }
+  @include media-breakpoint-between(sm, md) {
+    @include make-col(6);
+  }
+  @include media-breakpoint-down(sm) {
+    @include make-col(12);
+    max-width: 65%;
+  }
+}

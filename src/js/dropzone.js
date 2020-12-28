@@ -3,26 +3,24 @@
 // Theme module
 //
 
-import Dropzone from "dropzone";
+import Dropzone from 'dropzone';
 
 Dropzone.autoDiscover = false;
 Dropzone.thumbnailWidth = null;
 Dropzone.thumbnailHeight = null;
 
-const toggles = document.querySelectorAll("[data-dropzone]");
+const toggles = document.querySelectorAll('[data-dropzone]');
 
-toggles.forEach((toggle) => {
+toggles.forEach(toggle => {
   let currentFile = undefined;
 
-  const elementOptions = toggle.dataset.dropzone
-    ? JSON.parse(toggle.dataset.dropzone)
-    : {};
+  const elementOptions = toggle.dataset.dropzone ? JSON.parse(toggle.dataset.dropzone) : {};
 
   const defaultOptions = {
-    previewsContainer: toggle.querySelector(".dz-preview"),
-    previewTemplate: toggle.querySelector(".dz-preview").innerHTML,
-    init: function () {
-      this.on("addedfile", function (file) {
+    previewsContainer: toggle.querySelector('.dz-preview'),
+    previewTemplate: toggle.querySelector('.dz-preview').innerHTML,
+    init: function() {
+      this.on('addedfile', function(file) {
         const maxFiles = elementOptions.maxFiles;
 
         if (maxFiles == 1 && currentFile) {
@@ -31,16 +29,16 @@ toggles.forEach((toggle) => {
 
         currentFile = file;
       });
-    },
-  };
+    }
+  }
 
   const options = {
     ...elementOptions,
-    ...defaultOptions,
+    ...defaultOptions
   };
 
   // Clear preview
-  toggle.querySelector(".dz-preview").innerHTML = "";
+  toggle.querySelector('.dz-preview').innerHTML = '';
 
   // Init dropzone
   new Dropzone(toggle, options);

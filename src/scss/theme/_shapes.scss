@@ -20,13 +20,16 @@
   transform: scale(2);
 }
 
+
 // Hide SVG images in IE
 
 @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
   .shape > svg {
     display: none;
   }
 }
+
 
 // Position
 
@@ -90,6 +93,7 @@
   transform-origin: center right;
 }
 
+
 // Orientation
 
 .shape-fluid-x > * {
@@ -102,11 +106,13 @@
   height: 100%;
 }
 
+
 // Direction
 
 .shape-flip-x {
   transform: scaleX(-1);
 }
+
 
 // Blurs
 

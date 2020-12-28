@@ -7,14 +7,13 @@
   background-color: $bg;
   color: $color;
 
-  &:hover,
-  &:focus {
-    background-color: fade-in($bg, 0.05);
+  &:hover, &:focus {
+    background-color: fade-in($bg, .05);
     color: $color;
   }
 
   &.active {
-    background-color: fade-in($bg, 0.05);
+    background-color: fade-in($bg, .05);
     color: $color;
   }
 }

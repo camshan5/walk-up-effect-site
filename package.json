@@ -1,7 +1,7 @@
 {
   "name": "walk-up-effect-site",
   "version": "0.1.0",
-  "description": "Info site for The Walk Up Effect (business) at thewalkupeffect.com",
+  "description": "Website for The Walk Up Effect (business)",
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "del-cli dist && webpack --mode production"
@@ -9,10 +9,11 @@
   "dependencies": {
     "aos": "^3.0.0-beta.6",
     "bigpicture": "^2.5.3",
-    "bootstrap": "^5.0.0-beta1",
+    "bootstrap": "5.0.0-alpha1",
     "choices.js": "^9.0.1",
     "countup.js": "^2.0.7",
     "dropzone": "^5.7.2",
+    "fitty": "^2.3.3",
     "flickity": "^2.2.1",
     "flickity-as-nav-for": "^2.0.1",
     "flickity-fade": "^1.0.0",

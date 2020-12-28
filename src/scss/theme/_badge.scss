@@ -6,16 +6,19 @@
 // Links
 
 .badge[href] {
+
   &:hover {
     text-decoration: none;
   }
 }
+
 
 // Sizing
 
 .badge-lg {
   padding: $badge-padding-y-lg $badge-padding-x-lg;
 }
+
 
 // Rounded circle
 
@@ -30,12 +33,14 @@
     width: 1em;
   }
 
+
   &.badge-lg {
     height: calc(1em + #{$badge-padding-y-lg * 2});
     padding-left: $badge-padding-y-lg;
     padding-right: $badge-padding-y-lg;
   }
 }
+
 
 // Positioning
 
@@ -50,9 +55,10 @@
 }
 
 .badge-float-outside {
-  top: -0.5rem;
-  right: -0.5rem;
+  top: -.5rem;
+  right: -.5rem;
 }
+
 
 // Active states
 
@@ -60,8 +66,7 @@
   background-color: $white !important;
   color: $primary !important;
 
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     background-color: darken($white, 5%);
     color: $primary;
   }
@@ -71,12 +76,12 @@
   background-color: $primary !important;
   color: color-contrast($primary) !important;
 
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     background-color: darken($primary, 5%);
     color: color-contrast(darken($primary, 5%));
   }
 }
+
 
 // Creates the "soft" badge variant
 
@@ -90,12 +95,14 @@
   @include badge-variant-soft($gray-700, $badge-soft-bg-opacity);
 }
 
+
 // Color options
 
 .badge.bg-gray-600 {
   background-color: $gray-600;
   color: $white;
 }
+
 
 // Text color
 //

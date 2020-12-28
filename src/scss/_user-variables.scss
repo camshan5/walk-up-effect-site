@@ -1,8 +1,29 @@
-//
 // user-variables.scss
 // Use this to overwrite Bootstrap and theme variables
-//
 
-// Example of a variable override to change theme's background color
-// Remove the "//" to comment it in and see it in action!
-// $font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
+// Custom colors
+$oxford-blue: #001b2e !default;
+$black-coral: #5e6572 !default;
+$ghost-white: #f4faff !default;
+$ua-red: #e01a4f !default;
+$pacific-blue: #0eb1d2 !default;
+$black-olive: #32322c !default;
+
+// Color system overrides:
+// Monochromatic Colors of #08415c: https://www.color-hex.com/color/08415c
+$gray-900: #1b262d !default;
+$black: #333a3f !default;
+$primary: #08415c !default;
+
+$primary-desat: $pacific-blue !default;
+
+// $light: $gray-100 !default;
+$dark: $gray-900 !default;
+
+// Type overrides
+$font-family-base: "Inter", sans-serif;
+$font-weight-normal: 400 !default;
+
+$navbar-nav-link-font-weight: $font-weight-normal !default;
+
+// $card-bg: linear-gradient(180deg, #08203E 0%, #74A5C1 100%);

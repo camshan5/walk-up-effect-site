@@ -4,8 +4,8 @@
 //
 
 .close {
-  &:hover,
-  &:focus {
+
+  &:hover, &:focus {
     outline: none;
   }
 }
