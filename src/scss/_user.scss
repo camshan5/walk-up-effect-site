@@ -3,13 +3,6 @@
 // $enable-responsive-font-sizes: true;
 
 // Custom Colors
-.text-oxford-blue {
-  color: $oxford-blue;
-}
-
-.text-black-coral {
-  color: $black-coral;
-}
 
 .text-ua-red {
   color: $ua-red;
@@ -17,10 +10,6 @@
 
 .border-ua-red {
   border-color: $ua-red;
-}
-
-.text-black-olive {
-  color: $black-olive;
 }
 
 .text-ghost-white {
@@ -31,61 +20,13 @@
   background-color: $ghost-white;
 }
 
-.bg-oxford-blue {
-  background-color: $oxford-blue;
+.section-bg {
+  background-color: $main-bg-color-shade;
 }
 
 .hide-sm {
   @include media-breakpoint-down(sm) {
     display: none;
-  }
-}
-
-//.carousel {
-//  background: #EEE;
-//}
-//
-///* flickity on by default */
-//.carousel:after {
-//  content: 'flickity';
-//  display: none;
-//}
-//
-//@media screen and ( min-width: 768px ) {
-//  /* disable Flickity for large devices */
-//  .carousel:after {
-//    content: '';
-//  }
-//}
-//
-//.carousel-cell {
-//  width: 66%;
-//  height: 200px;
-//  margin-right: 10px;
-//  margin-bottom: 10px;
-//  background: #8C8;
-//  border-radius: 5px;
-//  counter-increment: carousel-cell;
-//}
-//
-///* no margin bottom when Flickity enabled */
-//.flickity-enabled .carousel-cell {
-//  margin-bottom: 0;
-//}
-//
-///* cell number */
-//.carousel-cell:before {
-//  display: block;
-//  text-align: center;
-//  line-height: 200px;
-//  font-size: 80px;
-//  color: white;
-//}
-
-@media screen and (min-width: 768px) {
-  /* disable Flickity for large devices */
-  .carousel:after {
-    content: "";
   }
 }
 
@@ -176,7 +117,17 @@
 }
 
 .section-header {
-  @include font-style-mixin($primary, 3rem, $font-weight-bold, uppercase);
+  @include font-style-mixin($header-color, 3rem, $font-weight-bold, uppercase);
+}
+
+.section-sub-header {
+  @include font-style-mixin(
+    $sub-header-color,
+    1.125rem,
+    $font-family-base,
+    normal
+  );
+  // font-weight: 500;
 }
 
 .group-container {

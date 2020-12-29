@@ -14,18 +14,22 @@
     <!-- HERO -->
     {{> partials/hero imgRoot="assets/img/hero-road.webp"}}
 
-    <section class="py-md-10 py-sm-8">
-      <div class="group-container">
-        <!-- What we do  -->
-        <div class="row">
-          <h1 class="section-header text-center text-md-left">What We Do</h1>
-          <div class="col-lg-8 col-xl-5">
-            <p class="lead text-center text-md-left text-muted mb-4 mb-lg-6">
+    <section class="py-md-10 py-sm-8 section-bg">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <h1 class="section-header">What We Do</h1>
+            <p class="section-sub-header mx-5">
               Two weeks of education and inspiration that will bring hope and
               strength to students and staff.
             </p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="group-container">
         <!-- Card Group -->
         <div class="row justify-content-center">
           <!-- Card 1 -->
@@ -187,42 +191,51 @@
       </div>
     </section>
 
-    <section class="py-8 py-md-11">
+    <section class="py-md-10 py-sm-8 section-bg">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
             <h1 class="section-header">How to Walk Up</h1>
-            <p class="lead text-muted mb-7 mb-md-9">
-              Take these walk up steps to begin the process of elevating you or
-              someone else
+            <p class="section-sub-header mx-5">
+              Take these <i>Walk Up</i> steps to begin the process of elevating
+              yourself or someone else.
             </p>
           </div>
-          <div
-            class="d-flex align-items-center justify-content-center mb-7 mb-md-9"
-          >
-            <nav class="nav justify-content-center">
-              <a
-                class="badge rounded-pill bg-secondary-soft mr-1 mb-1 active"
-                href="#"
-                data-toggle="pill"
-                data-filter="#heal-others"
-                data-target="#wu-steps"
-              >
-                <span class="h6 text-uppercase">Heal Others</span>
-              </a>
-              <a
-                class="badge rounded-pill bg-secondary-soft mr-1 mb-1"
-                href="#"
-                data-toggle="pill"
-                data-filter="#heal-yourself"
-                data-target="#wu-steps"
-              >
-                <span class="h6 text-uppercase">Heal Yourself</span>
-              </a>
-            </nav>
-          </div>
         </div>
+      </div>
+    </section>
 
+    <section>
+      <div class="container">
+        <div
+          class="d-flex align-items-center justify-content-center my-7 my-md-9"
+        >
+          <nav class="nav justify-content-center">
+            <a
+              class="badge rounded-pill bg-secondary-soft mr-1 mb-1 active"
+              href="#"
+              data-toggle="pill"
+              data-filter="#heal-others"
+              data-target="#wu-steps"
+            >
+              <span class="h6 text-uppercase">Heal Others</span>
+            </a>
+            <a
+              class="badge rounded-pill bg-secondary-soft mr-1 mb-1"
+              href="#"
+              data-toggle="pill"
+              data-filter="#heal-yourself"
+              data-target="#wu-steps"
+            >
+              <span class="h6 text-uppercase">Heal Yourself</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="pb-md-10 pb-sm-8">
+      <div class="container">
         <div class="col-12">
           <div
             class="row"
@@ -513,12 +526,10 @@
     <section class="py-15 bg-dark">
       <div class="container">
         <!-- Our Why  -->
-        <div class="row pt-8 pb-4">
-          <h1 class="section-header text-center text-md-right text-white">
-            Our Why
-          </h1>
+        <div class="row py-8">
+          <h1 class="section-header text-center text-white">Our Why</h1>
         </div>
-        <div class="row justify-content-center" >
+        <div class="row justify-content-center">
           <div class="col-12 col-md-6 col-lg-4 d-flex">
             <!-- Card -->
             <div
@@ -638,11 +649,12 @@
           </div>
           <div class="col-12 col-md-6 col-lg-4 d-flex">
             <!-- Card -->
-            <div class="card card-border border-primary-desat shadow-lg lift lift-lg">
+            <div
+              class="card card-border border-primary-desat shadow-lg lift lift-lg"
+            >
               <div class="card-body text-center">
-            
                 <!-- Heading -->
-                <h1 class="display-2 font-700 text-primary">1 in 14</h4>
+                <h1 class="display-2 font-700 text-primary">1 in 14</h1>
 
                 <!-- Text -->
                 <p class="text-gray-900 mb-3">
@@ -658,13 +670,13 @@
 
     <!-- SHAPE -->
     <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
         {{> angles/angle-bottom }}
       </div>
     </div>
 
     <!-- FOOTER -->
-    {{!-- {{> partials/footer classList="bg-gray-200"}} --}}
+    {{> partials/footer classList="bg-white"}}
 
     <!-- JAVASCRIPT -->
     {{> partials/scripts}}
