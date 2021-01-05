@@ -14,12 +14,13 @@
     <!-- HERO -->
     {{> partials/hero imgRoot="assets/img/hero-road.webp"}}
 
-    <section class="py-md-10 py-sm-8 section-bg">
+    <!-- WHAT WE DO  -->
+    <section class="pt-6 pt-md-10">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
             <h1 class="section-header">What We Do</h1>
-            <p class="section-sub-header mx-5">
+            <p class="section-sub-header mx-5 mb-8">
               Two weeks of education and inspiration that will bring hope and
               strength to students and staff.
             </p>
@@ -28,188 +29,148 @@
       </div>
     </section>
 
+    <!-- WHAT WE DO (CAROUSEL) -->
     <section>
-      <div class="group-container">
-        <!-- Card Group -->
-        <div class="row justify-content-center">
-          <!-- Card 1 -->
-          <div class="col group-item d-flex">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Flickity -->
             <div
-              class="card card-gradient-fill shadow-lg mt-8"
-              style="
-                --gradient: linear-gradient(
-                  180deg,
-                  #176ab1 7.85%,
-                  #cbd8f1 53.25%
-                );
-              "
+              class="flickity-viewport-visible pt-2 pb-9"
+              data-flickity='{"cellAlign": "left", "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "contain": true}'
             >
-              <!-- Image -->
-              <div class="card-img-icon">
-                <img
-                  src="../assets/img/icons/custom/wu-educate-icon.svg"
-                  alt="..."
-                  class="img-fluid"
-                />
+              <div class="col-12 col-md-5 col-lg-4">
+                <!-- Card -->
+                <div
+                  class="card card-border card-gradient-fill shadow-light-lg lift lift-lg"
+                  style="border-top-color: #e01a4f"
+                >
+                  <div class="card-body text-center">
+                    <!-- Icon -->
+                    <div class="img-fluid mb-5 w-50 svg-shim mx-auto">
+                      {{> artwork/wu-educate-icon }}
+                    </div>
+                    <h2 class="card-title-light font-700">Educate</h2>
+                    <!-- Text -->
+                    <p class="text-gray-700 mb-5">Students on Mental Health</p>
+                    <!-- Link -->
+                    <a href="#!" style="color: #e01a4f">Learn more</a>
+                  </div>
+                </div>
               </div>
-              <!-- Body -->
-              <div class="card-body">
-                <div class="text-center">
-                  <h2 class="card-title-dark font-700">Educate</h2>
-                  <p class="text-primary font-300">Students on Mental Health</p>
+
+              <div class="col-12 col-md-5 col-lg-4">
+                <!-- Card -->
+                <div
+                  class="card card-border shadow-light-lg lift lift-lg"
+                  style="border-top-color: #4078c0"
+                >
+                  <div class="card-body text-center">
+                    <!-- Icon -->
+                    <div class="img-fluid mb-5 w-50 svg-shim mx-auto">
+                      {{> artwork/wu-inspire-icon }}
+                    </div>
+                    <h2 class="card-title-light font-700">Inspire</h2>
+                    <!-- Text -->
+                    <p class="text-gray-700 mb-5">Students to Walk Up</p>
+
+                    <!-- Link -->
+                    <a href="#!" style="color: #4078c0">Learn more</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-5 col-lg-4">
+                <!-- Card -->
+                <div
+                  class="card card-border shadow-light-lg lift lift-lg"
+                  style="border-top-color: #e01a4f"
+                >
+                  <div class="card-body text-center">
+                    <!-- Icon -->
+                    <div class="img-fluid mb-5 w-50 svg-shim mx-auto">
+                      {{> artwork/wu-provide-icon }}
+                    </div>
+                    <h2 class="card-title-light font-700">Provide</h2>
+                    <!-- Text -->
+                    <p class="text-gray-700 mb-5">
+                      Long Term Mental Health Support to Your School
+                    </p>
+                    <!-- Link -->
+                    <a href="#!" style="color: #e01a4f">Learn more</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-5 col-lg-4">
+                <!-- Card -->
+                <div
+                  class="card card-border shadow-light-lg lift lift-lg"
+                  style="border-top-color: #4078c0"
+                >
+                  <div class="card-body text-center">
+                    <!-- Icon -->
+                    <div class="img-fluid mb-5 w-50 svg-shim mx-auto">
+                      {{> artwork/wu-motivate-icon }}
+                    </div>
+                    <h2 class="card-title-light font-700">Motivate</h2>
+                    <!-- Text -->
+                    <p class="text-gray-700 mb-5">
+                      Students by Bringing Speakers to Campus
+                    </p>
+                    <!-- Link -->
+                    <a href="#!" style="color: #4078c0">Learn more</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-12 col-md-5 col-lg-4">
+                <!-- Card -->
+                <div
+                  class="card card-border shadow-light-lg lift lift-lg"
+                  style="border-top-color: #e01a4f"
+                >
+                  <div class="card-body text-center">
+                    <!-- Icon -->
+                    <div class="img-fluid mb-5 w-50 svg-shim mx-auto">
+                      {{> artwork/wu-change-icon }}
+                    </div>
+                    <h2 class="card-title-light font-700">Change</h2>
+                    <!-- Text -->
+                    <p class="text-gray-700 mb-5">Lives and Bring Hope!</p>
+                    <!-- Link -->
+                    <a href="#!" style="color: #e01a4f">Learn more</a>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <!-- Card 2 -->
-          <div class="col group-item d-flex">
-            <div
-              class="card card-gradient-fill shadow-lg mt-8"
-              style="
-                --gradient: linear-gradient(
-                  200.44deg,
-                  #08355c 13.57%,
-                  #9cadbc 98.38%
-                );
-              "
-            >
-              <!-- Image -->
-              <div class="card-img-icon">
-                <img
-                  src="../assets/img/icons/custom/wu-inspire-icon.svg"
-                  alt="..."
-                  class="img-fluid"
-                />
-              </div>
-              <!-- Body -->
-              <div class="card-body">
-                <div class="text-center">
-                  <h2 class="card-title-dark font-700">Inspire</h2>
-                  <p class="text-ghost-white font-300">Students to Walk Up</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card 3 -->
-          <div class="col group-item d-flex">
-            <div
-              class="card card-gradient-fill shadow-lg mt-8"
-              style="
-                --gradient: linear-gradient(
-                  180deg,
-                  #176ab1 7.85%,
-                  #cbd8f1 53.25%
-                );
-              "
-            >
-              <!-- Image -->
-              <div class="card-img-icon">
-                <img
-                  src="../assets/img/icons/custom/wu-support-icon.svg"
-                  alt="..."
-                  class="img-fluid"
-                />
-              </div>
-              <!-- Body -->
-              <div class="card-body">
-                <div class="text-center">
-                  <h2 class="card-title-dark font-700">Provide</h2>
-                  <p class="text-primary font-300">
-                    Long Term Mental Health Support to Your School
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card 4 -->
-          <div class="col group-item d-flex">
-            <div
-              class="card card-gradient-fill shadow-lg mt-8"
-              style="
-                --gradient: linear-gradient(
-                  200.44deg,
-                  #08355c 13.57%,
-                  #9cadbc 98.38%
-                );
-              "
-            >
-              <!-- Image -->
-              <div class="card-img-icon">
-                <img
-                  src="../assets/img/icons/custom/wu-motivate-icon.svg"
-                  alt="..."
-                  class="img-fluid"
-                />
-              </div>
-              <!-- Body -->
-              <div class="card-body">
-                <div class="text-center">
-                  <h2 class="card-title-dark font-700">Motivate</h2>
-                  <p class="text-ghost-white font-300">
-                    Students by Bringing Speakers to Campus
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Card 5 -->
-          <div class="col group-item d-flex">
-            <div
-              class="card card-gradient-fill shadow-lg mt-8"
-              style="
-                --gradient: linear-gradient(
-                  180deg,
-                  #176ab1 7.85%,
-                  #cbd8f1 53.25%
-                );
-              "
-            >
-              <!-- Image -->
-              <div class="card-img-icon">
-                <img
-                  src="../assets/img/icons/custom/wu-change-icon.svg"
-                  alt="..."
-                  class="img-fluid"
-                />
-              </div>
-              <!-- Body -->
-              <div class="card-body">
-                <div class="text-center">
-                  <h2 class="card-title-dark font-700">Change</h2>
-                  <p class="text-primary font-300">Lives and Bring Hope!</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Learn More Button -->
-          <div class="col-12 my-5">
-            <a href="#" class="btn btn-sm btn-outline-primary shadow lift">
-              Learn More
-            </a>
           </div>
         </div>
+        <!-- / .row -->
       </div>
+      <!-- / .container -->
     </section>
 
-    <section class="py-md-10 py-sm-8 section-bg">
+    <!-- SHAPE -->
+    <div class="position-relative mt-n12" style="z-index: -1">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-black">
+        {{> angles/angle-bottom }}
+      </div>
+    </div>
+
+    <section class="py-md-10 py-sm-8 bg-black">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pt-8">
           <div class="col-12 col-md-10 col-lg-8 text-center">
-            <h1 class="section-header">How to Walk Up</h1>
-            <p class="section-sub-header mx-5">
+            <h1 class="section-header text-white">How to Walk Up</h1>
+            <p class="section-sub-header text-gray-300">
               Take these <i>Walk Up</i> steps to begin the process of elevating
               yourself or someone else.
             </p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section>
-      <div class="container">
-        <div
-          class="d-flex align-items-center justify-content-center my-7 my-md-9"
-        >
+        <div class="d-flex align-items-center justify-content-center mt-6 mb-4">
           <nav class="nav justify-content-center">
             <a
               class="badge rounded-pill bg-secondary-soft mr-1 mb-1 active"
@@ -231,12 +192,8 @@
             </a>
           </nav>
         </div>
-      </div>
-    </section>
 
-    <section class="pb-md-10 pb-sm-8">
-      <div class="container">
-        <div class="col-12">
+        <div class="col-12 mb-12">
           <div
             class="row"
             id="wu-steps"
@@ -245,10 +202,7 @@
             <!-- Heal Others -->
             <div class="col-12" id="heal-others">
               <!-- Card -->
-              <div
-                class="card rounded-lg shadow-lg mb-6 mb-md-0"
-                style="z-index: 1"
-              >
+              <div class="card rounded-lg shadow-lg mb-6 mb-md-0">
                 <!-- Body -->
                 <div class="card-body py-6 py-md-8">
                   <div class="row gx-0 mb-7 mb-md-9">
@@ -258,7 +212,7 @@
                         <div class="col"></div>
                         <div class="col-auto">
                           <div class="icon text-primary mb-3">
-                            {{> general/number-icon-1 }}
+                            {{> numbers/wu-number-icon-1 }}
                           </div>
                         </div>
                         <div class="col">
@@ -278,7 +232,7 @@
                         </div>
                         <div class="col-auto">
                           <div class="icon text-primary mb-3">
-                            {{> general/number-icon-2}}
+                            {{> numbers/wu-number-icon-2 }}
                           </div>
                         </div>
                         <div class="col">
@@ -298,7 +252,7 @@
                         </div>
                         <div class="col-auto">
                           <div class="icon text-primary mb-3">
-                            {{> general/number-icon-3}}
+                            {{> numbers/wu-number-icon-3 }}
                           </div>
                         </div>
                         <div class="col"></div>
@@ -316,7 +270,7 @@
                         <div class="col"></div>
                         <div class="col-auto">
                           <div class="icon text-primary mb-3">
-                            {{> general/number-icon-4}}
+                            {{> numbers/wu-number-icon-4 }}
                           </div>
                         </div>
                         <div class="col">
@@ -336,7 +290,7 @@
                         </div>
                         <div class="col-auto">
                           <div class="icon text-primary mb-3">
-                            {{> general/number-icon-5}}
+                            {{> numbers/wu-number-icon-5 }}
                           </div>
                         </div>
                         <div class="col">
@@ -357,7 +311,7 @@
                         </div>
                         <div class="col-auto">
                           <div class="icon text-primary mb-3">
-                            {{> general/number-icon-6}}
+                            {{> numbers/wu-number-icon-6 }}
                           </div>
                         </div>
                         <div class="col"></div>
@@ -390,7 +344,7 @@
                         <div class="col"></div>
                         <div class="col-auto">
                           <div class="icon text-primary mb-3">
-                            {{> general/number-icon-1}}
+                            {{> numbers/wu-number-icon-1 }}
                           </div>
                         </div>
                         <div class="col">
@@ -411,7 +365,7 @@
                         </div>
                         <div class="col-auto">
                           <div class="icon text-primary mb-3">
-                            {{> general/number-icon-2}}
+                            {{> numbers/wu-number-icon-2 }}
                           </div>
                         </div>
                         <div class="col">
@@ -432,7 +386,7 @@
                         </div>
                         <div class="col-auto">
                           <div class="icon text-primary mb-3">
-                            {{> general/number-icon-3}}
+                            {{> numbers/wu-number-icon-3 }}
                           </div>
                         </div>
                         <div class="col"></div>
@@ -451,7 +405,7 @@
                         <div class="col"></div>
                         <div class="col-auto">
                           <div class="icon text-primary mb-3">
-                            {{> general/number-icon-4}}
+                            {{> numbers/wu-number-icon-4 }}
                           </div>
                         </div>
                         <div class="col">
@@ -471,7 +425,7 @@
                         </div>
                         <div class="col-auto">
                           <div class="icon text-primary mb-3">
-                            {{> general/number-icon-5}}
+                            {{> numbers/wu-number-icon-5 }}
                           </div>
                         </div>
                         <div class="col">
@@ -491,7 +445,7 @@
                         </div>
                         <div class="col-auto">
                           <div class="icon text-primary mb-3">
-                            {{> general/number-icon-6}}
+                            {{> numbers/wu-number-icon-6 }}
                           </div>
                         </div>
                         <div class="col"></div>
@@ -515,20 +469,13 @@
       </div>
     </section>
 
-    <!-- SHAPE -->
-    <div class="position-relative mt-n15">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-dark">
-        {{> angles/angle-bottom }}
-      </div>
-    </div>
-
-    <!-- CATEGORIES -->
-    <section class="py-15 bg-dark">
+    <section class="py-10">
       <div class="container">
         <!-- Our Why  -->
         <div class="row py-8">
-          <h1 class="section-header text-center text-white">Our Why</h1>
+          <h1 class="section-header text-center">Our Why</h1>
         </div>
+
         <div class="row justify-content-center">
           <div class="col-12 col-md-6 col-lg-4 d-flex">
             <!-- Card -->
@@ -536,25 +483,18 @@
               class="card card-border border-danger shadow-lg mb-6 mb-md-8 lift lift-lg"
             >
               <div class="card-body text-center">
-                <!-- Heading -->
-                <h1 class="display-1 font-700 text-danger">
-                  <span
-                    data-countup='{"startVal": 0}'
-                    data-to="20"
-                    data-aos
-                    data-aos-id="countup:in"
-                    >0</span
-                  >%
-                </h1>
-
+                <div class="img-fluid mb-5 w-50 svg-shim mx-auto">
+                  {{> animations/graph-20 }}
+                </div>
                 <!-- Text -->
-                <p class="text-gray-900 mb-3">
-                  of children have a mental health disorder and only 20% of
-                  those get help.
+                <p class="text-gray-900 my-3">
+                  Nearly twenty percent of 12 to 18 year olds suffer from mental
+                  illness.
                 </p>
               </div>
             </div>
           </div>
+
           <div class="col-12 col-md-6 col-lg-4 d-flex">
             <!-- Card -->
             <div
@@ -562,18 +502,10 @@
             >
               <div class="card-body text-center">
                 <!-- Heading -->
-                <h1 class="display-2 font-weight-bold text-primary">
-                  <span
-                    data-countup='{"startVal": "0", "decimalPlaces": 0}'
-                    data-to="1"
-                    data-aos
-                    data-aos-id="countup:in"
-                    >0</span
-                  >/2
-                </h1>
+                <h1 class="display-2 font-weight-bold text-primary">13</h1>
                 <!-- Text -->
                 <p class="text-gray-900 mb-3">
-                  of all lifetime cases of mental illness begin by age 14
+                  The average age of the first incident of self-harm is 13
                 </p>
               </div>
             </div>
@@ -596,7 +528,7 @@
                 </h1>
                 <!-- Text -->
                 <p class="text-gray-900 mb-3">
-                  of high-school students seriously consider suicide
+                  Nearly 20% of high school students seriously consider suicide
                 </p>
               </div>
             </div>
@@ -631,18 +563,19 @@
               <div class="card-body text-center">
                 <!-- Heading -->
                 <h1 class="display-1 font-700 text-danger">
-                  :<span
+                  <span
                     data-countup='{"startVal": 0}'
-                    data-to="40"
+                    data-to="90"
                     data-aos
                     data-aos-id="countup:in"
                     >0</span
-                  >
+                  >%
                 </h1>
 
                 <!-- Text -->
                 <p class="text-gray-900 mb-3">
-                  One person every 40 seconds takes their own life.
+                  80 to 90% of people that seek treatment for a mental illness
+                  are successful with therapy and medication
                 </p>
               </div>
             </div>
@@ -654,11 +587,12 @@
             >
               <div class="card-body text-center">
                 <!-- Heading -->
-                <h1 class="display-2 font-700 text-primary">1 in 14</h1>
+                <h1 class="display-2 font-700 text-primary">6.3</h1>
 
                 <!-- Text -->
                 <p class="text-gray-900 mb-3">
-                  high school students has attempted suicide this year.
+                  6.3 million young people aged 3 to 17 suffer from anxiety or
+                  depression
                 </p>
               </div>
             </div>
@@ -667,13 +601,6 @@
         <!-- / .row -->
       </div>
     </section>
-
-    <!-- SHAPE -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-        {{> angles/angle-bottom }}
-      </div>
-    </div>
 
     <!-- FOOTER -->
     {{> partials/footer classList="bg-white"}}

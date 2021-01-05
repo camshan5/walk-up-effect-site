@@ -5,173 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9afe3861-0e0c-45eb-a25b-99ebf4946b24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fonts/Inter/Inter-VariableFont_slnt,wght.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Inter/OFL.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Inter/README.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Inter/static/Inter-Black-slnt=0.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Inter/static/Inter-Bold-slnt=0.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Inter/static/Inter-ExtraBold-slnt=0.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Inter/static/Inter-ExtraLight-slnt=0.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Inter/static/Inter-Light-slnt=0.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Inter/static/Inter-Medium-slnt=0.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Inter/static/Inter-Regular-slnt=0.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Inter/static/Inter-SemiBold-slnt=0.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/Inter/static/Inter-Thin-slnt=0.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/brand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/hero-road.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/custom/wu-change-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/custom/wu-educate-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/custom/wu-heal-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/custom/wu-inspire-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/custom/wu-motivate-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/icons/custom/wu-support-icon.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/hero.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/icons/duotone-icons/general/number-icon-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/icons/duotone-icons/general/number-icon-2.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/icons/duotone-icons/general/number-icon-3.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/icons/duotone-icons/general/number-icon-4.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/icons/duotone-icons/general/number-icon-5.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/icons/duotone-icons/general/number-icon-6.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/partials/scroll_card.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/favicon/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/src/favicon/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/account-general.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/account-general.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/account-notifications.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/account-notifications.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/account-security.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/account-security.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/agency.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/agency.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/billing-plans-and-payment.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/billing-plans-and-payment.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/billing-users.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/billing-users.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/blog-post.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blog-post.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/blog-search.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blog-search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/blog-showcase.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blog-showcase.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/career-single.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/career-single.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/careers.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/careers.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/cloud.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/cloud.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/contact-alt.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/contact-alt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/coworking.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/coworking.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/desktop-app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/desktop-app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/dummy.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/dummy.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/enterprise.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/enterprise.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/error-cover.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/error-cover.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/error-illustration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/error-illustration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/error.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/error.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/help-center-article.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/help-center-article.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/help-center.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/help-center.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/job.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/job.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/mobile-app.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/mobile-app.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/password-reset-cover.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/password-reset-cover.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/password-reset-illustration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/password-reset-illustration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/password-reset.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/password-reset.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/portfolio-case-study.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/portfolio-case-study.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/portfolio-grid-rows.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/portfolio-grid-rows.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/portfolio-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/portfolio-grid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/portfolio-image-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/portfolio-image-grid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/portfolio-masonry.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/portfolio-masonry.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/portfolio-parallax.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/portfolio-parallax.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/portfolio-sidebar-fluid.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/portfolio-sidebar-fluid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/portfolio-sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/portfolio-sidebar.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/pricing.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/pricing.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/rental.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/rental.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/service.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/service.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/signin-cover.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/signin-cover.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/signin-illustration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/signin-illustration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/signin.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/signin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/signup-cover.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/signup-cover.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/signup-illustration.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/signup-illustration.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/signup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/signup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/startup.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/startup.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/html/terms-of-service.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/html/terms-of-service.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/aos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/aos.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/bigpicture.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/bigpicture.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/choices.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/choices.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/countup.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/countup.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/dropzone.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/dropzone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/highlight.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/highlight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/isotope.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/isotope.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/jarallax.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/jarallax.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/modal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/modal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/navbar-dropdown.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/navbar-dropdown.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/popover.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/popover.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/pricing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/pricing.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/quill.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/quill.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/smooth-scroll.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/smooth-scroll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/theme.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/tooltip.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/tooltip.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/typed.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/typed.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/brands/logotype/airbnb.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/brands/logotype/airbnb.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/brands/logotype/coinbase.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/brands/logotype/coinbase.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/partials/navbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/navbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/custom/wu-change-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/icons/artwork/wu-change-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/custom/wu-educate-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/icons/artwork/wu-educate-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/custom/wu-heal-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/custom/wu-inspire-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/icons/artwork/wu-inspire-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/custom/wu-motivate-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/icons/artwork/wu-motivate-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/icons/custom/wu-support-icon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/partials/icons/artwork/wu-support-icon.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/icons/wu-change-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/icons/wu-educate-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/icons/wu-inspire-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/icons/wu-motivate-icon.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/partials/icons/wu-support-icon.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/scss/_user-variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_user-variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/_user.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/_user.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/libs.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/libs.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_alert.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_alert.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_avatar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_avatar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_badge.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_badge.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_breadcrumb.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_card.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_close.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_close.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_collapse.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_collapse.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_device.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_device.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_dropdown.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_dropdown.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_forms.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_forms.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_functions.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_functions.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_icon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_icon.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_images.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_images.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_list-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_list-group.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_list.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_list.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_modal.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_modal.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_navbar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_navbar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_pagination.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_pagination.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_popover.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_popover.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_reboot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_reboot.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_screenshot.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_screenshot.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_section.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_section.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_shapes.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_shapes.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_sidenav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_sidenav.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_tables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_tables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_theme.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_theme.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_type.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_type.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_utilities.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/_vendor.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/_vendor.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/forms/_form-check.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/forms/_form-check.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/forms/_form-control.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/forms/_form-control.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/forms/_form-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/forms/_form-group.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/forms/_form-select.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/forms/_form-select.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/forms/_input-group.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/forms/_input-group.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/forms/_labels.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/forms/_labels.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/forms/_leftover.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/forms/_leftover.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/mixins/_badge.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/mixins/_badge.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/mixins/_buttons.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/mixins/_buttons.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/mixins/_overlay.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/mixins/_overlay.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/utilities/_background.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/utilities/_background.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/utilities/_images.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/utilities/_images.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/utilities/_lift.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/utilities/_lift.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/utilities/_overlay.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/utilities/_overlay.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/utilities/_position.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/utilities/_position.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/utilities/_sizing.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/utilities/_sizing.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/utilities/_type.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/utilities/_type.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/vendor/_aos.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/vendor/_aos.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/vendor/_bigpicture.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/vendor/_bigpicture.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/vendor/_choices.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/vendor/_choices.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/vendor/_dropzone.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/vendor/_dropzone.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/vendor/_feather.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/vendor/_feather.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/vendor/_flickity.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/vendor/_flickity.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/vendor/_highlight.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/vendor/_highlight.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/scss/theme/vendor/_quill.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/scss/theme/vendor/_quill.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,16 +59,19 @@
     <property name="ejs.close.delimiter" value="%&gt;" />
     <property name="ejs.open.delimiter" value="&lt;%" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.3" />
-    <property name="javascript.nodejs.core.library.typings.version" value="14.14.16" />
+    <property name="javascript.nodejs.core.library.typings.version" value="14.14.17" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/img/icons/custom" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="$USER_HOME$/.config/nvm/versions/node/v14.15.3/bin/node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="Template Data Languages" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -233,11 +83,11 @@
       <recent name="$PROJECT_DIR$/src/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/partials/icons/artwork" />
       <recent name="$PROJECT_DIR$/src/partials/icons/duotone-icons/general" />
       <recent name="$PROJECT_DIR$/src/partials/brands/logotype" />
       <recent name="$PROJECT_DIR$/src/img/icons/custom" />
       <recent name="$PROJECT_DIR$/src/partials/icons" />
-      <recent name="$PROJECT_DIR$/src/partials/brands" />
     </key>
   </component>
   <component name="RunManager">
@@ -269,6 +119,8 @@
       <workItem from="1608659327718" duration="7059000" />
       <workItem from="1608933544916" duration="5502000" />
       <workItem from="1609004849141" duration="4224000" />
+      <workItem from="1609431861305" duration="4034000" />
+      <workItem from="1609439692828" duration="1869000" />
     </task>
     <servers />
   </component>

@@ -12,14 +12,6 @@
   border-color: $ua-red;
 }
 
-.text-ghost-white {
-  color: $ghost-white;
-}
-
-.bg-ghost-white {
-  background-color: $ghost-white;
-}
-
 .section-bg {
   background-color: $main-bg-color-shade;
 }
@@ -37,30 +29,27 @@
 }
 
 .font-900 {
-  // Black
   font-family: $font-family-base;
-  font-weight: 900;
+  font-weight: $font-weight-black;
   font-style: normal;
 }
 
 .font-700 {
-  // Bold
   font-family: $font-family-base;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   font-style: normal;
 }
 
 .font-500 {
-  // Medium
   font-family: $font-family-base;
-  font-weight: 500;
+  font-weight: $font-weight-medium;
   font-style: normal;
 }
 
 .font-300 {
   // Light
   font-family: $font-family-base;
-  font-weight: 300;
+  font-weight: $font-weight-light;
   font-style: normal;
 }
 
@@ -80,8 +69,9 @@
   @include card-bg-mixin($color);
 }
 
-@mixin card-icon-mixin($width, $padding) {
+@mixin card-icon-mixin($width, $height, $padding) {
   width: $width;
+  height: $height;
   align-self: center;
   padding-top: $padding;
 }
@@ -97,7 +87,10 @@
 }
 
 .card-img-icon {
-  @include card-icon-mixin(50%, 0.75rem);
+  @include card-icon-mixin(50%, 40%, 0.75rem);
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  border-bottom: $border-width solid $dark;
 }
 
 .card-title-dark {
@@ -109,10 +102,10 @@
 }
 
 .card-title-light {
-  @include card-title-mixin($black, 1.65rem);
+  @include card-title-mixin($dark, 1.65rem);
 
   @include media-breakpoint-up(xl) {
-    @include card-title-mixin($white, 1.75vw);
+    @include card-title-mixin($dark, 1.75vw);
   }
 }
 
@@ -160,5 +153,60 @@
   @include media-breakpoint-down(sm) {
     @include make-col(12);
     max-width: 65%;
+  }
+}
+
+@mixin card-icon-bg(
+  $name,
+  $top-or-bottom,
+  $left-or-right,
+  $top-padding,
+  $bottom-padding
+) {
+  .icon-#{$name} {
+    background-image: url("/src/img/icons/#{$name}.svg");
+    position: absolute;
+    background-repeat: no-repeat;
+    #{$top-or-bottom}: $top-padding;
+    #{$left-or-right}: $bottom-padding;
+  }
+}
+
+@include card-icon-bg("educate", top, auto, 1.5rem, 0);
+
+/**
+ * 1. The `reverse` animation direction plays the animation backwards
+ *    which makes it start at the stroke offset 100 which means displaying
+ *    no stroke at all and animating it to the value defined in the SVG
+ *    via the inline `stroke-dashoffset` attribute.
+ * 2. Rotate by -90 degree to make the starting point of the
+ *    stroke the top of the circle.
+ * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
+ *    and Edge, use the transform attribute directly on the SVG element as a
+ * .  workaround (https://markus.oberlehner.net/blog/pure-css-animated-svg-circle-chart/#part-4-internet-explorer-strikes-back).
+ */
+.circle-chart__circle {
+  animation: circle-chart-fill 2s reverse; /* 1 */
+  animation-play-state: paused;
+  transform: rotate(-90deg); /* 2, 3 */
+  transform-origin: center; /* 4 */
+}
+
+.circle-chart__info {
+  animation: circle-chart-appear 2s forwards;
+  opacity: 0;
+  transform: translateY(0.3em);
+}
+
+@keyframes circle-chart-fill {
+  to {
+    stroke-dasharray: 0 100;
+  }
+}
+
+@keyframes circle-chart-appear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
