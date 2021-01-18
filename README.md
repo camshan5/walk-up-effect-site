@@ -1,6 +1,6 @@
-# LANDKIT
+# The Walk Up Effect
 
-Landkit Theme by Good Themes.
+Website built with the bones from "Landkit Theme" by Good Themes.
 
 ### Documentation
 
