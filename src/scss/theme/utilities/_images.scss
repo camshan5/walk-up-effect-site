@@ -14,7 +14,7 @@
 
 // Left
 
-.img-skewed-left {
+.img-skewed-start {
   perspective-origin: left center;
 
   .img-skewed-item {
@@ -25,7 +25,7 @@
 
 // Right
 
-.img-skewed-right {
+.img-skewed-end {
   perspective-origin: right center;
 
   .img-skewed-item {

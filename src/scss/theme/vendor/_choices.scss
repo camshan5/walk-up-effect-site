@@ -16,7 +16,6 @@
   display: none;
 }
 
-
 // Dropdown menu
 
 .choices > .dropdown-menu {
@@ -69,14 +68,12 @@
   padding-left: -$dropdown-padding-x-lg;
 }
 
-
 // Placeholder
 
 .choices__placeholder {
   color: $input-placeholder-color;
   opacity: 1;
 }
-
 
 // Open
 
@@ -92,7 +89,6 @@
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-
 
 // Multiple
 
@@ -123,27 +119,29 @@
 
 .choices__list--multiple > .choices__item {
   display: inline-block;
-  margin-right: .2rem;
-  padding-right: .375rem;
-  padding-left: .375rem;
+  margin-right: 0.2rem;
+  padding-right: 0.375rem;
+  padding-left: 0.375rem;
   font-size: $font-size-sm;
   background-color: $light;
   border-radius: $border-radius-sm;
 }
 
 .choices__list--multiple > .choices__item > .choices__button {
-  width: .5rem;
-  margin-left: .5rem;
+  width: 0.5rem;
+  margin-left: 0.5rem;
   padding: 0;
   outline: none;
   border-width: 0;
   background-color: transparent;
   background-repeat: no-repeat;
   background-position: center center;
-  background-image: url(escape-svg("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#{$body-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg>"));
+  background-image: url(escape-svg(
+    "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='#{$body-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><line x1='18' y1='6' x2='6' y2='18'></line><line x1='6' y1='6' x2='18' y2='18'></line></svg>"
+  ));
   background-size: 100% auto;
   text-indent: -9999px;
-  opacity: .5;
+  opacity: 0.5;
   transition: $input-transition;
 }
 

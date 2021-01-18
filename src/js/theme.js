@@ -24,5 +24,5 @@ import "./smooth-scroll"
 import "./tooltip"
 import "./typed"
 
-// Custom JS
-import "./index"
+// User
+import "./user.js"

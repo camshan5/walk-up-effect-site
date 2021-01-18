@@ -24,22 +24,29 @@
   background-color: unset;
 }
 
-.card-body, .card-footer, .card-meta, .card-img, .card-img-top, .card-img-left, .card-img-right {
+.card-body,
+.card-footer,
+.card-meta,
+.card-img,
+.card-img-top,
+.card-img-start,
+.card-img-end {
   position: relative;
   min-height: 1px;
 }
 
-
 // Card action
 
-a.card, a.card-body, a.card-footer, a.card-meta {
+a.card,
+a.card-body,
+a.card-footer,
+a.card-meta {
   color: inherit;
 
   &:hover {
     text-decoration: none;
   }
 }
-
 
 // Card flush
 
@@ -51,7 +58,6 @@ a.card, a.card-body, a.card-footer, a.card-meta {
   padding-left: 0;
   padding-right: 0;
 }
-
 
 // Card border
 
@@ -85,52 +91,45 @@ a.card, a.card-body, a.card-footer, a.card-meta {
   border-bottom-width: calc(#{$card-border-radius} - #{$border-width * 3});
 }
 
-
 // Card row
 
 .card-row {
-
   .card-body {
-
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding: $card-row-spacer-y $card-row-spacer-x;
     }
   }
 
   .card-meta {
-
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding-left: $card-row-spacer-x;
       padding-right: $card-row-spacer-x;
     }
   }
 }
 
-
 // Card image
 
-.card-img-right {
+.card-img-end {
   border-radius: $border-radius $border-radius 0 0;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     border-radius: 0 $border-radius $border-radius 0;
   }
 }
 
-.card-img-left {
+.card-img-start {
   border-radius: $border-radius $border-radius 0 0;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     border-radius: $border-radius 0 0 $border-radius;
   }
 }
 
-
 // Card image slider
 
 .card-img-slider {
-
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     height: 100%;
     width: 100%;
 
@@ -140,7 +139,6 @@ a.card, a.card-body, a.card-footer, a.card-meta {
     }
   }
 }
-
 
 // Card image overlay
 
@@ -157,26 +155,22 @@ a.card, a.card-body, a.card-footer, a.card-meta {
   border-bottom-left-radius: $card-inner-border-radius;
 }
 
-
 .card-img-overlay-hover {
   overflow: hidden;
 }
 
 .card-img-overlay-hover .card-body {
   transform: translateY(110%);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 
 .card-img-overlay-hover:hover .card-body {
   transform: translateY(0);
 }
 
-
-
 // Card group
 
 .card-group {
-
   @include media-breakpoint-only(sm) {
     flex-direction: column !important;
 
@@ -185,7 +179,6 @@ a.card, a.card-body, a.card-footer, a.card-meta {
     }
   }
 }
-
 
 // Card meta
 
@@ -201,14 +194,12 @@ a.card, a.card-body, a.card-footer, a.card-meta {
   margin: 0 0 $card-meta-spacer-y;
 }
 
-
 // Card button
 
 .card-btn:last-child {
   border-top-right-radius: 0;
   border-top-left-radius: 0;
 }
-
 
 // Zoom
 
@@ -218,14 +209,13 @@ a.card, a.card-body, a.card-footer, a.card-meta {
 }
 
 .card-zoom > [class*="card-img"] {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   transform-origin: center center;
 }
 
 .card:hover > .card-zoom > [class*="card-img"] {
   transform: scale(1.1);
 }
-
 
 // Card list
 
@@ -255,11 +245,9 @@ a.card, a.card-body, a.card-footer, a.card-meta {
   display: block;
 }
 
-
 // Card bleed
 
 @include media-breakpoint-down(md) {
-
   .card-bleed {
     width: auto;
     min-width: 100%;

@@ -4,9 +4,6 @@
     {{> partials/head title="The Walk Up Effect"}}
   </head>
   <body>
-    <!-- MODALS -->
-    {{> partials/modals}}
-
     <!-- NAVBAR -->
     {{> partials/navbar classList="navbar-light bg-white fixed-top"
     container="container"}}
@@ -19,8 +16,19 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
-            <h1 class="section-header">What We Do</h1>
-            <p class="section-sub-header mx-5 mb-8">
+            <h1
+              class="display-3 fw-bold text-primary text-uppercase"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              What We Do
+            </h1>
+            <p
+              class="lead text-gray-500 mb-6 mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              style="max-width: 500px"
+            >
               Two weeks of education and inspiration that will bring hope and
               strength to students and staff.
             </p>
@@ -38,11 +46,13 @@
             <div
               class="flickity-viewport-visible pt-2 pb-9"
               data-flickity='{"cellAlign": "left", "imagesLoaded": true, "pageDots": false, "prevNextButtons": false, "contain": true}'
+              data-aos="fade-up"
+              data-aos-delay="200"
             >
               <div class="col-12 col-md-5 col-lg-4">
                 <!-- Card -->
                 <div
-                  class="card card-border card-gradient-fill shadow-light-lg lift lift-lg"
+                  class="card card-border shadow-light-lg lift lift-lg"
                   style="border-top-color: #e01a4f"
                 >
                   <div class="card-body text-center">
@@ -158,339 +168,147 @@
       </div>
     </div>
 
-    <section class="py-md-10 py-sm-8 bg-black">
+    <section class="py-md-10 py-sm-8 bg-black bg-pattern-2">
       <div class="container">
-        <div class="row justify-content-center pt-8">
+        <div class="row justify-content-center pt-2">
           <div class="col-12 col-md-10 col-lg-8 text-center">
-            <h1 class="section-header text-white">How to Walk Up</h1>
-            <p class="section-sub-header text-gray-300">
+            <h1 class="display-3 fw-bold text-white text-uppercase">
+              How to Walk Up
+            </h1>
+            <p
+              class="lead text-gray-500 mb-6 mx-auto inner-border-dark"
+              style="max-width: 500px"
+            >
               Take these <i>Walk Up</i> steps to begin the process of elevating
               yourself or someone else.
             </p>
           </div>
         </div>
 
-        <div class="d-flex align-items-center justify-content-center mt-6 mb-4">
+        <!-- toggle step-cards-->
+        <div class="d-flex align-items-center justify-content-center mt-2 mb-6">
           <nav class="nav justify-content-center">
             <a
-              class="badge rounded-pill bg-secondary-soft mr-1 mb-1 active"
+              class="badge rounded-pill bg-white-soft me-1 mb-1 active"
               href="#"
-              data-toggle="pill"
+              data-bs-toggle="pill"
               data-filter="#heal-others"
-              data-target="#wu-steps"
+              data-bs-target="#wu-steps"
             >
               <span class="h6 text-uppercase">Heal Others</span>
             </a>
             <a
-              class="badge rounded-pill bg-secondary-soft mr-1 mb-1"
+              class="badge rounded-pill bg-white-soft me-1 mb-1"
               href="#"
-              data-toggle="pill"
+              data-bs-toggle="pill"
               data-filter="#heal-yourself"
-              data-target="#wu-steps"
+              data-bs-target="#wu-steps"
             >
               <span class="h6 text-uppercase">Heal Yourself</span>
             </a>
           </nav>
         </div>
 
-        <div class="col-12 mb-12">
+        <div
+          class="position-relative p-4 rounded-4 shadow-multicolor overflow-hidden"
+        >
+          <!-- Background -->
           <div
-            class="row"
-            id="wu-steps"
-            data-isotope='{"layoutMode": "fitRows", "filter": "#heal-others"}'
-          >
-            <!-- Heal Others -->
-            <div class="col-12" id="heal-others">
-              <!-- Card -->
-              <div class="card rounded-lg shadow-lg mb-6 mb-md-0">
-                <!-- Body -->
-                <div class="card-body py-6 py-md-8">
-                  <div class="row gx-0 mb-7 mb-md-9">
-                    <!-- Recognize -->
-                    <div class="col-12 col-md-4 text-center">
-                      <div class="row mb-5">
-                        <div class="col"></div>
-                        <div class="col-auto">
-                          <div class="icon text-primary mb-3">
-                            {{> numbers/wu-number-icon-1 }}
-                          </div>
-                        </div>
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                      </div>
-                      <h3 class="font-weight-bold">Recognize</h3>
-                      <p class="text-muted mb-6 mb-md-0 px-2">
-                        Notice the signs and see the struggle.
-                      </p>
-                    </div>
-                    <!-- Communicate -->
-                    <div class="col-12 col-md-4 text-center">
-                      <div class="row mb-5">
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                        <div class="col-auto">
-                          <div class="icon text-primary mb-3">
-                            {{> numbers/wu-number-icon-2 }}
-                          </div>
-                        </div>
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                      </div>
-                      <h3 class="font-weight-bold">Communicate</h3>
-                      <p class="text-muted mb-6 mb-md-0 px-2">
-                        Let them feel "seen". Talk to them or give a smile.
-                      </p>
-                    </div>
-                    <!-- Learn -->
-                    <div class="col-12 col-md-4 text-center">
-                      <div class="row mb-5">
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                        <div class="col-auto">
-                          <div class="icon text-primary mb-3">
-                            {{> numbers/wu-number-icon-3 }}
-                          </div>
-                        </div>
-                        <div class="col"></div>
-                      </div>
-                      <h3 class="font-weight-bold">Learn</h3>
-                      <p class="text-muted mb-0 px-2">
-                        What's their story? What can you do to help?
-                      </p>
-                    </div>
-                  </div>
-                  <div class="row gx-0 mb-7 mb-md-9">
-                    <!-- Imagine -->
-                    <div class="col-12 col-md-4 text-center">
-                      <div class="row mb-5">
-                        <div class="col"></div>
-                        <div class="col-auto">
-                          <div class="icon text-primary mb-3">
-                            {{> numbers/wu-number-icon-4 }}
-                          </div>
-                        </div>
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                      </div>
-                      <h3 class="font-weight-bold">Imagine</h3>
-                      <p class="text-muted mb-6 mb-md-0 px-2">
-                        What would you want or need if roles were reversed?
-                      </p>
-                    </div>
-                    <!-- Comfort -->
-                    <div class="col-12 col-md-4 text-center">
-                      <div class="row mb-5">
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                        <div class="col-auto">
-                          <div class="icon text-primary mb-3">
-                            {{> numbers/wu-number-icon-5 }}
-                          </div>
-                        </div>
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                      </div>
-                      <h3 class="font-weight-bold">Comfort</h3>
-                      <p class="text-muted mb-6 mb-md-0 px-2">
-                        Make sure they feel a sense of hope by the time you
-                        leave.
-                      </p>
-                    </div>
-                    <!-- Follow Up -->
-                    <div class="col-12 col-md-4 text-center">
-                      <div class="row mb-5">
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                        <div class="col-auto">
-                          <div class="icon text-primary mb-3">
-                            {{> numbers/wu-number-icon-6 }}
-                          </div>
-                        </div>
-                        <div class="col"></div>
-                      </div>
-                      <h3 class="font-weight-bold">Follow Up</h3>
-                      <p class="text-muted mb-0 px-2">
-                        Make an effort for you to see or talk to them again.
-                        Provide hope.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Button -->
-                <a href="#!" class="card-btn btn btn-block btn-lg btn-primary">
-                  Learn more!
-                </a>
-              </div>
-            </div>
+            class="position-absolute top-0 end-0 bottom-0 start-0 bg-gradient-multicolor"
+          ></div>
 
-            <!-- Heal Yourself -->
-            <div class="col-12" id="heal-yourself">
-              <div
-                class="card rounded-lg shadow-lg mb-6 mb-md-0"
-                style="z-index: 1"
-              >
-                <div class="card-body py-6 py-md-8">
-                  <div class="row gx-0 mb-7 mb-md-9">
-                    <div class="col-12 col-md-4 text-center">
-                      <div class="row mb-5">
-                        <div class="col"></div>
-                        <div class="col-auto">
-                          <div class="icon text-primary mb-3">
-                            {{> numbers/wu-number-icon-1 }}
-                          </div>
-                        </div>
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                      </div>
-                      <h3 class="font-weight-bold">Recognize</h3>
-                      <p class="text-muted mb-6 mb-md-0 px-2">
-                        Notice the signs and see the struggle that you may be
-                        facing.
-                      </p>
-                    </div>
-                    <!-- Be Humble -->
-                    <div class="col-12 col-md-4 text-center">
-                      <div class="row mb-5">
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                        <div class="col-auto">
-                          <div class="icon text-primary mb-3">
-                            {{> numbers/wu-number-icon-2 }}
-                          </div>
-                        </div>
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                      </div>
-                      <h3 class="font-weight-bold">Be Humble</h3>
-                      <p class="text-muted mb-6 mb-md-0 px-2">
-                        Admit to yourself that you have a struggle and need
-                        help.
-                      </p>
-                    </div>
-                    <!-- Ask For help -->
-                    <div class="col-12 col-md-4 text-center">
-                      <div class="row mb-5">
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                        <div class="col-auto">
-                          <div class="icon text-primary mb-3">
-                            {{> numbers/wu-number-icon-3 }}
-                          </div>
-                        </div>
-                        <div class="col"></div>
-                      </div>
-                      <h3 class="font-weight-bold">Ask for Help</h3>
-                      <p class="text-muted mb-0 px-2">
-                        Be courageous. Walk up to somebody to ask for help.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div class="row gx-0 mb-7 mb-md-9">
-                    <!-- Listen -->
-                    <div class="col-12 col-md-4 text-center">
-                      <div class="row mb-5">
-                        <div class="col"></div>
-                        <div class="col-auto">
-                          <div class="icon text-primary mb-3">
-                            {{> numbers/wu-number-icon-4 }}
-                          </div>
-                        </div>
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                      </div>
-                      <h3 class="font-weight-bold">Listen</h3>
-                      <p class="text-muted mb-6 mb-md-0 px-2">
-                        Listen to their advice.
-                      </p>
-                    </div>
-                    <!-- Take Action -->
-                    <div class="col-12 col-md-4 text-center">
-                      <div class="row mb-5">
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                        <div class="col-auto">
-                          <div class="icon text-primary mb-3">
-                            {{> numbers/wu-number-icon-5 }}
-                          </div>
-                        </div>
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                      </div>
-                      <h3 class="font-weight-bold">Take Action</h3>
-                      <p class="text-muted mb-6 mb-md-0 px-2">
-                        Make time in each day to work on yourself.
-                      </p>
-                    </div>
-                    <!-- Surround -->
-                    <div class="col-12 col-md-4 text-center">
-                      <div class="row mb-5">
-                        <div class="col">
-                          <hr class="d-none d-md-block" />
-                        </div>
-                        <div class="col-auto">
-                          <div class="icon text-primary mb-3">
-                            {{> numbers/wu-number-icon-6 }}
-                          </div>
-                        </div>
-                        <div class="col"></div>
-                      </div>
-                      <h3 class="font-weight-bold">Surround</h3>
-                      <p class="text-muted mb-0 px-2">
-                        Surround yourself with people that will support and help
-                        you.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <!-- Button -->
-                <a href="#!" class="card-btn btn btn-block btn-lg btn-primary">
-                  Learn more!
-                </a>
-              </div>
-            </div>
-          </div>
+          <!-- Walk-up Steps (Heal Others/ Heal Yourself) -->
+          {{> sections/step-cards }}
         </div>
       </div>
     </section>
 
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+
     <section class="py-10">
       <div class="container">
         <!-- Our Why  -->
-        <div class="row py-8">
-          <h1 class="section-header text-center">Our Why</h1>
+        <div class="row py-6">
+          <h1 class="display-3 fw-bold text-primary text-uppercase text-center">
+            Our Why
+          </h1>
         </div>
 
         <div class="row justify-content-center">
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <div class="col-12 col-md-6 col-lg-4 card-flip-container d-flex">
             <!-- Card -->
             <div
-              class="card card-border border-danger shadow-lg mb-6 mb-md-8 lift lift-lg"
+              class="card shadow-lg mb-6 mb-md-8 lift lift-lg"
+              onclick="this.classList.toggle('flipped');"
             >
-              <div class="card-body text-center">
-                <div class="img-fluid mb-5 w-50 svg-shim mx-auto">
-                  {{> animations/graph-20 }}
+              <div class="side front card-border border-danger">
+                <div class="card-body text-center">
+                  <p class="text-gray-900">
+                    What percent of 12 to 18 year-olds suffer from some form of
+                    mental illness?
+                  </p>
+                  <div class="stats-container">
+                    <div class="stats">
+                      <h4>A</h4>
+                      <p>10%</p>
+                    </div>
+                    <div class="stats">
+                      <h4>B</h4>
+                      <p>20%</p>
+                    </div>
+                    <div class="stats">
+                      <h4>C</h4>
+                      <p>30%</p>
+                    </div>
+                  </div>
                 </div>
-                <!-- Text -->
-                <p class="text-gray-900 my-3">
-                  Nearly twenty percent of 12 to 18 year olds suffer from mental
-                  illness.
-                </p>
+                <div class="card-footer">
+                  <button class="btn btn-link">
+                    {{> communication/forward }} View Answer
+                  </button>
+                </div>
+              </div>
+
+              <div class="side back card-border border-danger">
+                <div class="card-body text-center">
+                  <h4>
+                    {{!--
+                    <div class="img-fluid mb-3 w-50 svg-shim mx-auto">
+                      {{> animations/graph-20 }}
+                    </div>
+                    --}} Answer:
+                  </h4>
+
+                  <div class="stats-container">
+                    <div class="stats">
+                      <h4>A</h4>
+                      <p>10%</p>
+                    </div>
+                    <div class="stats-correct">
+                      <h4>B</h4>
+                      <p>20%</p>
+                    </div>
+                    <div class="stats">
+                      <h4>C</h4>
+                      <p>30%</p>
+                    </div>
+
+                    <p class="text-gray-900">
+                      Nearly twenty percent of 12 to 18 year olds suffer from
+                      mental illness.
+                    </p>
+                  </div>
+                </div>
+                <div class="footer">
+                  <button class="btn btn-link">
+                    {{> communication/reply }} Back
+                  </button>
+                </div>
               </div>
             </div>
           </div>

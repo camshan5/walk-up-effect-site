@@ -7,14 +7,8 @@
 // Font sizing
 //
 
-.font-size-sm {
-  font-size: $font-size-sm !important;
-}
-
-.font-size-lg {
-  font-size: $font-size-lg !important;
-
-  @include media-breakpoint-down(lg) {
+@include media-breakpoint-down(lg) {
+  .font-size-lg {
     font-size: $font-size-lg-md !important;
   }
 }

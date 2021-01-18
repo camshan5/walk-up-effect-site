@@ -45,12 +45,9 @@ $theme-colors: (
   // NEW
   "black": $black,
   // NEW
-  "white": $white // NEW,,
+  "white": $white // NEW,
 );
 /* beautify ignore:end */
-
-// Set a specific jump point for requesting color jumps
-$theme-color-interval: 8% !default;
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
 // See https://www.w3.org/TR/WCAG20/#visual-audio-contrast-contrast
@@ -65,6 +62,7 @@ $color-contrast-light: $white !default;
 // Quickly modify global styling by enabling or disabling optional features.
 
 $enable-shadows: true !default;
+$enable-smooth-scroll: false !default;
 $enable-rfs: false !default;
 $enable-validation-icons: false !default;
 $enable-negative-margins: true !default;
@@ -209,8 +207,11 @@ $grid-gutter-width: 2.5rem !default;
 $border-width: 1px !default;
 $border-color: $gray-200 !default;
 
+$border-radius-sm: 0.25rem !default;
 $border-radius: 0.375rem !default;
 $border-radius-lg: 0.5rem !default;
+$border-radius-xl: 1rem !default; // NEW
+$border-radius-pill: 50rem !default;
 
 $box-shadow: 0 0.5rem 1.5rem fade-out($black, 0.9) !default;
 $box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075) !default;
@@ -243,6 +244,7 @@ $font-size-lg: 1.1875rem !default; // 19px
 
 $font-weight-normal: 400 !default;
 $font-weight-bold: 600 !default;
+$font-weight-bolder: 700 !default;
 
 $line-height-base: 1.6 !default;
 $line-height-sm: 1.3 !default;
@@ -254,6 +256,19 @@ $h3-font-size: 1.3125rem !default; // 21px
 $h4-font-size: 1.1875rem !default; // 19px
 $h5-font-size: 1.0625rem !default; // 17px
 $h6-font-size: 0.75rem !default; // 12px
+
+/* beautify ignore:start */
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  sm: $font-size-sm,
+  lg: $font-size-lg,
+) !default;
+/* beautify ignore:end */
 
 $headings-margin-bottom: 0.5rem !default;
 $headings-font-weight: $font-weight-normal !default;
@@ -267,7 +282,7 @@ $display-font-sizes: (
   // 61px
   3: 3rem,
   // 48px
-  4: 2.6875rem // 43px,,
+  4: 2.6875rem // 43px,
 ) !default;
 /* beautify ignore:end */
 
@@ -306,16 +321,16 @@ $table-border-color: $border-color !default;
 
 $table-group-seperator-color: inherit !default;
 
-$table-bg-level: -9 !default;
+$table-bg-scale: -90% !default;
 
 /* beautify ignore:start */
 $table-variants: (
-  "primary": color-level($primary, $table-bg-level),
-  "secondary": color-level($secondary, $table-bg-level),
-  "success": color-level($success, $table-bg-level),
-  "info": color-level($info, $table-bg-level),
-  "warning": color-level($warning, $table-bg-level),
-  "danger": color-level($danger, $table-bg-level),
+  "primary": shift-color($primary, $table-bg-scale),
+  "secondary": shift-color($secondary, $table-bg-scale),
+  "success": shift-color($success, $table-bg-scale),
+  "info": shift-color($info, $table-bg-scale),
+  "warning": shift-color($warning, $table-bg-scale),
+  "danger": shift-color($danger, $table-bg-scale),
   "light": $light,
   "dark": $gray-800,
 ) !default;
@@ -330,7 +345,7 @@ $table-head-color: $body-color !default; // NEW
 
 $input-btn-padding-y: 0.8125rem !default;
 $input-btn-padding-x: 1.25rem !default;
-$inut-btn-font-size: $font-size-base !default;
+$input-btn-font-size: $font-size-base !default;
 $input-btn-line-height: $line-height-base !default;
 
 $input-btn-focus-width: 0 !default;
@@ -377,7 +392,7 @@ $input-placeholder-color: $text-muted !default;
 
 $form-check-input-active-filter: none !default;
 
-$form-check-padding-left: 1.5rem !default;
+$form-check-padding-start: 1.5rem !default;
 $form-check-label-cursor: pointer !default;
 
 $form-check-input-bg: $gray-300 !default;
@@ -395,7 +410,7 @@ $form-check-input-indeterminate-color: $component-active-color !default;
 
 $form-switch-color: $white !default;
 $form-switch-width: 2.5rem !default;
-$form-switch-padding-left: $form-switch-width + 0.5rem !default;
+$form-switch-padding-start: $form-switch-width + 0.5rem !default;
 $form-switch-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='#{$form-switch-color}'/></svg>") !default;
 
 $form-switch-focus-color: $form-switch-color !default;
@@ -419,6 +434,9 @@ $form-select-focus-box-shadow: $input-focus-box-shadow !default;
 
 $form-file-button-bg: $light !default;
 
+$form-floating-label-opacity: 1 !default;
+$form-floating-label-transform: translateY(-0.5rem) !default;
+
 $form-group-margin-bottom: 1rem !default; // NEW
 
 // Navbar
@@ -429,7 +447,7 @@ $navbar-padding-x: 0 !default;
 $navbar-nav-link-padding-x: 1.5rem !default;
 
 $navbar-brand-font-size: 1.5rem !default;
-$navbar-brand-margin-right: 0 !default;
+$navbar-brand-margin-end: 0 !default;
 
 $navbar-dark-color: $white !default;
 $navbar-dark-hover-color: $white !default;
@@ -511,7 +529,7 @@ $toast-padding-y: 0.5rem !default;
 $badge-padding-y: 0.25rem !default;
 $badge-padding-x: 0.75rem !default;
 
-$rounded-pill-padding-x: $badge-padding-x !default; // NEW
+$border-radius-pill-padding-x: $badge-padding-x !default; // NEW
 
 // Modals
 
@@ -524,9 +542,9 @@ $modal-backdrop-opacity: 0.8 !default;
 $alert-padding-y: 0.75rem !default;
 $alert-padding-x: 1.25rem !default;
 
-$alert-bg-level: 0 !default;
-$alert-border-level: 0 !default;
-$alert-color-level: 6 !default;
+$alert-bg-scale: 0% !default;
+$alert-border-scale: 0% !default;
+$alert-color-scale: 60% !default;
 
 // List group
 
@@ -551,8 +569,9 @@ $breadcrumb-border-radius: 0 !default;
 
 // Close
 
-$close-color: $text-muted;
-$close-text-shadow: none !default;
+$btn-close-width: 0.5em !default;
+$btn-close-color: $text-muted !default;
+$btn-close-text-shadow: none !default;
 
 // Code
 
@@ -650,6 +669,9 @@ $form-select-line-height-xs: $input-line-height-xs !default;
 $form-select-height-xs: $input-height-xs !default;
 $form-select-indicator-padding-xs: 0.625rem !default;
 $form-select-bg-size-xs: 0.75em !default;
+
+$form-floating-label-font-size: $font-size-xs !default;
+$form-floating-label-color: $input-placeholder-color !default;
 
 // Navbar
 
@@ -879,6 +901,20 @@ $utilities: (
         )
       ),
   ),
+  "rounded": (
+    property: border-radius,
+    class: rounded,
+    values: (
+      null: $border-radius,
+      0: 0,
+      1: $border-radius-sm,
+      2: $border-radius,
+      3: $border-radius-lg,
+      4: $border-radius-xl,
+      circle: 50%,
+      pill: $border-radius-pill,
+    ),
+  ),
   "border": (
     responsive: true,
     property: border,
@@ -895,7 +931,7 @@ $utilities: (
       0: 0,
     ),
   ),
-  "border-right": (
+  "border-end": (
     responsive: true,
     property: border-right,
     values: (
@@ -911,7 +947,7 @@ $utilities: (
       0: 0,
     ),
   ),
-  "border-left": (
+  "border-start": (
     responsive: true,
     property: border-left,
     values: (

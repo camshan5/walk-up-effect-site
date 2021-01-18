@@ -4,7 +4,7 @@
 //
 
 .fe {
-  font-family: 'Feather' !important;
+  font-family: "Feather" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1083,7 +1083,7 @@
 .fe-lg {
   font-size: $h3-font-size;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     font-size: $h3-font-size-md;
   }
 }

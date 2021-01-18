@@ -1,9 +1,17 @@
 // user-variables.scss
 // Use this to overwrite Bootstrap and theme variables
 
-// Custom colors from coolors.co
+// Primer css
+$bg-blue-light: #f2f8fa !default;
+$blue: #4078c0 !default;
+$green: #06ef06 !default;
 
+// Brand colors from coolors.co
 $ua-red: #e01a4f !default;
+$pacific-blue: #0eb1d2 !default;
+$indigo-dye: #08415c !default;
+$eggshell: #faf3dd !default;
+$black-olive: #32322c !default;
 
 $raisin-black: #20232a !default;
 $gunmetal-gray: #32363e !default;
@@ -16,25 +24,9 @@ $ghost-white: #f4faff !default;
 $primary: #08355c !default; // #3a585f; //  #08415c  // #284268
 $primary-desat: #9aabbb !default; // #7c9398 !default;
 
-// $dark: $gunmetal-gray; // #2b2e3b !default;
-
 // Custom colors
 $header-color: $raisin-black;
 $sub-header-color: #767676 !default;
-
-// Primer css
-$bg-blue-light: #f2f8fa !default;
-$blue: #4078c0 !default;
-
-// Electron css:
-// main
-$main-bg-color: hsl(190, 12%, 100%) !default;
-$main-bg-color-shade: #f6f8f8 !default;
-$main-color-subtle: $primary-desat;
-$main-color: $primary;
-
-// Accent
-$accent-color: hsl(335, 87%, 47%) !default;
 
 // Type overrides
 $font-family-base: "Inter", sans-serif;
@@ -45,6 +37,7 @@ $font-weight-medium: 500 !default;
 $font-weight-normal: 400 !default;
 $font-weight-light: 300 !default;
 
+// Component overrides
 $navbar-nav-link-font-weight: $font-weight-normal !default;
 
 // $card-bg: linear-gradient(180deg, #08203E 0%, #74A5C1 100%);

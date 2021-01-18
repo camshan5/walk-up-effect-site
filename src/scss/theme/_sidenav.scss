@@ -13,14 +13,14 @@
   }
 }
 
-.sidenav-left {
+.sidenav-start {
 
   @include media-breakpoint-up(lg) {
     left: 0;
   }
 }
 
-.sidenav-right {
+.sidenav-end {
 
   @include media-breakpoint-up(lg) {
     right: 0;

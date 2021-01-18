@@ -2,20 +2,6 @@
 // Use this to write custom SCSS
 // $enable-responsive-font-sizes: true;
 
-// Custom Colors
-
-.text-ua-red {
-  color: $ua-red;
-}
-
-.border-ua-red {
-  border-color: $ua-red;
-}
-
-.section-bg {
-  background-color: $main-bg-color-shade;
-}
-
 .hide-sm {
   @include media-breakpoint-down(sm) {
     display: none;
@@ -82,6 +68,13 @@
   text-transform: uppercase;
 }
 
+@mixin border-bottom-mixin($border-color, $padding) {
+  border-bottom-width: $border-width;
+  border-bottom-style: solid;
+  border-bottom-color: $border-color;
+  padding-bottom: $padding;
+}
+
 .card-gradient-fill {
   @include card-mixin(var(--gradient));
 }
@@ -110,17 +103,30 @@
 }
 
 .section-header {
-  @include font-style-mixin($header-color, 3rem, $font-weight-bold, uppercase);
+  @include font-style-mixin(
+    $header-color,
+    3.25rem,
+    $font-weight-bold,
+    uppercase
+  );
 }
 
-.section-sub-header {
+.sub-header {
   @include font-style-mixin(
     $sub-header-color,
-    1.125rem,
+    1.4rem,
     $font-family-base,
     normal
   );
-  // font-weight: 500;
+  font-weight: 300;
+}
+
+.inner-border-dark {
+  @include border-bottom-mixin(rgba($bg-blue-light, 0.25), 1rem);
+}
+
+.inner-border-light {
+  @include border-bottom-mixin(rgba($indigo-dye, 0.25), 1rem);
 }
 
 .group-container {
@@ -209,4 +215,184 @@
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+// testing css below -- need to convert to scss w/ proper variables
+
+.card-footer {
+  border-top: 1px solid $ghost-white;
+  color: $silver-sonic;
+  margin: 1.5rem 0 0;
+  padding: 4px 0 0;
+  text-align: center;
+}
+
+.card-footer .btn {
+  margin-top: -0.25rem;
+}
+
+.card .stats-container {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.card .stats {
+  display: block;
+  float: left;
+  width: 33.333333%;
+  text-align: center;
+}
+
+.card .stats:first-child {
+  border-right: 1px solid $ghost-white;
+}
+
+.card .stats:last-child {
+  border-left: 1px solid $ghost-white;
+}
+
+.card .stats h4 {
+  font-weight: $font-weight-light;
+  margin-bottom: 5px;
+}
+.card .stats p {
+  color: $silver-sonic;
+}
+
+.card .stats-correct {
+  color: $green;
+  font-weight: bolder;
+  display: block;
+  float: left;
+  width: 33.333333%;
+  text-align: center;
+}
+
+.card-flip-container {
+  -webkit-perspective: 800px; /* Safari and Chrome */
+  -moz-perspective: 800px; /* Firefox */
+  -o-perspective: 800px; /* Opera */
+  perspective: 800px;
+  position: relative;
+}
+
+.card-flip-container .card.flipped {
+  transform: rotatey(-180deg);
+  -ms-transform: rotatey(-180deg); /* IE 9 */
+  -moz-transform: rotatey(-180deg); /* Firefox */
+  -webkit-transform: rotatey(-180deg); /* Safari and Chrome */
+  -o-transform: rotatey(-180deg); /* Opera */
+}
+
+/* flip speed of cards  here */
+.card-flip-container .card {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: 0.5s;
+  -o-transform-style: preserve-3d;
+  -o-transition: 0.5s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: $white;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  z-index: 3;
+}
+
+.card-flip-container .card .side {
+  padding: 0.75rem;
+  position: absolute;
+  // overflow: auto;
+  cursor: pointer;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+}
+
+.fade-in {
+  animation: fadeIn ease 2.5s;
+  -webkit-animation: fadeIn ease 2.5s;
+  -moz-animation: fadeIn ease 2.5s;
+  -o-animation: fadeIn ease 2.5s;
+  -ms-animation: fadeIn ease 2.5s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.bg-gradient-multicolor {
+  background-image: conic-gradient(
+    from 52deg at 50% 50%,
+    $ua-red 0deg,
+    $pacific-blue 33deg,
+    $blue 222deg,
+    #ea4672 264deg,
+    #d5498c 295deg,
+    $ua-red 360deg
+  );
 }

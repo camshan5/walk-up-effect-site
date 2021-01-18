@@ -4,7 +4,7 @@
 //
 
 // Selectors
-const drops = document.querySelectorAll('.navbar-nav .dropdown, .navbar-nav .dropright');
+const drops = document.querySelectorAll('.navbar-nav .dropdown, .navbar-nav .dropend');
 
 // Events
 const showEvents = ['mouseenter'];

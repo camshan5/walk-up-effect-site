@@ -141,7 +141,7 @@
 // Pill
 
 .btn-pill {
-  border-radius: $rounded-pill;
+  border-radius: $border-radius-pill;
 }
 
 
@@ -150,7 +150,7 @@
 .btn-rounded-circle {
   padding-left: $btn-padding-y;
   padding-right: $btn-padding-y;
-  border-radius: $rounded-pill;
+  border-radius: $border-radius-pill;
 }
 
 .btn-rounded-circle > * {

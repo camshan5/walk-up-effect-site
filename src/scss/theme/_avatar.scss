@@ -98,7 +98,7 @@
   height: $avatar-size-lg;
   font-size: $avatar-size-lg / 3;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     width: $avatar-size-xl;
     height: $avatar-size-xl;
     font-size: $avatar-size-xl / 3;
@@ -110,7 +110,7 @@
   height: $avatar-size-xl;
   font-size: $avatar-size-xl / 3;
 
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     width: $avatar-size-xxl;
     height: $avatar-size-xxl;
     font-size: $avatar-size-xxl / 3;
