@@ -1,7 +1,7 @@
 # https://git-scm.com/docs/gitignore
 
 node_modules/
-# dist/
+dist/
 .DS_Store
 
 # Jetbrains Settings
