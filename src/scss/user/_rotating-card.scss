@@ -1,0 +1,112 @@
+// .card-footer {
+//   border-top: 1px solid $ghost-white;
+//   color: $silver-sonic;
+//   margin: 1.5rem 0 0;
+//   padding: 4px 0 0;
+//   text-align: center;
+// }
+
+// .card-footer .btn {
+//   margin-top: -0.25rem;
+// }
+
+// .card .stats-container {
+//   width: 100%;
+//   margin-top: 2rem;
+// }
+
+// .card .stats {
+//   display: block;
+//   float: left;
+//   width: 33.333333%;
+//   text-align: center;
+// }
+
+// .card .stats:first-child {
+//   border-right: 1px solid $ghost-white;
+// }
+
+// .card .stats:last-child {
+//   border-left: 1px solid $ghost-white;
+// }
+
+// .card .stats h4 {
+//   font-weight: $font-weight-light;
+//   margin-bottom: 5px;
+// }
+// .card .stats p {
+//   color: $silver-sonic;
+// }
+
+// .card .stats-correct {
+//   color: $green;
+//   font-weight: bolder;
+//   display: block;
+//   float: left;
+//   width: 33.333333%;
+//   text-align: center;
+// }
+
+.card-flip-container {
+  -webkit-perspective: 800px; /* Safari and Chrome */
+  -moz-perspective: 800px; /* Firefox */
+  -o-perspective: 800px; /* Opera */
+  perspective: 800px;
+  position: relative;
+}
+
+.card-flip-container .flipped {
+  transform: rotatey(-180deg);
+  -ms-transform: rotatey(-180deg); /* IE 9 */
+  -moz-transform: rotatey(-180deg); /* Firefox */
+  -webkit-transform: rotatey(-180deg); /* Safari and Chrome */
+  -o-transform: rotatey(-180deg); /* Opera */
+}
+
+/* flip speed of cards  here */
+.card-flip-container {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: 0.5s;
+  -o-transform-style: preserve-3d;
+  -o-transition: 0.5s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: $white;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+}
+
+/* back, initially hidden pane */
+.back {
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  z-index: 3;
+}
+
+.card-flip-container .side {
+  //   padding: 0.75rem;
+  position: absolute;
+  overflow: scroll;
+  cursor: pointer;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+}

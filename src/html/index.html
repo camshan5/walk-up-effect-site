@@ -12,19 +12,15 @@
     {{> partials/hero imgRoot="assets/img/hero-road.webp"}}
 
     <!-- WHAT WE DO  -->
-    <section class="pt-6 pt-md-10">
+    <section class="py-md-11 py-10 bg-light">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-            <h1
-              class="display-3 fw-bold text-primary text-uppercase"
-              data-aos="fade-up"
-              data-aos-delay="50"
-            >
-              What We Do
-            </h1>
+        <div class="row">
+          <div class="col-12 col-md-10 col-lg-8">
+            <h2 class="display-3" data-aos="fade-up" data-aos-delay="50">
+              What we do
+            </h2>
             <p
-              class="lead text-gray-500 mb-6 mx-auto"
+              class="text-gray-700 mb-6"
               data-aos="fade-up"
               data-aos-delay="100"
               style="max-width: 500px"
@@ -38,22 +34,22 @@
       </div>
     </section>
 
+    {{!--
     <!-- SHAPE -->
     <div class="position-relative mt-n12" style="z-index: -1">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-black">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-primary">
         {{> angles/angle-bottom }}
       </div>
     </div>
+    --}}
 
-    <section class="py-md-10 py-sm-8 bg-black bg-pattern-2">
+    <section class="py-md-10 py-sm-8 bg-primary bg-pattern-2">
       <div class="container">
-        <div class="row justify-content-center pt-2">
+        <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
-            <h1 class="display-3 fw-bold text-white text-uppercase">
-              How to Walk Up
-            </h1>
+            <h2 class="display-3 text-white">How to Walk Up</h2>
             <p
-              class="lead text-gray-500 mb-6 mx-auto inner-border-dark"
+              class="text-gray-300 mb-6 mx-auto inner-border-dark"
               style="max-width: 500px"
             >
               Take these <i>Walk Up</i> steps to begin the process of elevating
@@ -86,205 +82,48 @@
           </nav>
         </div>
 
-        <!-- Walk-up Steps (Heal Others/ Heal Yourself) -->
-        {{> sections/step-cards }}
+        <div
+          class="position-relative p-2 rounded-4 shadow-multicolor overflow-hidden"
+        >
+          <!-- Background -->
+          <div
+            class="position-absolute top-0 end-0 bottom-0 start-0 bg-gradient-multicolor"
+          ></div>
+
+          <!-- Walk-up Steps (Heal Others/ Heal Yourself) -->
+          {{> sections/step-cards }}
+        </div>
       </div>
     </section>
 
-    <!-- SHAPE -->
+    {{!--
+
     <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-        {{> curves/curve-1}}
+      <div
+        class="shape shape-top shape-fluid-x shape-flip-x svg-shim text-black"
+      >
+        {{> angles/angle-top}}
       </div>
     </div>
+    --}}
 
-    <section class="py-10">
+    <!-- STEPS -->
+
+    <section class="py-8 py-md-11">
       <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7">
+            <!-- Heading -->
+            <h2 class="display-3 text-primary">Our why</h2>
+            <!-- Text -->
+            <p class="text-gray-700 mb-7">
+              I'm baby viral pop-up coloring book, tattooed woke neutra copper
+              mug kale chips ramps cray try-hard narwhal drinking vinegar.
+            </p>
+          </div>
+        </div>
         <!-- Our Why  -->
-        <div class="row py-6">
-          <h1 class="display-3 fw-bold text-primary text-uppercase text-center">
-            Our Why
-          </h1>
-        </div>
-
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-6 col-lg-4 card-flip-container d-flex">
-            <!-- Card -->
-            <div
-              class="card shadow-lg mb-6 mb-md-8 lift lift-lg"
-              onclick="this.classList.toggle('flipped');"
-            >
-              <div class="side front card-border border-danger">
-                <div class="card-body text-center">
-                  <p class="text-gray-900">
-                    What percent of 12 to 18 year-olds suffer from some form of
-                    mental illness?
-                  </p>
-                  <div class="stats-container">
-                    <div class="stats">
-                      <h4>A</h4>
-                      <p>10%</p>
-                    </div>
-                    <div class="stats">
-                      <h4>B</h4>
-                      <p>20%</p>
-                    </div>
-                    <div class="stats">
-                      <h4>C</h4>
-                      <p>30%</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <button class="btn btn-link">
-                    {{> communication/forward }} View Answer
-                  </button>
-                </div>
-              </div>
-
-              <div class="side back card-border border-danger">
-                <div class="card-body text-center">
-                  <h4>
-                    {{!--
-                    <div class="img-fluid mb-3 w-50 svg-shim mx-auto">
-                      {{> animations/graph-20 }}
-                    </div>
-                    --}} Answer:
-                  </h4>
-
-                  <div class="stats-container">
-                    <div class="stats">
-                      <h4>A</h4>
-                      <p>10%</p>
-                    </div>
-                    <div class="stats-correct">
-                      <h4>B</h4>
-                      <p>20%</p>
-                    </div>
-                    <div class="stats">
-                      <h4>C</h4>
-                      <p>30%</p>
-                    </div>
-
-                    <p class="text-gray-900">
-                      Nearly twenty percent of 12 to 18 year olds suffer from
-                      mental illness.
-                    </p>
-                  </div>
-                </div>
-                <div class="footer">
-                  <button class="btn btn-link">
-                    {{> communication/reply }} Back
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-            <!-- Card -->
-            <div
-              class="card card-border border-primary-desat shadow-lg mb-6 mb-md-8 lift lift-lg"
-            >
-              <div class="card-body text-center">
-                <!-- Heading -->
-                <h1 class="display-2 font-weight-bold text-primary">13</h1>
-                <!-- Text -->
-                <p class="text-gray-900 mb-3">
-                  The average age of the first incident of self-harm is 13
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-            <!-- Card -->
-            <div
-              class="card card-border border-danger shadow-lg mb-6 mb-md-8 lift lift-lg"
-            >
-              <div class="card-body text-center">
-                <!-- Heading -->
-                <h1 class="display-1 font-700 text-danger">
-                  <span
-                    data-countup='{"startVal": 0}'
-                    data-to="17"
-                    data-aos
-                    data-aos-id="countup:in"
-                    >0</span
-                  >%
-                </h1>
-                <!-- Text -->
-                <p class="text-gray-900 mb-3">
-                  Nearly 20% of high school students seriously consider suicide
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-            <!-- Card -->
-            <div
-              class="card card-border border-primary-desat shadow-lg mb-6 mb-md-8 mb-lg-0 lift lift-lg"
-            >
-              <div class="card-body text-center">
-                <!-- Icon -->
-                <div class="icon-circle bg-primary text-white mb-5">
-                  <i class="fe fe-users"></i>
-                </div>
-
-                <!-- Heading -->
-                <h4 class="font-weight-bold">15 to 24</h4>
-
-                <!-- Text -->
-                <p class="text-gray-900 mb-3">
-                  Suicide is the second leading cause of death amongst 15 to 24
-                  year olds
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-            <!-- Card -->
-            <div
-              class="card card-border border-danger shadow-lg mb-6 mb-md-0 lift lift-lg"
-            >
-              <div class="card-body text-center">
-                <!-- Heading -->
-                <h1 class="display-1 font-700 text-danger">
-                  <span
-                    data-countup='{"startVal": 0}'
-                    data-to="90"
-                    data-aos
-                    data-aos-id="countup:in"
-                    >0</span
-                  >%
-                </h1>
-
-                <!-- Text -->
-                <p class="text-gray-900 mb-3">
-                  80 to 90% of people that seek treatment for a mental illness
-                  are successful with therapy and medication
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-            <!-- Card -->
-            <div
-              class="card card-border border-primary-desat shadow-lg lift lift-lg"
-            >
-              <div class="card-body text-center">
-                <!-- Heading -->
-                <h1 class="display-2 font-700 text-primary">6.3</h1>
-
-                <!-- Text -->
-                <p class="text-gray-900 mb-3">
-                  6.3 million young people aged 3 to 17 suffer from anxiety or
-                  depression
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- / .row -->
+        {{> sections/our-why-cards }}
       </div>
     </section>
 
