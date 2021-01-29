@@ -180,55 +180,6 @@
 
 @include card-icon-bg("educate", top, auto, 1.5rem, 0);
 
-/**
- * 1. The `reverse` animation direction plays the animation backwards
- *    which makes it start at the stroke offset 100 which means displaying
- *    no stroke at all and animating it to the value defined in the SVG
- *    via the inline `stroke-dashoffset` attribute.
- * 2. Rotate by -90 degree to make the starting point of the
- *    stroke the top of the circle.
- * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
- *    and Edge, use the transform attribute directly on the SVG element as a
- * .  workaround (https://markus.oberlehner.net/blog/pure-css-animated-svg-circle-chart/#part-4-internet-explorer-strikes-back).
- */
-.circle-chart__circle {
-  animation: circle-chart-fill 2s reverse;
-  transform: rotate(-90deg);
-  transform-origin: center;
-}
-
-@keyframes circle-chart-fill {
-  to {
-    stroke-dasharray: 0 100;
-  }
-}
-
-// .circle-chart__circle {
-//   animation: circle-chart-fill 2s reverse; /* 1 */
-//   animation-play-state: paused;
-//   transform: rotate(-90deg); /* 2, 3 */
-//   transform-origin: center; /* 4 */
-// }
-
-// .circle-chart__info {
-//   animation: circle-chart-appear 2s forwards;
-//   opacity: 0;
-//   transform: translateY(0.3em);
-// }
-
-// @keyframes circle-chart-fill {
-//   to {
-//     stroke-dasharray: 0 100;
-//   }
-// }
-
-// @keyframes circle-chart-appear {
-//   to {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
-
 // testing css below -- need to convert to scss w/ proper variables
 
 .fade-in {
