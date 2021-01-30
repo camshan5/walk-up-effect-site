@@ -1,32 +1,33 @@
 // user-variables.scss
 // Use this to overwrite Bootstrap and theme variables
 
-// Primer css
-$bg-blue-light: #f2f8fa !default;
-$blue: #4078c0 !default;
+// Color system
+$white: #ffffff !default;
+$gray-100: #fafafb !default;
+$gray-200: #f6f6f7 !default;
+$gray-300: #d6d6d8 !default;
+$gray-400: #c1c2c5 !default;
+$gray-500: #adaeb1 !default;
+$gray-600: #84868b !default;
+$gray-700: #545b68 !default;
+$gray-800: #32363e !default;
+$gray-900: #272a30 !default;
+$black: #1b1d22 !default;
 
-// Brand colors from coolors.co
-$ua-red: #e01a4f !default;
-
-$gunmetal-gray: #32363e !default;
-$silver-sonic: #747474 !default;
-$ghost-white: #f4faff !default;
-
-$baby-blue: #9cc0ff;
-$dark-blue: #174291;
-$sky-blue: #61dafb;
-
-// Color system overrides:
-// React js theme colors...
-$primary: #282c34 !default;
-$secondary: $sky-blue !default;
-$black: #20232a !default; // Raisin Black
-
-$primary-desat: #9aabbb !default; // #7c9398 !default;
+$primary: #61dafb !default;
+$secondary: $gray-800 !default;
+$primary-desat: #93e6fc !default;
+$success: #61fbcf !default;
+$info: #618dfb !default;
+$warning: #fb8261 !default;
+$danger: #df4759 !default;
+$light: $gray-100 !default;
+$dark: $gray-900 !default;
 
 // Custom colors
+$dark-blue: #174291;
 $header-color: $black;
-$sub-header-color: $silver-sonic;
+$sub-header-color: $gray-700;
 
 // Type overrides
 $font-family-base: "Inter", sans-serif;
@@ -39,3 +40,5 @@ $font-weight-light: 300 !default;
 
 // Component overrides
 $navbar-nav-link-font-weight: $font-weight-normal !default;
+
+$icon-circle-size: 7.1875rem !default;

@@ -122,11 +122,11 @@
 }
 
 .inner-border-dark {
-  @include border-bottom-mixin(rgba($bg-blue-light, 0.25), 1rem);
+  @include border-bottom-mixin(rgba($gray-300, 0.25), 1rem);
 }
 
 .inner-border-light {
-  @include border-bottom-mixin(rgba($blue, 0.25), 1rem);
+  @include border-bottom-mixin(rgba($dark-blue, 0.25), 1rem);
 }
 
 .group-container {
@@ -235,24 +235,6 @@
   }
 }
 
-.bg-gradient-primary {
-  background-image: linear-gradient(
-    to right top,
-    #20232a,
-    #21252c,
-    #23262d,
-    #24282f,
-    #262a31,
-    #2f3641,
-    #374352,
-    #3f5164,
-    #4d708a,
-    #5692b1,
-    #5db5d7,
-    #61dafb
-  );
-}
-
 .bg-gradient-multicolor {
   background-image: conic-gradient(
     from 52deg at 50% 50%,
@@ -265,30 +247,16 @@
   );
 }
 
-.bg-gradient-3color-primary {
-  background-image: linear-gradient(
-    to right top,
-    #2f3641,
-    #435a6f,
-    #52829e,
-    #5cadce,
-    #61dafb
-  );
-}
-
 .shadow-multicolor {
-  box-shadow: -300px 100px 300px rgba(#52829e, 0.1),
-    300px -100px 300px rgba(#61dafb, 0.15);
+  box-shadow: -300px 100px 300px rgba($danger, 0.2),
+    300px -100px 300px rgba($primary, 0.2);
 }
 
-.navbar {
-  padding-top: 0.75rem; // 12px
-  padding-bottom: 0.75rem;
-}
+// Patterns
 
-.btn {
-  border-radius: 0;
-  padding: 0.75rem 1.25rem;
+.bg-pattern-2 {
+  background-image: linear-gradient(to bottom, transparent 0%, $dark 100%),
+    url("#{$path-to-img}/patterns/pattern-2.png");
 }
 
 // Dropdown image in navbar override

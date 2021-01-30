@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-41.3816,-38.3816)">
+        <g transform="matrix(1,0,0,1,-1,83)">
+            <g id="icon-6">
+            </g>
+            <g id="icon-5">
+            </g>
+            <g id="icon-4">
+            </g>
+            <g id="icon-2">
+            </g>
+            <g id="icon-3">
+            </g>
+            <g id="icon-1">
+            </g>
+        </g>
+        <g>
+            <g id="icon-61" serif:id="icon-6">
+            </g>
+            <g id="icon-51" serif:id="icon-5" transform="matrix(1.26316,0,0,1.26316,351.568,64.5684)">
+                <g transform="matrix(1,0,0,1,-245.417,-20.5833)">
+                    <path d="M9.05,18.05C4.113,18.05 0.05,13.987 0.05,9.05C0.05,4.113 4.113,0.05 9.05,0.05C13.987,0.05 18.05,4.113 18.05,9.05C18.05,13.987 13.987,18.05 9.05,18.05Z" style="fill:rgb(50,54,62);stroke:rgb(223,71,89);stroke-width:0.4px;"/>
+                </g>
+                <g id="_5" serif:id="5" transform="matrix(1,0,0,1,-240.87,-6.42237)">
+                    <g transform="matrix(14.25,0,0,14.25,0,0)">
+                        <path d="M0.31,0.01C0.456,0.01 0.561,-0.093 0.56,-0.235C0.561,-0.376 0.463,-0.478 0.33,-0.478C0.276,-0.478 0.226,-0.457 0.198,-0.43L0.194,-0.43L0.217,-0.633L0.525,-0.633L0.525,-0.727L0.125,-0.727L0.085,-0.361L0.185,-0.346C0.212,-0.37 0.261,-0.387 0.305,-0.387C0.392,-0.386 0.454,-0.322 0.454,-0.233C0.454,-0.146 0.393,-0.082 0.31,-0.082C0.24,-0.082 0.184,-0.127 0.178,-0.19L0.072,-0.19C0.076,-0.074 0.176,0.01 0.31,0.01Z" style="fill:rgb(223,71,89);fill-rule:nonzero;"/>
+                    </g>
+                </g>
+            </g>
+            <g id="icon-41" serif:id="icon-4">
+            </g>
+            <g id="icon-31" serif:id="icon-3">
+            </g>
+            <g id="icon-21" serif:id="icon-2">
+            </g>
+            <g id="icon-11" serif:id="icon-1">
+            </g>
+        </g>
+    </g>
+</svg>
