@@ -1,7 +1,7 @@
 {
   "name": "walk-up-effect-site",
-  "version": "0.2.0",
-  "description": "Information site for The Walk Up Effect (business). Using Landkit's 2.0.0-beta1",
+  "version": "0.2.1",
+  "description": "Information site for The Walk Up Effect organization. Theme licensed from Landkit 2.0.0-beta1",
   "scripts": {
     "start": "webpack-dev-server --open",
     "build": "del-cli dist && webpack --mode production"
