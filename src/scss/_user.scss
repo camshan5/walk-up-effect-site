@@ -22,7 +22,7 @@
 
 .font-700 {
   font-family: $font-family-base;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-bolder;
   font-style: normal;
 }
 
@@ -122,11 +122,11 @@
 }
 
 .inner-border-dark {
-  @include border-bottom-mixin(rgba($bg-blue-light, 0.25), 1rem);
+  @include border-bottom-mixin(rgba($gray-300, 0.25), 1rem);
 }
 
 .inner-border-light {
-  @include border-bottom-mixin(rgba($indigo-dye, 0.25), 1rem);
+  @include border-bottom-mixin(rgba($dark-blue, 0.25), 1rem);
 }
 
 .group-container {
@@ -180,157 +180,7 @@
 
 @include card-icon-bg("educate", top, auto, 1.5rem, 0);
 
-/**
- * 1. The `reverse` animation direction plays the animation backwards
- *    which makes it start at the stroke offset 100 which means displaying
- *    no stroke at all and animating it to the value defined in the SVG
- *    via the inline `stroke-dashoffset` attribute.
- * 2. Rotate by -90 degree to make the starting point of the
- *    stroke the top of the circle.
- * 3. Using CSS transforms on SVG elements is not supported by Internet Explorer
- *    and Edge, use the transform attribute directly on the SVG element as a
- * .  workaround (https://markus.oberlehner.net/blog/pure-css-animated-svg-circle-chart/#part-4-internet-explorer-strikes-back).
- */
-.circle-chart__circle {
-  animation: circle-chart-fill 2s reverse; /* 1 */
-  animation-play-state: paused;
-  transform: rotate(-90deg); /* 2, 3 */
-  transform-origin: center; /* 4 */
-}
-
-.circle-chart__info {
-  animation: circle-chart-appear 2s forwards;
-  opacity: 0;
-  transform: translateY(0.3em);
-}
-
-@keyframes circle-chart-fill {
-  to {
-    stroke-dasharray: 0 100;
-  }
-}
-
-@keyframes circle-chart-appear {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
 // testing css below -- need to convert to scss w/ proper variables
-
-.card-footer {
-  border-top: 1px solid $ghost-white;
-  color: $silver-sonic;
-  margin: 1.5rem 0 0;
-  padding: 4px 0 0;
-  text-align: center;
-}
-
-.card-footer .btn {
-  margin-top: -0.25rem;
-}
-
-.card .stats-container {
-  width: 100%;
-  margin-top: 2rem;
-}
-
-.card .stats {
-  display: block;
-  float: left;
-  width: 33.333333%;
-  text-align: center;
-}
-
-.card .stats:first-child {
-  border-right: 1px solid $ghost-white;
-}
-
-.card .stats:last-child {
-  border-left: 1px solid $ghost-white;
-}
-
-.card .stats h4 {
-  font-weight: $font-weight-light;
-  margin-bottom: 5px;
-}
-.card .stats p {
-  color: $silver-sonic;
-}
-
-.card .stats-correct {
-  color: $green;
-  font-weight: bolder;
-  display: block;
-  float: left;
-  width: 33.333333%;
-  text-align: center;
-}
-
-.card-flip-container {
-  -webkit-perspective: 800px; /* Safari and Chrome */
-  -moz-perspective: 800px; /* Firefox */
-  -o-perspective: 800px; /* Opera */
-  perspective: 800px;
-  position: relative;
-}
-
-.card-flip-container .card.flipped {
-  transform: rotatey(-180deg);
-  -ms-transform: rotatey(-180deg); /* IE 9 */
-  -moz-transform: rotatey(-180deg); /* Firefox */
-  -webkit-transform: rotatey(-180deg); /* Safari and Chrome */
-  -o-transform: rotatey(-180deg); /* Opera */
-}
-
-/* flip speed of cards  here */
-.card-flip-container .card {
-  -webkit-transform-style: preserve-3d;
-  -webkit-transition: 0.5s;
-  -moz-transform-style: preserve-3d;
-  -moz-transition: 0.5s;
-  -o-transform-style: preserve-3d;
-  -o-transition: 0.5s;
-  transform-style: preserve-3d;
-  transition: 0.5s;
-}
-
-/* hide back of pane during swap */
-.front,
-.back {
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background-color: $white;
-}
-
-/* front pane, placed above back */
-.front {
-  z-index: 2;
-}
-
-/* back, initially hidden pane */
-.back {
-  -webkit-transform: rotateY(180deg);
-  -moz-transform: rotateY(180deg);
-  -o-transform: rotateY(180deg);
-  transform: rotateY(180deg);
-  z-index: 3;
-}
-
-.card-flip-container .card .side {
-  padding: 0.75rem;
-  position: absolute;
-  // overflow: auto;
-  cursor: pointer;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-}
 
 .fade-in {
   animation: fadeIn ease 2.5s;
@@ -388,11 +238,62 @@
 .bg-gradient-multicolor {
   background-image: conic-gradient(
     from 52deg at 50% 50%,
-    $ua-red 0deg,
-    $pacific-blue 33deg,
-    $blue 222deg,
-    #ea4672 264deg,
-    #d5498c 295deg,
-    $ua-red 360deg
+    #61dafb 0deg,
+    #5cadce 33deg,
+    #52829e 222deg,
+    #174291 264deg,
+    #4078c0 295deg,
+    #61dafb 360deg
   );
+}
+
+.shadow-multicolor {
+  box-shadow: -300px 100px 300px rgba($danger, 0.2),
+    300px -100px 300px rgba($primary, 0.2);
+}
+
+// Patterns
+
+.bg-pattern-2 {
+  background-image: linear-gradient(to bottom, transparent 0%, $dark 100%),
+    url("#{$path-to-img}/patterns/pattern-2.png");
+}
+
+// Dropdown image in navbar override
+.navbar-nav .dropdown-img-start {
+  // Overlay
+  &::before {
+    background-color: fade-out($primary, 0.5);
+  }
+}
+
+// Flickity overrides
+
+.flickity-button:hover {
+  background: $gray-100;
+}
+
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+
+.flickity-button-bottom .flickity-button {
+  top: auto;
+  bottom: -3.5rem;
+  transform: none;
+}
+
+.flickity-button-bottom .flickity-button.previous {
+  left: auto;
+  right: 5.375rem;
+}
+
+.flickity-button-bottom .flickity-button.next {
+  left: auto;
+  right: 1.25rem;
+}
+
+.flickity-viewport {
+  left: -20px;
 }
