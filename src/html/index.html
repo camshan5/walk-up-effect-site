@@ -5,14 +5,14 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    {{> partials/navbar classList="navbar-light bg-white fixed-top"
-    container="container"}}
+    {{> partials/navbar classList="navbar-light bg-white border-bottom
+    fixed-top" container="container"}}
 
     <!-- HERO -->
     {{> partials/hero imgRoot="assets/img/hero-road.webp"}}
 
     <!-- WHAT WE DO  -->
-    <section class="py-md-10 py-sm-8">
+    <section class="py-8 py-md-10">
       <div class="row justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 text-center">
           <h2
@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    <section class="py-md-10 py-sm-10 bg-secondary bg-pattern-2">
+    <section class="py-8 py-md-10 bg-secondary bg-pattern-2">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -65,11 +65,11 @@
           </div>
         </div>
 
-        <!-- toggle step-cards-->
+        <!-- toggle buttons-->
         <div class="d-flex align-items-center justify-content-center mt-2 mb-6">
           <nav class="nav justify-content-center">
             <a
-              class="badge rounded-pill bg-white-soft me-1 mb-1 active"
+              class="badge badge-lg rounded-pill bg-white-soft me-1 mb-1 active"
               href="#"
               data-bs-toggle="pill"
               data-filter="#heal-others"
@@ -78,7 +78,7 @@
               <span class="h6 text-uppercase">Heal Others</span>
             </a>
             <a
-              class="badge rounded-pill bg-white-soft me-1 mb-1"
+              class="badge badge-lg rounded-pill bg-white-soft me-1 mb-1"
               href="#"
               data-bs-toggle="pill"
               data-filter="#heal-yourself"
@@ -110,7 +110,7 @@
       </div>
     </div>
 
-    <!-- STEPS -->
+    <!-- OUR WHY  -->
     <section class="py-md-14 py-sm-10">
       <div class="container">
         <div class="row justify-content-center">
@@ -123,10 +123,40 @@
             </p>
           </div>
         </div>
-        <!-- Our Why  -->
         {{> sections/our-why-cards }}
       </div>
     </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative mt-n12" style="z-index: -1">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-secondary">
+        {{> angles/angle-bottom }}
+      </div>
+    </div>
+
+    <!-- OUR TEAM -->
+    <section class="py-md-10 py-sm-10 bg-secondary bg-gradient-to-dark">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <h2 class="display-3 fw-bold text-white text-uppercase">
+              Our Team
+            </h2>
+            <p class="text-gray-300 mb-6 mx-auto" style="max-width: 500px">
+              Random placeholder text here because I am not sure.
+            </p>
+          </div>
+        </div>
+        {{> sections/our-team-card }}
+      </div>
+    </section>
+
+    <!-- SHAPE -->
+    <div class="position-relative">
+      <div class="shape shape-top shape-fluid-x svg-shim text-dark">
+        {{> angles/angle-top}}
+      </div>
+    </div>
 
     <!-- FOOTER -->
     {{> partials/footer classList="bg-white"}}

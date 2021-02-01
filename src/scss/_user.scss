@@ -267,33 +267,46 @@
   }
 }
 
+.bg-gradient-to-dark {
+  background-image: linear-gradient(to bottom, transparent 0%, $dark 100%);
+}
+
+.bg-gradient-light-white {
+  background-image: linear-gradient(to bottom, $light 0%, $white 100%);
+}
+
+.shadow-multicolor {
+  box-shadow: -300px 100px 300px rgba(#501ae8, 0.2),
+    300px -100px 300px rgba(#24a1fc, 0.2);
+}
+
 // Flickity overrides
 
-.flickity-button:hover {
-  background: $gray-100;
-}
+// .flickity-button:hover {
+//   background: $gray-100;
+// }
 
 /* icon color */
-.flickity-button-icon {
-  fill: white;
-}
+// .flickity-button-icon {
+//   fill: white;
+// }
 
-.flickity-button-bottom .flickity-button {
-  top: auto;
-  bottom: -3.5rem;
-  transform: none;
-}
+// .flickity-button-bottom .flickity-button {
+//   top: auto;
+//   bottom: -3.5rem;
+//   transform: none;
+// }
 
-.flickity-button-bottom .flickity-button.previous {
-  left: auto;
-  right: 5.375rem;
-}
+// .flickity-button-bottom .flickity-button.previous {
+//   left: auto;
+//   right: 5.375rem;
+// }
 
-.flickity-button-bottom .flickity-button.next {
-  left: auto;
-  right: 1.25rem;
-}
+// .flickity-button-bottom .flickity-button.next {
+//   left: auto;
+//   right: 1.25rem;
+// }
 
-.flickity-viewport {
-  left: -20px;
-}
+// .flickity-viewport {
+//   left: -20px;
+// }
