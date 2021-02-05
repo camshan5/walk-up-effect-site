@@ -26,3 +26,4 @@ import "./typed"
 
 // User
 import "./user.js"
+import "./user/rotating-card"
