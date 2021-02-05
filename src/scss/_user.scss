@@ -75,10 +75,6 @@
   padding-bottom: $padding;
 }
 
-.card-gradient-fill {
-  @include card-mixin(var(--gradient));
-}
-
 .card-img-icon {
   @include card-icon-mixin(50%, 40%, 0.75rem);
   padding-bottom: 1.5rem;
@@ -247,11 +243,6 @@
   );
 }
 
-.shadow-multicolor {
-  box-shadow: -300px 100px 300px rgba($danger, 0.2),
-    300px -100px 300px rgba($primary, 0.2);
-}
-
 // Patterns
 
 .bg-pattern-2 {
@@ -276,37 +267,6 @@
 }
 
 .shadow-multicolor {
-  box-shadow: -300px 100px 300px rgba(#501ae8, 0.2),
-    300px -100px 300px rgba(#24a1fc, 0.2);
+  box-shadow: -300px 100px 300px rgba($danger, 0.2),
+    300px -100px 300px rgba($primary, 0.2);
 }
-
-// Flickity overrides
-
-// .flickity-button:hover {
-//   background: $gray-100;
-// }
-
-/* icon color */
-// .flickity-button-icon {
-//   fill: white;
-// }
-
-// .flickity-button-bottom .flickity-button {
-//   top: auto;
-//   bottom: -3.5rem;
-//   transform: none;
-// }
-
-// .flickity-button-bottom .flickity-button.previous {
-//   left: auto;
-//   right: 5.375rem;
-// }
-
-// .flickity-button-bottom .flickity-button.next {
-//   left: auto;
-//   right: 1.25rem;
-// }
-
-// .flickity-viewport {
-//   left: -20px;
-// }
