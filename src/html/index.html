@@ -4,6 +4,9 @@
     {{> partials/head title="The Walk Up Effect"}}
   </head>
   <body>
+    <!-- MODALS -->
+    {{> partials/modals}}
+
     <!-- NAVBAR -->
     {{> partials/navbar classList="navbar-light bg-white border-bottom
     fixed-top" container="container"}}
@@ -35,14 +38,12 @@
       </div>
 
       <div class="group-container">
-        <div class="row justify-content-center">
-          {{> sections/program-cards }}
-        </div>
+        <div class="row justify-content-center">{{> sections/what-we-do }}</div>
       </div>
     </section>
 
     <!-- SHAPE -->
-    <div class="position-relative mt-n12" style="z-index: -1">
+    <div class="position-relative" style="z-index: -1">
       <div class="shape shape-bottom shape-fluid-x svg-shim text-secondary">
         {{> angles/angle-bottom }}
       </div>
@@ -90,7 +91,7 @@
         </div>
 
         {{!-- shadow-multicolor --}}
-        <div class="position-relative p-3 rounded-4 overflow-hidden">
+        <div class="position-relative p-2 rounded-4 overflow-hidden">
           <!-- Background -->
           <div
             class="position-absolute top-0 end-0 bottom-0 start-0 bg-primary"

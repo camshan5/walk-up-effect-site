@@ -1,0 +1,64 @@
+<div
+  class="modal fade"
+  id="modalProvide"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="modalProvideTitle"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <!-- Close -->
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+
+        <!-- Image -->
+        <div class="text-center">
+          <div class="icon-circle bg-light text-white mb-2">
+            <div class="img-fluid w-75 svg-shim mx-auto">
+              {{> artwork/provide }}
+            </div>
+          </div>
+        </div>
+
+        <!-- Heading -->
+        <h2
+          class="fw-bold text-center mb-1 text-uppercase"
+          id="modalProvideTitle"
+        >
+          Provide
+        </h2>
+
+        <!-- Text -->
+        <p
+          class="fs-md text-center text-gray-700 mb-2 mb-md-4 pb-4 border-bottom"
+        >
+          Only <span class="fw-bold text-primary">20%</span> of those struggling
+          with their mental health get the proper treatment.
+        </p>
+
+        <div class="row">
+          <div class="col-12">
+            {{!-- TODO: add icons to beginning --}}
+            <p class="mb-2 text-gray-700">
+              Our goal is to increase that percentage and be able to provide
+              therapy/treatment to any individual who needs it. We understand
+              that therapy can be expensive.
+            </p>
+
+            <p class="mb-0 text-gray-700">
+              With our program and our fundraising platform, we are able to
+              provide the funds to any student who needs it to make sure they
+              get they care they deserve.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
