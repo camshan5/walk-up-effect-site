@@ -1,0 +1,31 @@
+@mixin zap($img) {
+  position: relative;
+
+  &:after {
+    background-image: url("#{$img}");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    content: "";
+    display: block;
+    height: 0.8rem;
+    left: -0.2rem;
+    position: absolute;
+    top: calc(100% - 0.25rem);
+    width: calc(100% + 0.4rem);
+  }
+}
+
+$zap-count: (
+  "01": "01",
+  "02": "02",
+  "03": "03",
+  "04": "04",
+  "05": "05",
+);
+
+@each $key, $val in $zap-count {
+  .zap-#{$val} {
+    @include zap("#{$path-to-img}/icons/zaps/zap-#{$val}.svg");
+    font-weight: $font-weight-bold;
+  }
+}

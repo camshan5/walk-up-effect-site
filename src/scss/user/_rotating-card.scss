@@ -1,7 +1,6 @@
 .flip-card {
-  width: 420px;
-  height: 340px;
-  // margin: 2rem;
+  width: 100%;
+  height: 350px;
   perspective: 1500px;
   .content {
     position: relative;
@@ -23,7 +22,7 @@
 @mixin answer-mixin($font-size, $color, $fw) {
   display: block;
   margin-top: -0.25rem;
-  font-size: $font-size; // 2.75rem;
+  font-size: $font-size; // 2.5rem;
   font-weight: $fw;
   white-space: pre-wrap;
   color: $color; // $success;
@@ -62,7 +61,6 @@
     display: block;
     border-radius: 6px;
     backface-visibility: hidden;
-    background: var(--gradient);
   }
 
   .inner {
@@ -73,16 +71,14 @@
   .flip-h2 {
     grid-row: 2;
     margin-bottom: 0.3em;
-    text-transform: uppercase;
-    letter-spacing: 3px;
     color: $white;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
   }
 
   .rating {
     grid-row: 3;
-    color: $dark;
-    font-size: 14px;
     display: flex;
     flex-flow: row nowrap;
   }
@@ -91,7 +87,7 @@
 .back {
   transform: rotateY(180deg);
   background-color: $white;
-  border: 2px solid rgb(240, 240, 240);
+  border: 2px solid $primary;
   .inner {
     grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
     grid-template-columns: repeat(4, auto);
@@ -103,11 +99,14 @@
     position: relative;
     display: flex;
     align-items: center;
-    color: $gray-500;
+    color: $gray-400;
+    font-family: $font-family-header;
     grid-row: 3;
+    padding-bottom: 1.25rem;
+    padding-top: 1.25rem;
 
     &:not(:first-of-type):before {
-      content: "";
+      // content: "";
       position: absolute;
       left: -0.9rem;
       height: 1.25rem;
@@ -116,17 +115,17 @@
     }
 
     span.correct {
-      @include answer-mixin(2.75rem, $success, 600);
+      @include answer-mixin(1.5rem, $success, 600);
     }
 
     span {
-      @include answer-mixin(1.25rem, $gray-300, 600);
+      @include answer-mixin(1rem, $gray-300, 600);
     }
 
-    .icon {
+    .choice {
       margin-left: 0.3rem;
       span {
-        @include answer-mixin(1.25rem, $gray-300, 600);
+        @include answer-mixin(1rem, $gray-300, 600);
       }
     }
   }
@@ -169,43 +168,13 @@
 
 .button {
   grid-row: -1;
-  text-transform: uppercase;
   letter-spacing: 1px;
-  font-weight: 600;
-  cursor: pointer;
   display: block;
-  padding: 0 1.25rem;
-  height: 3rem;
-  line-height: 2.9rem;
-  min-width: 3rem;
   background-color: transparent;
-  border: solid 2px $white;
-  color: $white;
-  border-radius: 4px;
-  text-align: center;
-  left: 50%;
+  border: solid 1px $white;
   backface-visibility: hidden;
   transition: 0.3s ease-in-out;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
-
-  &:hover {
-    background-color: $white;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-    text-shadow: none;
-    color: $primary;
-  }
-
-  &.return {
-    line-height: 3em;
-    color: $primary;
-    border-color: $primary;
-    text-shadow: none;
-    &:hover {
-      background-color: $primary;
-      color: $white;
-      box-shadow: none;
-    }
-  }
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {

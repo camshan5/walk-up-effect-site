@@ -39,6 +39,20 @@
   font-style: normal;
 }
 
+.section-header {
+  color: $header-color;
+  font-family: $font-family-header;
+  font-weight: $font-weight-bolder;
+  font-style: bold;
+}
+
+.section-sub-header {
+  color: $dark-gray;
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
+  font-style: normal;
+}
+
 .group-container {
   // > X-Large
   @include media-breakpoint-up(xxl) {
@@ -74,61 +88,6 @@
   @include media-breakpoint-down(sm) {
     @include make-col(12);
     max-width: 70%;
-  }
-}
-
-// testing css below -- need to convert to scss w/ proper variables
-
-.fade-in {
-  animation: fadeIn ease 2.5s;
-  -webkit-animation: fadeIn ease 2.5s;
-  -moz-animation: fadeIn ease 2.5s;
-  -o-animation: fadeIn ease 2.5s;
-  -ms-animation: fadeIn ease 2.5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
   }
 }
 
