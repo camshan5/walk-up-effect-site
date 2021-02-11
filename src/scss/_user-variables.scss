@@ -2,27 +2,27 @@
 // Use this to overwrite Bootstrap and theme variables
 
 // Color system
-$white: #ffffff !default;
-$gray-100: #fafafb !default;
-$gray-200: #f6f6f7 !default;
-$gray-300: #d6d6d8 !default;
-$gray-400: #c1c2c5 !default;
-$gray-500: #adaeb1 !default;
-$gray-600: #84868b !default;
-$gray-700: #545b68 !default;
-$gray-800: #32363e !default;
-$gray-900: #272a30 !default;
-$black: #1b1d22 !default;
+// $white: #ffffff !default;
+// $gray-100: #fafafb !default;
+// $gray-200: #f6f6f7 !default;
+// $gray-300: #d6d6d8 !default;
+// $gray-400: #c1c2c5 !default;
+// $gray-500: #adaeb1 !default;
+// $gray-600: #84868b !default;
+// $gray-700: #545b68 !default;
+// $gray-800: #32363e !default;
+// $gray-900: #272a30 !default;
+// $black: #1b1d22 !default;
 
 $primary: #61dafb !default;
-$secondary: $gray-800 !default;
+// $secondary: $gray-800 !default;
 $primary-desat: #f2f9ff !default;
 $success: #61fbcf !default;
 $info: #618dfb !default;
 $warning: #fb8261 !default;
 $danger: #df4759 !default;
-$light: $gray-100 !default;
-$dark: $gray-900 !default;
+// $light: $gray-100 !default;
+// $dark: $gray-900 !default;
 
 // Custom colors
 $dark-blue: #174291 !default;
@@ -30,7 +30,7 @@ $dark-purple: #20123a !default;
 $dark-gray: #53525d !default;
 
 $header-color: $dark-purple;
-$sub-header-color: $gray-700;
+$sub-header-color: #506690 !default; //  $gray-700;
 
 // Paths
 
@@ -57,14 +57,6 @@ $font-family-base: "Inter", sans-serif;
   font-weight: bold;
   src: url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff2") format("woff2"),
     url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff") format("woff");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: "Metropolis Black";
-  font-style: normal;
-  font-weight: normal;
-  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Black.woff") format("woff");
 }
 
 $font-family-header: "Metropolis", sans-serif !default;
