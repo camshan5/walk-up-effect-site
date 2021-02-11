@@ -16,7 +16,7 @@ $black: #1b1d22 !default;
 
 $primary: #61dafb !default;
 $secondary: $gray-800 !default;
-$primary-desat: #93e6fc !default;
+$primary-desat: #f2f9ff !default;
 $success: #61fbcf !default;
 $info: #618dfb !default;
 $warning: #fb8261 !default;
@@ -59,6 +59,14 @@ $font-family-base: "Inter", sans-serif;
     url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff") format("woff");
 }
 
+@font-face {
+  font-display: swap;
+  font-family: "Metropolis Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Black.woff") format("woff");
+}
+
 $font-family-header: "Metropolis", sans-serif !default;
 
 $font-weight-black: 900 !default;
@@ -71,7 +79,8 @@ $font-weight-light: 300 !default;
 $navbar-nav-link-font-weight: $font-weight-normal !default;
 
 $icon-circle-size: 7.875rem !default;
+$icon-circle-size-sm: 4.1875rem !default;
 
 $border-width: 2px !default;
 
-$h6-font-size: 0.875rem !default; // 14px
+// $h6-font-size: 0.875rem !default; // 14px

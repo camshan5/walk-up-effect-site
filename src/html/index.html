@@ -44,21 +44,29 @@
     </section>
 
     <!-- SHAPE -->
+
     <div class="position-relative" style="z-index: -1">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-secondary">
+      {{!--
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-primary-desat">
         {{> angles/angle-bottom }}
+      </div>
+      --}}
+
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-primary-desat">
+        {{> curves/curve-3}}
       </div>
     </div>
 
-    <section class="py-8 py-md-10 bg-secondary bg-pattern-2">
+    {{!-- bg-pattern-2 --}}
+    <section class="py-8 py-md-10 bg-primary-desat">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
-            <h2 class="display-3 section-header text-white text-uppercase">
+            <h2 class="display-3 section-header text-uppercase">
               How to Walk Up
             </h2>
             <h4
-              class="section-sub-header text-white mb-6 mx-auto"
+              class="section-sub-header mb-6 mx-auto"
               style="max-width: 500px"
             >
               Take these <span class="zap-02">Walk Up Steps </span>to begin the
@@ -71,7 +79,7 @@
         <div class="d-flex align-items-center justify-content-center mt-2 mb-6">
           <nav class="nav justify-content-center">
             <a
-              class="badge badge-lg rounded-pill bg-white-soft me-1 mb-1 active"
+              class="badge badge-lg rounded-pill bg-secondary-soft me-1 mb-1 active"
               href="#"
               data-bs-toggle="pill"
               data-filter="#heal-others"
@@ -80,7 +88,7 @@
               <span class="h6 text-uppercase">Heal Others</span>
             </a>
             <a
-              class="badge badge-lg rounded-pill bg-white-soft me-1 mb-1"
+              class="badge badge-lg rounded-pill bg-secondary-soft me-1 mb-1"
               href="#"
               data-bs-toggle="pill"
               data-filter="#heal-yourself"
@@ -104,6 +112,7 @@
       </div>
     </section>
 
+    {{!--
     <div class="position-relative">
       <div
         class="shape shape-top shape-fluid-x shape-flip-x svg-shim text-dark"
@@ -111,9 +120,10 @@
         {{> angles/angle-top}}
       </div>
     </div>
+    --}}
 
     <!-- OUR WHY  -->
-    <section class="py-md-14 py-sm-10">
+    <section class="py-8 py-md-10">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -131,22 +141,22 @@
       </div>
     </section>
 
+    {{!--
     <!-- SHAPE -->
     <div class="position-relative mt-n12" style="z-index: -1">
       <div class="shape shape-bottom shape-fluid-x svg-shim text-secondary">
         {{> angles/angle-bottom }}
       </div>
     </div>
+    --}}
 
     <!-- OUR TEAM -->
-    <section class="py-md-10 py-sm-10 bg-secondary bg-gradient-to-dark">
+    <section class="py-md-10 py-sm-10 bg-primary-desat">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
-            <h2 class="display-3 fw-bold text-white text-uppercase">
-              Our Team
-            </h2>
-            <p class="text-gray-300 mb-6 mx-auto" style="max-width: 500px">
+            <h2 class="display-3 section-header text-uppercase">Our Team</h2>
+            <p class="section-sub-header mb-6 mx-auto" style="max-width: 500px">
               Random placeholder text here because I am not sure.
             </p>
           </div>
@@ -157,10 +167,18 @@
 
     <!-- SHAPE -->
     <div class="position-relative">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
+        {{> curves/curve-1}}
+      </div>
+    </div>
+    {{!--
+    <!-- SHAPE -->
+    <div class="position-relative">
       <div class="shape shape-top shape-fluid-x svg-shim text-dark">
         {{> angles/angle-top}}
       </div>
     </div>
+    --}}
 
     <!-- FOOTER -->
     {{> partials/footer classList="bg-white"}}

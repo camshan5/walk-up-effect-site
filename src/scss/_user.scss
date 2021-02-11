@@ -47,7 +47,7 @@
 }
 
 .section-sub-header {
-  color: $dark-gray;
+  color: #545b68; // text-gray-700
   font-family: $font-family-base;
   font-weight: $font-weight-normal;
   font-style: normal;
@@ -124,4 +124,17 @@
   padding-right: 2rem;
   padding-bottom: 3rem;
   padding-left: 2rem;
+}
+
+.icon-circle-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: $icon-circle-size-sm;
+  height: $icon-circle-size-sm;
+  border-radius: 50%;
+
+  > .fe {
+    font-size: $icon-circle-font-size;
+  }
 }
