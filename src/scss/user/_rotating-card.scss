@@ -87,7 +87,7 @@
 .back {
   transform: rotateY(180deg);
   background-color: $white;
-  border: 2px solid $primary;
+  border: 2px solid $gray-200;
   .inner {
     grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
     grid-template-columns: repeat(4, auto);
@@ -115,17 +115,17 @@
     }
 
     span.correct {
-      @include answer-mixin(1.5rem, $success, 600);
+      @include answer-mixin(1.25rem, $gray-900, 600);
     }
 
     span {
-      @include answer-mixin(1rem, $gray-300, 600);
+      @include answer-mixin(1.125rem, $gray-200, 600);
     }
 
     .choice {
       margin-left: 0.3rem;
       span {
-        @include answer-mixin(1rem, $gray-300, 600);
+        @include answer-mixin(1.125rem, $gray-200, 600);
       }
     }
   }

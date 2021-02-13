@@ -44,27 +44,19 @@
     </section>
 
     <!-- SHAPE -->
-    {{!--
-    <div class="shape shape-bottom shape-fluid-x svg-shim text-primary-desat">
-      {{> angles/angle-bottom }}
-    </div>
-    --}} {{!--
-    <div class="position-relative" style="z-index: -1">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-primary-desat">
+    <div class="position-relative mt-n12" style="z-index: -1">
+      {{!--
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-300">
         {{> curves/curve-3}}
       </div>
-    </div>
-    --}}
+      --}}
 
-    <!-- SHAPE -->
-    <div class="position-relative mt-n8" style="z-index: -1">
       <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
-        {{> curves/curve-3}}
+        {{> angles/angle-bottom}}
       </div>
     </div>
 
-    {{!-- bg-pattern-2 --}}
-    <section class="py-8 py-md-10 bg-gray-200">
+    <section class="py-7 py-md-5 bg-gray-200">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
@@ -106,10 +98,10 @@
         </div>
 
         {{!-- shadow-multicolor --}}
-        <div class="position-relative p-2 rounded-4 overflow-hidden">
+        <div class="position-relative px-8 py-6 rounded-4 overflow-hidden">
           <!-- Background -->
           <div
-            class="position-absolute top-0 end-0 bottom-0 start-0 bg-primary"
+            class="position-absolute top-0 end-0 bottom-0 start-0 bg-color-wave"
           ></div>
 
           <!-- Walk-up Steps (Heal Others/ Heal Yourself) -->
@@ -118,15 +110,12 @@
       </div>
     </section>
 
-    {{!--
-    <div class="position-relative">
-      <div
-        class="shape shape-top shape-fluid-x shape-flip-x svg-shim text-dark"
-      >
+    <!-- SHAPE -->
+    <div class="position-relative pb-8" style="z-index: -1">
+      <div class="shape shape-top shape-fluid-x svg-shim text-gray-200">
         {{> angles/angle-top}}
       </div>
     </div>
-    --}}
 
     <!-- OUR WHY  -->
     <section class="py-8 py-md-10">
@@ -147,24 +136,24 @@
       </div>
     </section>
 
-    {{!--
     <!-- SHAPE -->
-    <div class="position-relative mt-n12" style="z-index: -1">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-secondary">
-        {{> angles/angle-bottom }}
+    <div class="position-relative pb-8" style="z-index: -1">
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
+        {{> curves/curve-1}}
       </div>
     </div>
-    --}}
-
     <!-- OUR TEAM -->
-    <section class="py-md-10 py-sm-10 bg-primary-desat">
+    <section class="py-8 py-md-10 bg-gray-200">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
             <h2 class="display-3 section-header text-uppercase">Our Team</h2>
-            <p class="section-sub-header mb-6 mx-auto" style="max-width: 500px">
+            <h4
+              class="section-sub-header mb-6 mx-auto"
+              style="max-width: 500px"
+            >
               Random placeholder text here because I am not sure.
-            </p>
+            </h4>
           </div>
         </div>
         {{> sections/our-team-card }}
@@ -177,15 +166,6 @@
         {{> curves/curve-1}}
       </div>
     </div>
-
-    {{!--
-    <!-- SHAPE -->
-    <div class="position-relative">
-      <div class="shape shape-top shape-fluid-x svg-shim text-dark">
-        {{> angles/angle-top}}
-      </div>
-    </div>
-    --}}
 
     <!-- FOOTER -->
     {{> partials/footer classList="bg-white"}}
