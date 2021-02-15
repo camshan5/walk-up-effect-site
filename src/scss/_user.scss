@@ -98,14 +98,6 @@
     url("#{$path-to-img}/patterns/pattern-2.png");
 }
 
-// Dropdown image in navbar override
-.navbar-nav .dropdown-img-start {
-  // Overlay
-  &::before {
-    background-color: fade-out($primary, 0.5);
-  }
-}
-
 .bg-gradient-to-dark {
   background-image: linear-gradient(to bottom, transparent 0%, $dark 100%);
 }
@@ -152,6 +144,16 @@
 
   > .fe {
     font-size: $icon-circle-font-size;
+  }
+}
+
+/* ---- Navbar Custom Styles ---- */
+
+// Dropdown image in navbar override
+.navbar-nav .dropdown-img-start {
+  // Overlay
+  &::before {
+    background-color: fade-out($primary, 0.5);
   }
 }
 
