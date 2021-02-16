@@ -40,14 +40,11 @@
 }
 
 .section-header {
-  color: $header-color;
   font-family: $font-family-header;
-  font-weight: $font-weight-bolder;
-  font-style: bold;
 }
 
 .section-sub-header {
-  color: #717171; // text-gray-700
+  color: $gray-700;
   font-family: $font-family-base;
   font-weight: $font-weight-normal;
   font-style: normal;
@@ -108,18 +105,18 @@
 
 .shadow-multicolor {
   box-shadow: -100px 50px 100px rgba($danger, 0.2),
-    100px -50px 100px rgba($primary, 0.2);
+    100px -50px 100px rgba($info, 0.2);
 }
 
 .bg-gradient-multicolor {
   background-image: conic-gradient(
     from 52deg at 50% 50%,
-    $primary 0deg,
+    $info 0deg,
     $success 33deg,
-    $dark-blue 222deg,
+    $primary 222deg,
     $warning 264deg,
     $danger 295deg,
-    $primary 360deg
+    $icon-circle-font-size 360deg
   );
 }
 
