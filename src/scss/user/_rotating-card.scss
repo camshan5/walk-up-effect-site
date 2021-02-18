@@ -72,16 +72,8 @@
   transform: rotateY(180deg);
   background-color: $dark;
 
-  .inner {
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: repeat(3, auto);
-    grid-column-gap: 1.85rem;
-    align-items: center;
-  }
-
   .answers {
     color: $white;
-    grid-row: 2;
     padding: 1.25rem;
 
     &:not(:first-of-type):before {
@@ -106,8 +98,6 @@
   }
 
   .button {
-    grid-row: 4;
-    grid-column: 1/-1;
     letter-spacing: 1px;
     justify-self: center;
   }
