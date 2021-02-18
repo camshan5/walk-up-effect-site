@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     
     <!-- Title -->
-    <title>Take a Look</title>
+    <title>The Core</title>
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
       <div class="container">
         <!-- Brand -->
         <a class="navbar-brand" href=".">
@@ -139,11 +139,101 @@
     </nav>
 
     <!-- WELCOME -->
-    <section class="py-8 py-md-11">
+    <section class="border-bottom">
       <div class="container">
-        <h1>Take a Look</h1>
-        <div class="row">
+        <div class="row align-items-stretch">
+          <div class="col-12 col-md-6 offset-md-1 order-md-2">
+            <!-- Slider (mobile) -->
+            <div
+              class="d-md-none img-cover"
+              data-flickity='{"imagesLoaded": true, "wrapAround": true, "prevNextButtons": false, "pageDots": false}'
+            >
+              <div class="w-100">
+                <!-- Image -->
+                <img
+                  src="assets/img/covers/cover-12.jpg"
+                  alt="..."
+                  class="img-fluid"
+                />
+              </div>
+              <div class="w-100">
+                <!-- Image -->
+                <img
+                  src="assets/img/covers/cover-5.jpg"
+                  alt="..."
+                  class="img-fluid"
+                />
+              </div>
+            </div>
+
+            <!-- Slider -->
+            <div
+              class="position-relative h-100 vw-50 d-none d-md-block"
+              data-aos="fade-left"
+            >
+              <!-- Slider -->
+              <div
+                class="flickity-button-bottom flickity-button-white h-100 w-100"
+                data-flickity='{"imagesLoaded": true, "setGallerySize": false, "wrapAround": true, "pageDots": false}'
+              >
+                <div
+                  class="w-100 h-100 bg-cover"
+                  style="background-image: url(assets/img/covers/cover-9.jpg)"
+                ></div>
+                <div
+                  class="w-100 h-100 bg-cover"
+                  style="background-image: url(assets/img/covers/cover-5.jpg)"
+                ></div>
+              </div>
+
+              <!-- Shape -->
+              <div class="shape shape-start shape-fluid-y svg-shim text-white">
+                <svg viewBox="0 0 100 1544" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h100v386l-50 772v386H0V0z" fill="currentColor"/></svg>              </div>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-5 py-8 py-md-14 order-md-1"
+            data-aos="fade-right"
+          >
+            <!-- Heading -->
+            <h1 class="display-3">
+              <span class="text-secondary">Walk Up </span> <br />
+              At Its Core
+            </h1>
+
+            <!-- Text -->
+            <p class="lead text-muted mb-6 mb-md-8">
+              We design and build coworking spaces tailored to the needs of
+              growing teams.
+            </p>
+
+            <!-- Text -->
+            <p>
+              “Walk Up”…what does that actually mean. In a sense, you can take
+              it quite literally and define it as walking up to someone or
+              something. And while that may be true, our one word answer to
+              “what does walk up mean”, is COURAGE. Walking up means that
+              someone has the courage to do 1 of 2 things.
+            </p>
+            <p>
+              1. Having the courage to walk up to someone who may be struggling
+              with something. Walking up to them and taking the 6 walk up steps
+              to ensure that they have a sense of hope and strength to continue
+              moving forward.
+            </p>
+            <p>
+              2. Having the courage to walk up to someone and being vulnerable
+              enough to express that you are struggling with mental health.
+              Letting someone know that you have anxiety, depression, or
+              suicidal thoughts. Its having the courage to step out of your
+              comfort zone and the strength to express your struggles openly.
+              Its having the courage to SHARE YOUR STORY!
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
       </div>
+      <!-- / .container -->
     </section>
 
     <!-- FOOTER -->

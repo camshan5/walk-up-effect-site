@@ -1,6 +1,7 @@
 .flip-card {
-  width: 100%;
-  height: 350px;
+  width: 420px;
+  height: 340px;
+  // margin: 2rem;
   perspective: 1500px;
   .content {
     position: relative;
@@ -13,22 +14,19 @@
 
 .more {
   display: none;
+
   &:checked ~ .content {
     transform: rotateY(180deg);
   }
 }
 
-@mixin answer-mixin($color, $fw) {
+@mixin answer-mixin($font-size, $color, $fw) {
   display: block;
   margin-top: -0.25rem;
-  font-size: 1.3125rem;
+  font-size: $font-size; // 2.75rem;
   font-weight: $fw;
   white-space: pre-wrap;
-  color: $color;
-
-  @include media-breakpoint-down(md) {
-    font-size: 1.5rem;
-  }
+  color: $color; // $success;
 }
 
 .front,
@@ -40,21 +38,31 @@
   height: 100%;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  border-radius: $border-radius;
+  border-radius: 6px;
 
   .inner {
     height: 100%;
     display: grid;
-    padding: 0.875rem;
+    padding: 1.25rem;
     transform: translateZ(80px) scale(0.94);
   }
 }
 
 .front {
-  background-color: $dark;
-
+  background-color: $white;
+  background-size: cover;
+  background-position: center center;
   &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 6px;
     backface-visibility: hidden;
+    background: var(--gradient);
   }
 
   .inner {
@@ -62,64 +70,142 @@
     justify-items: center;
   }
 
-  .question-header {
-    font-weight: $font-weight-light;
-    font-size: 1.1875rem !important;
+  .flip-h2 {
+    grid-row: 2;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: $white;
+    font-weight: 600;
+  }
+
+  .rating {
+    grid-row: 3;
+    color: $dark;
+    font-size: 14px;
+    display: flex;
+    flex-flow: row nowrap;
   }
 }
 
 .back {
   transform: rotateY(180deg);
-  background-color: $dark;
-
+  background-color: $white;
+  border: 2px solid rgb(240, 240, 240);
   .inner {
-    grid-template-rows: repeat(4, auto);
-    grid-template-columns: repeat(3, auto);
-    grid-column-gap: 1.85rem;
-    align-items: center;
+    grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
+    grid-template-columns: repeat(4, auto);
+    grid-column-gap: 0.85rem;
+    justify-items: center;
   }
 
   .answers {
-    color: $white;
-    grid-row: 2;
-    padding: 1.25rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: $gray-500;
+    grid-row: 3;
 
     &:not(:first-of-type):before {
+      content: "";
+      position: absolute;
       left: -0.9rem;
       height: 1.25rem;
       width: 1px;
+      background-color: #ccc;
     }
 
     span.correct {
-      @include answer-mixin($danger, 600);
+      @include answer-mixin(2.75rem, $success, 600);
     }
 
     span {
-      @include answer-mixin($gray-300, 600);
+      @include answer-mixin(1.25rem, $gray-300, 600);
+    }
+
+    .icon {
+      margin-left: 0.3rem;
+      span {
+        @include answer-mixin(1.25rem, $gray-300, 600);
+      }
     }
   }
 
   .description {
-    font-weight: $font-weight-light;
-    font-size: 1.1875rem !important;
-    color: $white;
+    grid-row: 5;
+    grid-column: 1/-1;
+    font-size: 0.875;
+    border-radius: 5px;
+    font-weight: 400;
+    line-height: 1.5rem;
+    overflow: auto;
+    color: $gray-700;
+    padding-right: 0.25rem;
+  }
+
+  .header-prefix-left,
+  .header-prefix-right {
+    font-weight: 500;
+    color: $secondary;
+    grid-row: 1;
+    font-size: 0.84;
+  }
+
+  .header-prefix-left {
+    grid-column: 1/3;
+    justify-self: left;
+  }
+
+  .header-prefix-right {
+    grid-column: 3/-1;
+    justify-self: right;
   }
 
   .button {
-    grid-row: 4;
     grid-column: 1/-1;
-    letter-spacing: 1px;
     justify-self: center;
   }
 }
 
 .button {
   grid-row: -1;
+  text-transform: uppercase;
   letter-spacing: 1px;
-  // display: block;
+  font-weight: 600;
+  cursor: pointer;
+  display: block;
+  padding: 0 1.25rem;
+  height: 3rem;
+  line-height: 2.9rem;
+  min-width: 3rem;
+  background-color: transparent;
+  border: solid 2px $white;
+  color: $white;
+  border-radius: 4px;
+  text-align: center;
+  left: 50%;
   backface-visibility: hidden;
   transition: 0.3s ease-in-out;
-  cursor: pointer;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+
+  &:hover {
+    background-color: $white;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    text-shadow: none;
+    color: $primary;
+  }
+
+  &.return {
+    line-height: 3em;
+    color: $primary;
+    border-color: $primary;
+    text-shadow: none;
+    &:hover {
+      background-color: $primary;
+      color: $white;
+      box-shadow: none;
+    }
+  }
 }
 
 ::-webkit-scrollbar {

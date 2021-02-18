@@ -1,59 +1,35 @@
 // user-variables.scss
 // Use this to overwrite Bootstrap and theme variables
 
+// Color system
 $white: #ffffff !default;
-$gray-100: #f9fbfd !default;
-$gray-200: #f1f4f8 !default;
-$gray-300: #d9e2ef !default;
-$gray-400: #c6d3e6 !default;
-$gray-500: #abbcd5 !default;
-$gray-600: #869ab8 !default;
+$gray-100: #fafafb !default;
+$gray-200: #f6f6f7 !default;
+$gray-300: #d6d6d8 !default;
+$gray-400: #c1c2c5 !default;
+$gray-500: #adaeb1 !default;
+$gray-600: #84868b !default;
+$gray-700: #545b68 !default;
+$gray-800: #32363e !default;
+$gray-900: #272a30 !default;
+$black: #1b1d22 !default;
 
-$gray-700: #5b606c !default; // overrides base
-$gray-800: #2d3242 !default; // overrides base
-$gray-900: #1e273e !default; // overrides base
-$black: #161c2d !default; // overrides base
-
-$primary: #174291 !default; // overrides base
-$secondary: $gray-700 !default;
-$primary-desat: #738dbd !default; // overrides base
+$primary: #61dafb !default;
+$secondary: $gray-800 !default;
+$primary-desat: #93e6fc !default;
 $success: #61fbcf !default;
-$info: #61dafb !default; // overrides base
-$warning: #fb8261 !default; // overrides base
+$info: #618dfb !default;
+$warning: #fb8261 !default;
 $danger: #df4759 !default;
 $light: $gray-100 !default;
 $dark: $gray-900 !default;
 
+// Custom colors
+$dark-blue: #174291;
 $header-color: $dark;
 $sub-header-color: $gray-700;
 
-// Paths
-
-$path-to-img: "../img" !default;
-$path-to-fonts: "../fonts" !default;
-
 // Type overrides
-
-@font-face {
-  font-display: swap;
-  font-family: Metropolis;
-  font-style: normal;
-  font-weight: normal;
-  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Medium.woff2")
-      format("woff2"),
-    url("#{$path-to-fonts}/Metropolis/Metropolis-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: Metropolis;
-  font-style: normal;
-  font-weight: bold;
-  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff2") format("woff2"),
-    url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff") format("woff");
-}
-
-$font-family-header: "Metropolis", sans-serif !default;
 $font-family-base: "Inter", sans-serif;
 
 $font-weight-black: 900 !default;
@@ -66,6 +42,7 @@ $font-weight-light: 300 !default;
 $navbar-nav-link-font-weight: $font-weight-normal !default;
 
 $icon-circle-size: 7.875rem !default;
-$icon-circle-size-sm: 4.1875rem !default;
 
 $border-width: 2px !default;
+
+$h6-font-size: 0.875rem !default; // 14px
