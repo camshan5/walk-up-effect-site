@@ -8,167 +8,97 @@
     {{> partials/modals}}
 
     <!-- NAVBAR -->
-    {{> partials/navbar classList="navbar-light bg-white border-bottom
-    fixed-top" container="container"}}
+    {{!-- {{> partials/navbar classList="navbar-dark bg-black fixed-top"
+    container="container"}} --}}
 
-    <!-- HERO -->
-    {{> partials/hero imgRoot="assets/img/hero-road.webp"}}
+    <!-- NAVBAR -->
+    {{> partials/navbar classList="navbar-dark navbar-togglable fixed-top"
+    container="container"}}
 
-    <!-- WHAT WE DO  -->
-    <section class="py-8 py-md-10">
-      <div class="row justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 text-center">
-          <h2
-            class="display-3 section-header text-uppercase"
-            data-aos="fade-up"
-            data-aos-delay="50"
-          >
-            What We Do
-          </h2>
-          <h4
-            class="section-sub-header mb-6 mx-auto"
-            data-aos="fade-up"
-            data-aos-delay="100"
-            style="max-width: 500px"
-          >
-            We provide two weeks of
-            <span class="zap-03">Education & Inspiration</span> that will bring
-            hope and strength to students and staff.
-          </h4>
-        </div>
-      </div>
-
-      <div class="group-container">
-        <div class="row justify-content-center">{{> sections/what-we-do }}</div>
-      </div>
-    </section>
-
-    <!-- SHAPE -->
-    <div class="position-relative mt-n12" style="z-index: -1">
-      {{!--
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-300">
-        {{> curves/curve-3}}
-      </div>
-      --}}
-
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
-        {{> angles/angle-bottom}}
-      </div>
-    </div>
-
-    <section class="py-7 py-md-5 bg-gray-200">
+    <section
+      class="py-12 py-lg-14 bg-black bg-img-gradient jarallax"
+      data-jarallax
+      data-speed=".8"
+    >
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-            <h2 class="display-3 section-header text-uppercase">
-              How to Walk Up
-            </h2>
-            <h4
-              class="section-sub-header mb-6 mx-auto"
+          <div class="col-12 col-lg-10 text-center" style="max-width: 768px">
+            <!-- Heading -->
+            <h1
+              class="display-1 fw-bold text-white section-header"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              Its tough to judge someone when you know
+              <span class="zap-02">their story</span>.
+            </h1>
+
+            <!-- Text -->
+            <p
+              class="lead text-gray-500 mb-6 mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="100"
               style="max-width: 500px"
             >
-              Take these <span class="zap-02">Walk Up Steps </span>to begin the
-              process of elevating yourself or someone else.
-            </h4>
+              We created an easy-to-use set of components for building startup
+              sites and apps.
+            </p>
+
+            <!-- Button -->
+            <p class="mb-3 mb-md-6" data-aos="fade-up" data-aos-delay="150">
+              <a class="btn btn-info shadow lift" href="#!">
+                Get involved <i class="fe fe-arrow-right ms-3"></i>
+              </a>
+            </p>
           </div>
         </div>
-
-        <!-- toggle buttons-->
-        <div class="d-flex align-items-center justify-content-center mt-2 mb-6">
-          <nav class="nav justify-content-center">
-            <a
-              class="badge badge-lg rounded-pill bg-secondary-soft me-1 mb-1 active"
-              href="#"
-              data-bs-toggle="pill"
-              data-filter="#heal-others"
-              data-bs-target="#wu-steps"
-            >
-              <span class="h6 text-uppercase">Heal Others</span>
-            </a>
-            <a
-              class="badge badge-lg rounded-pill bg-secondary-soft me-1 mb-1"
-              href="#"
-              data-bs-toggle="pill"
-              data-filter="#heal-yourself"
-              data-bs-target="#wu-steps"
-            >
-              <span class="h6 text-uppercase">Heal Yourself</span>
-            </a>
-          </nav>
-        </div>
-
-        {{!-- shadow-multicolor --}}
-        <div class="position-relative px-8 py-6 rounded-4 overflow-hidden">
-          <!-- Background -->
-          <div
-            class="position-absolute top-0 end-0 bottom-0 start-0 bg-color-wave"
-          ></div>
-
-          <!-- Walk-up Steps (Heal Others/ Heal Yourself) -->
-          {{> sections/step-cards }}
-        </div>
+        <!-- / .row -->
       </div>
+      <!-- / .container -->
     </section>
 
-    <!-- SHAPE -->
-    <div class="position-relative pb-8" style="z-index: -1">
-      <div class="shape shape-top shape-fluid-x svg-shim text-gray-200">
+    <!-- BORDER -->
+    <div class="bg-dark">
+      <div class="container border-top border-gray-800"></div>
+    </div>
+
+    <!-- WHAT WE DO -->
+    {{> sections/what-we-do }}
+
+    <!-- WU STEPS -->
+    {{> sections/wu-steps }}
+
+    <!-- IMAGE -->
+    <section
+      class="py-14 py-lg-16 overlay overlay-black overlay-30 jarallax"
+      data-jarallax
+      data-speed=".8"
+      style="background-image: url(assets/img/covers/cover-1.jpg)"
+    >
+      <!-- Shape -->
+      <div class="shape shape-top shape-fluid-x svg-shim text-black">
         {{> angles/angle-top}}
       </div>
-    </div>
 
-    <!-- OUR WHY  -->
-    <section class="py-8 py-md-10">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-            <!-- Heading -->
-            <h2 class="display-3 section-header text-uppercase">Our why</h2>
-            <!-- Text -->
-            <h4 class="section-sub-header mb-6 mx-auto">
-              Take our quiz to
-              <span class="zap-05">Learn More</span> about your students and
-              mental health.
-            </h4>
-          </div>
-        </div>
-        {{> sections/our-why-cards }}
+      <!-- Shape -->
+      <div class="shape shape-bottom shape-fluid-x svg-shim text-black">
+        {{> angles/angle-bottom}}
       </div>
     </section>
 
-    <!-- SHAPE -->
-    <div class="position-relative pb-8" style="z-index: -1">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-gray-200">
-        {{> curves/curve-1}}
-      </div>
-    </div>
+    <!-- OUR WHY -->
+    {{> sections/our-why }}
+
     <!-- OUR TEAM -->
-    <section class="py-8 py-md-10 bg-gray-200">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-            <h2 class="display-3 section-header text-uppercase">Our Team</h2>
-            <h4
-              class="section-sub-header mb-6 mx-auto"
-              style="max-width: 500px"
-            >
-              Random placeholder text here because I am not sure.
-            </h4>
-          </div>
-        </div>
-        {{> sections/our-team-card }}
-      </div>
-    </section>
+    {{> sections/our-team }}
 
-    <!-- SHAPE -->
-    <div class="position-relative">
-      <div class="shape shape-bottom shape-fluid-x svg-shim text-white">
-        {{> curves/curve-1}}
-      </div>
+    <!-- BORDER -->
+    <div class="bg-dark">
+      <div class="container border-top border-gray-800"></div>
     </div>
 
     <!-- FOOTER -->
-    {{> partials/footer classList="bg-white"}}
+    {{> partials/footer classList="bg-dark"}}
 
     <!-- JAVASCRIPT -->
     {{> partials/scripts}}
