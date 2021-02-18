@@ -13,19 +13,22 @@
 
 .more {
   display: none;
-
   &:checked ~ .content {
     transform: rotateY(180deg);
   }
 }
 
-@mixin answer-mixin($font-size, $color, $fw) {
+@mixin answer-mixin($color, $fw) {
   display: block;
   margin-top: -0.25rem;
-  font-size: $font-size; // 2.5rem;
+  font-size: 1.3125rem;
   font-weight: $fw;
   white-space: pre-wrap;
-  color: $color; // $success;
+  color: $color;
+
+  @include media-breakpoint-down(md) {
+    font-size: 1.5rem;
+  }
 }
 
 .front,
@@ -37,7 +40,7 @@
   height: 100%;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  border-radius: 6px;
+  border-radius: $border-radius;
 
   .inner {
     height: 100%;
@@ -60,14 +63,8 @@
   }
 
   .question-header {
-    grid-row: 2;
-    // font-weight: 400;
-  }
-
-  .answer-choices {
-    grid-row: 3;
-    display: flex;
-    flex-flow: row nowrap;
+    font-weight: $font-weight-light;
+    font-size: 1.1875rem !important;
   }
 }
 
@@ -76,72 +73,40 @@
   background-color: $dark;
 
   .inner {
-    grid-template-rows: 1fr 2fr 1fr 2fr 14fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
     grid-template-columns: repeat(3, auto);
-    grid-column-gap: 0.85rem;
+    grid-column-gap: 1.85rem;
     align-items: center;
   }
 
   .answers {
-    position: relative;
-    display: flex;
-    align-items: center;
     color: $white;
-    grid-row: 3;
-    padding-bottom: 1.25rem;
-    padding-top: 1.25rem;
+    grid-row: 2;
+    padding: 1.25rem;
 
     &:not(:first-of-type):before {
-      // content: "";
-      position: absolute;
       left: -0.9rem;
       height: 1.25rem;
       width: 1px;
     }
 
     span.correct {
-      @include answer-mixin(1.25rem, $danger, 600);
+      @include answer-mixin($danger, 600);
     }
 
     span {
-      @include answer-mixin(1.125rem, $gray-300, 600);
-    }
-
-    .choice {
-      margin-left: 0.3rem;
-      span {
-        @include answer-mixin(1.125rem, $gray-300, 600);
-      }
+      @include answer-mixin($gray-300, 600);
     }
   }
 
   .description {
-    grid-row: 5;
-    grid-column: 1/-1;
-    line-height: 1.5rem;
-    // padding-right: 0.25rem;
-  }
-
-  .header-prefix-left,
-  .header-prefix-right {
-    font-weight: 400;
-    color: $text-muted;
-    grid-row: 1;
-    font-size: $font-size-sm;
-  }
-
-  .header-prefix-left {
-    grid-column: 1/3;
-    justify-self: left;
-  }
-
-  .header-prefix-right {
-    grid-column: 3/-1;
-    justify-self: right;
-    padding-right: 0.5rem;
+    font-weight: $font-weight-light;
+    font-size: 1.1875rem !important;
+    color: $white;
   }
 
   .button {
+    grid-row: 4;
     grid-column: 1/-1;
     letter-spacing: 1px;
     justify-self: center;

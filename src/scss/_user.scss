@@ -111,17 +111,13 @@
 .bg-gradient-multicolor {
   background-image: conic-gradient(
     from 52deg at 50% 50%,
-    $info 0deg,
-    $success 33deg,
-    $primary 222deg,
+    $primary 0deg,
+    $info 33deg,
+    $info 222deg,
     $warning 264deg,
     $danger 295deg,
-    $icon-circle-font-size 360deg
+    $primary 360deg
   );
-}
-
-.bg-color-wave {
-  background-image: url(#{$path-to-img}/patterns/bg-color-wave.svg);
 }
 
 .modal-body {
