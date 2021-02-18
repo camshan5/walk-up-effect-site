@@ -9,17 +9,17 @@ $gray-400: #c6d3e6 !default;
 $gray-500: #abbcd5 !default;
 $gray-600: #869ab8 !default;
 
-$gray-700: #5b606c !default;
-$gray-800: #2d3242 !default;
-$gray-900: #1e273e !default;
-$black: #161c2d !default;
+$gray-700: #5b606c !default; // overrides base
+$gray-800: #2d3242 !default; // overrides base
+$gray-900: #1e273e !default; // overrides base
+$black: #161c2d !default; // overrides base
 
-$primary: #174291 !default;
+$primary: #174291 !default; // overrides base
 $secondary: $gray-700 !default;
-$primary-desat: #738dbd !default;
+$primary-desat: #738dbd !default; // overrides base
 $success: #61fbcf !default;
-$info: #61dafb !default;
-$warning: #fb8261 !default;
+$info: #61dafb !default; // overrides base
+$warning: #fb8261 !default; // overrides base
 $danger: #df4759 !default;
 $light: $gray-100 !default;
 $dark: $gray-900 !default;
