@@ -39,96 +39,42 @@
   font-style: normal;
 }
 
-.group-container {
-  // > X-Large
-  @include media-breakpoint-up(xxl) {
-    @include make-container(9rem);
-  }
-  // Large
-  @include media-breakpoint-between(xl, xxl) {
-    @include make-container(7rem);
-  }
-  // Medium
-  @include media-breakpoint-between(sm, xl) {
-    @include make-container(4.5rem);
-  }
-  // < Small
-  @include media-breakpoint-down(sm) {
-    @include make-container(2.5rem);
-  }
+.section-header {
+  font-family: $font-family-header;
+  font-weight: $font-weight-bold;
+  font-style: normal;
 }
 
-.group-item {
-  @include make-col-ready();
-  @include media-breakpoint-up(xl) {
-    max-width: 280px;
-    padding-right: calc(var(--bs-gutter-x) / 4);
-    padding-left: calc(var(--bs-gutter-x) / 4);
+.section-sub-header {
+  color: $gray-700;
+  font-family: $font-family-base;
+  font-weight: $font-weight-normal;
+  font-style: normal;
+}
+
+.row-grid {
+  p {
+    font-weight: $font-weight-light;
   }
+
+  // @x-small, @small: <768px
+  @include media-breakpoint-down(md) {
+    h4 {
+      font-size: 1.3125rem !important; // (21px)
+    }
+
+    p {
+      font-size: 1.1875rem !important; // 19px (lead)
+    }
+  }
+  // @medium, @large: ≥768px && <1200px
   @include media-breakpoint-between(md, xl) {
-    @include make-col(4);
-  }
-  @include media-breakpoint-between(sm, md) {
-    @include make-col(6);
-  }
-  @include media-breakpoint-down(sm) {
-    @include make-col(12);
-    max-width: 70%;
-  }
-}
-
-// testing css below -- need to convert to scss w/ proper variables
-
-.fade-in {
-  animation: fadeIn ease 2.5s;
-  -webkit-animation: fadeIn ease 2.5s;
-  -moz-animation: fadeIn ease 2.5s;
-  -o-animation: fadeIn ease 2.5s;
-  -ms-animation: fadeIn ease 2.5s;
-}
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
+    h4 {
+      font-size: 1.0625rem !important; // (17px)
+    }
+    p {
+      font-size: 0.875rem !important; // 14px
+    }
   }
 }
 
@@ -139,12 +85,9 @@
     url("#{$path-to-img}/patterns/pattern-2.png");
 }
 
-// Dropdown image in navbar override
-.navbar-nav .dropdown-img-start {
-  // Overlay
-  &::before {
-    background-color: fade-out($primary, 0.5);
-  }
+.bg-img-gradient {
+  background-image: linear-gradient(to bottom, transparent 0%, $dark 100%),
+    url("#{$path-to-img}/covers/cover-19.jpg");
 }
 
 .bg-gradient-to-dark {
@@ -155,9 +98,26 @@
   background-image: linear-gradient(to bottom, $light 0%, $white 100%);
 }
 
-.shadow-multicolor {
-  box-shadow: -300px 100px 300px rgba($danger, 0.2),
-    300px -100px 300px rgba($primary, 0.2);
+.shadow-multicolor-1 {
+  box-shadow: -50px 50px 100px rgba($primary, 0.2),
+    100px -50px 100px rgba($info, 0.2);
+}
+
+.shadow-multicolor-2 {
+  box-shadow: -20px -10px 90px rgba($info, 0.15),
+    90px 80px 120px rgba($danger, 0.15);
+}
+
+.bg-gradient-multicolor {
+  background-image: conic-gradient(
+    from 52deg at 50% 50%,
+    $primary 0deg,
+    $info 33deg,
+    $info 222deg,
+    $warning 264deg,
+    $danger 295deg,
+    $primary 360deg
+  );
 }
 
 .modal-body {
@@ -165,4 +125,41 @@
   padding-right: 2rem;
   padding-bottom: 3rem;
   padding-left: 2rem;
+}
+
+.icon-circle-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: $icon-circle-size-sm;
+  height: $icon-circle-size-sm;
+  border-radius: 50%;
+
+  > .fe {
+    font-size: $icon-circle-font-size;
+  }
+}
+
+/* ---- Navbar Custom Styles ---- */
+
+// Dropdown image in navbar override
+.navbar-nav .dropdown-img-start {
+  // Overlay
+  &::before {
+    background-color: fade-out($primary, 0.5);
+  }
+}
+
+.navbar {
+  padding-top: $font-size-sm;
+  padding-bottom: $font-size-sm;
+}
+
+.navbar-nav .nav-link {
+  font-size: $font-size-sm;
+}
+
+.navbar-brand-img {
+  max-height: 1.6rem;
+  width: auto;
 }
