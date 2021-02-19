@@ -18,11 +18,11 @@
   }
 }
 
-@mixin answer-mixin($color, $fw) {
+@mixin answer-mixin($color) {
   display: block;
   margin-top: -0.25rem;
   font-size: 1.3125rem;
-  font-weight: $fw;
+  font-weight: 600;
   white-space: pre-wrap;
   color: $color;
 
@@ -83,11 +83,11 @@
     }
 
     span.correct {
-      @include answer-mixin($danger, 600);
+      @include answer-mixin($info);
     }
 
     span {
-      @include answer-mixin($gray-300, 600);
+      @include answer-mixin($gray-300);
     }
   }
 
