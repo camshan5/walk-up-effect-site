@@ -44,7 +44,7 @@ $theme-colors: (
   // NEW
   "black": $black,
   // NEW
-  "white": $white // NEW,,,,,,,,,,,,,,
+  "white": $white // NEW,,,,,,,,,,,,,,,
 );
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
@@ -273,7 +273,7 @@ $display-font-sizes: (
   // 61px
   3: 3rem,
   // 48px
-  4: 2.6875rem // 43px,,
+  4: 2.6875rem // 43px,,,
 ) !default;
 
 $display-font-weight: $font-weight-normal !default;

@@ -27,40 +27,16 @@ $dark: $gray-900 !default;
 $header-color: $dark;
 $sub-header-color: $gray-700;
 
-// Paths
-
-$path-to-img: "../img" !default;
-$path-to-fonts: "../fonts" !default;
-
-// Type overrides
-
-@font-face {
-  font-display: swap;
-  font-family: Metropolis;
-  font-style: normal;
-  font-weight: normal;
-  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Medium.woff2")
-      format("woff2"),
-    url("#{$path-to-fonts}/Metropolis/Metropolis-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: Metropolis;
-  font-style: normal;
-  font-weight: bold;
-  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff2") format("woff2"),
-    url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff") format("woff");
-}
-
-$font-family-header: "Metropolis", sans-serif !default;
-$font-family-base: "Inter", sans-serif;
-
 $font-weight-black: 900 !default;
 $font-weight-bolder: 700 !default;
 $font-weight-medium: 500 !default;
 $font-weight-normal: 400 !default;
 $font-weight-light: 300 !default;
+
+// Paths
+
+$path-to-img: "../img" !default;
+$path-to-fonts: "../fonts" !default;
 
 // Component overrides
 $navbar-nav-link-font-weight: $font-weight-normal !default;

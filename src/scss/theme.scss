@@ -22,6 +22,8 @@
 @import "theme/theme";
 
 // Custom core
-@import "user";
+
 @import "user/rotating-card";
 @import "user/zap";
+@import "user/fonts";
+@import "user";
