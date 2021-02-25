@@ -1,10 +1,11 @@
-.flip-card {
+.rotate-container {
   width: 100%;
   height: 350px;
   perspective: 1500px;
+
   .content {
     position: relative;
-    width: 100%;
+    // width: 100%;
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
@@ -18,109 +19,31 @@
   }
 }
 
-@mixin answer-mixin($color) {
-  display: block;
-  margin-top: -0.25rem;
-  font-size: 1.3125rem;
-  font-weight: 600;
-  white-space: pre-wrap;
-  color: $color;
-
-  @include media-breakpoint-down(md) {
-    font-size: 1.5rem;
-  }
-}
-
-.front,
-.back {
+.card-front,
+.card-back {
   position: absolute;
-  top: 0;
-  left: 0;
+  // top: 0;
+  // left: 0;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
   transform-style: preserve-3d;
   border-radius: $border-radius;
-
-  .inner {
-    height: 100%;
-    display: grid;
-    padding: 0.875rem;
-    transform: translateZ(80px) scale(0.94);
+  .card-text {
+    font-weight: $font-weight-light;
+    font-size: 1.1875rem !important;
+    color: $white;
   }
 }
 
-.front {
+.card-front {
   background-color: $dark;
-
   &:after {
     backface-visibility: hidden;
   }
-
-  .inner {
-    grid-template-rows: 2fr 1fr 1fr 2fr 1fr;
-    justify-items: center;
-  }
-
-  .question-header {
-    font-weight: $font-weight-light;
-    font-size: 1.1875rem !important;
-  }
 }
 
-.back {
+.card-back {
   transform: rotateY(180deg);
   background-color: $dark;
-
-  .answers {
-    color: $white;
-    padding: 1.25rem;
-
-    &:not(:first-of-type):before {
-      left: -0.9rem;
-      height: 1.25rem;
-      width: 1px;
-    }
-
-    span.correct {
-      @include answer-mixin($info);
-    }
-
-    span {
-      @include answer-mixin($gray-300);
-    }
-  }
-
-  .description {
-    font-weight: $font-weight-light;
-    font-size: 1.1875rem !important;
-    color: $white;
-  }
-
-  .button {
-    letter-spacing: 1px;
-    justify-self: center;
-  }
-}
-
-.button {
-  grid-row: -1;
-  letter-spacing: 1px;
-  // display: block;
-  backface-visibility: hidden;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: lighten($primary, 20%);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: $primary;
 }

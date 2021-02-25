@@ -115,6 +115,19 @@
   }
 }
 
+.icon-circle-xs {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: $icon-circle-size-xs;
+  height: $icon-circle-size-xs;
+  border-radius: 50%;
+
+  > .fe {
+    font-size: $icon-circle-font-size;
+  }
+}
+
 /* ---- Navbar Custom Styles ---- */
 
 // Dropdown image in navbar override
@@ -137,4 +150,48 @@
 .navbar-brand-img {
   max-height: 1.6rem;
   width: auto;
+}
+
+.font-900 {
+  font-family: $font-family-base;
+  font-weight: $font-weight-black;
+  font-style: normal;
+}
+
+.font-700 {
+  font-family: $font-family-base;
+  font-weight: $font-weight-bolder;
+  font-style: normal;
+}
+
+.font-500 {
+  font-family: $font-family-base;
+  font-weight: $font-weight-medium;
+  font-style: normal;
+}
+
+.font-300 {
+  // Light
+  font-family: $font-family-base;
+  font-weight: $font-weight-light;
+  font-style: normal;
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: normal;
+  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Medium.woff2")
+      format("woff2"),
+    url("#{$path-to-fonts}/Metropolis/Metropolis-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: bold;
+  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff2") format("woff2"),
+    url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff") format("woff");
 }
