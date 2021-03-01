@@ -29,15 +29,11 @@
   backface-visibility: hidden;
   transform-style: preserve-3d;
   border-radius: $border-radius;
-  .card-text {
-    font-weight: $font-weight-light;
-    font-size: 1.1875rem !important;
-    color: $white;
-  }
 }
 
 .card-front {
   background-color: $dark;
+
   &:after {
     backface-visibility: hidden;
   }

@@ -29,16 +29,13 @@
 
 .row-grid {
   p {
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-sm; // 15px
   }
 
   // @x-small, @small: <768px
   @include media-breakpoint-down(md) {
     h4 {
-      font-size: 1.3125rem !important; // (21px)
-    }
-
-    p {
       font-size: 1.1875rem !important; // 19px (lead)
     }
   }
@@ -46,9 +43,6 @@
   @include media-breakpoint-between(md, xl) {
     h4 {
       font-size: 1.0625rem !important; // (17px)
-    }
-    p {
-      font-size: 0.875rem !important; // 14px
     }
   }
 }
@@ -86,12 +80,12 @@
 .bg-gradient-multicolor {
   background-image: conic-gradient(
     from 52deg at 50% 50%,
-    $primary 0deg,
+    $danger 0deg,
     $info 33deg,
     $info 222deg,
     $warning 264deg,
     $danger 295deg,
-    $primary 360deg
+    $danger 360deg
   );
 }
 
@@ -194,4 +188,16 @@
   font-weight: bold;
   src: url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff2") format("woff2"),
     url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff") format("woff");
+}
+
+.flickity-prev-next-button {
+  background-color: $gray-800;
+  border: 1px solid $primary;
+  box-shadow: 10px -20px 90px rgba($info, 0.9);
+}
+
+.flickity-prev-next-button:hover {
+  background-color: $gray-900;
+  border: 1px solid $primary-desat;
+  box-shadow: 10px -20px 90px rgba($primary-desat, 0.9);
 }
