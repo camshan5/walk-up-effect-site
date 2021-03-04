@@ -15,7 +15,7 @@
 }
 
 .section-header {
-  font-family: $font-family-header;
+  font-family: $font-family-metropolis;
   font-weight: $font-weight-bold;
   font-style: normal;
 }
@@ -61,6 +61,10 @@
 
 .bg-gradient-to-dark {
   background-image: linear-gradient(to bottom, transparent 0%, $dark 100%);
+}
+
+.bg-gradient-black-dark {
+  background-image: linear-gradient(to bottom, $black 0%, $dark 100%);
 }
 
 .bg-gradient-light-white {

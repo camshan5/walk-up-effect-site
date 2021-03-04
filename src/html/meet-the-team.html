@@ -1,42 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    {{> partials/head title="Meet the Team"}}
+    {{> partials/head title="Our Team"}}
   </head>
   <body>
     <!-- NAVBAR -->
-    {{> partials/navbar classList="navbar-light bg-white border-bottom"
+    {{> partials/navbar classList="navbar-dark navbar-togglable fixed-top"
     container="container"}}
 
-    <section class="py-7 py-md-10 bg-light">
+    <!-- HEADER -->
+    <section class="mt-n11 pt-12 pb-8 pt-md-14 pb-md-11 bg-black bg-pattern-2">
       <div class="container">
-        <div class="row align-items-center mb-5">
-          <div class="col-12 col-md">
-            <!-- Heading -->
-            <h2 class="mb-0">Meet the Team</h2>
-
-            <!-- Text -->
-            <p class="mb-0 text-muted">
-              Other goodies that are similar to this one.
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 text-center">
+            <h1
+              class="display-2 fw-bold text-white section-header"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              Our <span class="zap-03">Awesome</span> Team
+            </h1>
+            <p
+              class="lead text-gray-500 mb-6 mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              style="max-width: 500px"
+            >
+              We created an easy-to-use set of components for building startup
+              sites and apps.
             </p>
           </div>
-          <div class="col-12 col-md-auto">
-            {{!--
-            <!-- Button -->
-            <a
-              href="#!"
-              class="btn btn-sm btn-outline-gray-300 d-none d-md-inline"
-            >
-              View all
-            </a>
-            --}}
-          </div>
         </div>
-        <!-- / .row -->
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
+      </div>
+    </section>
+
+    <!-- TEAM BIO - BRANDO -->
+    <section class="pt-6 pt-md-8 bg-gradient-dark-black">
+      <div class="container">
+        <div
+          class="row align-items-center justify-content-center justify-content-md-between"
+        >
+          <div class="col-10 col-sm-8 col-md-5 order-md-2">
             <!-- Card -->
-            <a class="card mb-6 mb-lg-0 shadow-light-lg" href="#!">
+            <a
+              class="card mb-6 mb-lg-0 shadow-light-lg ms-2"
+              data-aos="fade-left"
+              href="#!"
+            >
               <!-- Image -->
               <div class="card-zoom">
                 <img
@@ -45,12 +55,11 @@
                   alt="..."
                 />
               </div>
-
               <!-- Body -->
-              <div class="card-body">
+              <div class="card-body bg-dark">
                 <!-- Shape -->
                 <div
-                  class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  class="shape shape-bottom-100 shape-fluid-x svg-shim text-dark"
                 >
                   {{> curves/curve-1}}
                 </div>
@@ -59,13 +68,65 @@
                 <h6 class="text-uppercase mb-1 text-muted">Founder & CEO</h6>
 
                 <!-- Heading -->
-                <h4 class="mb-0">Brandon Gross</h4>
+                <h3 class="mb-0 text-white section-header">Brandon Gross</h3>
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+          <div class="col-12 col-md-6 col-lg-7" data-aos="fade-right">
+            <!-- Text -->
+            <p class="fs-5 text-muted mb-4">
+              Brandon was born and raised in Southern California, where he
+              quickly developed a love of sports and water. Fast forward several
+              years, Brandon is playing collegiate water polo at California
+              Lutheran University in Thousand Oaks, CA. During his time in
+              college, Brandon began coaching youth water polo and found a new
+              passion; teaching.
+            </p>
+
+            <p class="fs-5 text-muted mb-4">
+              Upon graduation, he jumped into the education world and became a
+              7th-grade algebra teacher and athletic director. After a few years
+              of teaching, Brandon took a job as a director at Apex Leadership
+              Co, a company that contracts with schools throughout the United
+              States to teach a unique program focused on valuable leadership
+              skills for students. Additionally, Apex Leadership offers a
+              service that utilizes its staff and the students who have taken
+              the leadership course to assist the school in raising
+              contributions from the families and community for the school.
+            </p>
+            <p class="fs-5 text-muted mb-4">
+              Brandon has a love for helping others be their best selves and
+              reach their full potential. While on his honeymoon, Brandon
+              received the heartbreaking news of a mass shooting at a bar in the
+              town he attended college. This news led Brandon to develop the
+              idea of <br />
+              <span class="zap-02">The Walk Up Effect.</span>
+            </p>
+            <p class="fs-5 text-muted mb-6">
+              Brandon brings the vision behind the company that will help
+              provide the youth with the resources and strength they need to
+              overcome their mental health struggles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM BIO - JOEY -->
+    <section class="py-8 py-md-11 bg-black">
+      <div class="container">
+        <div
+          class="row align-items-center justify-content-between justify-content-md-between"
+        >
+          {{!-- col-12 col-md-6 --}}
+          <div class="col-10 col-sm-8 col-md-5 mb-5 mb-md-0">
             <!-- Card -->
-            <a class="card mb-6 mb-lg-0 shadow-light-lg" href="#!">
+            <a
+              class="card mb-6 mb-lg-0 shadow-light-lg me-2"
+              href="#!"
+              data-aos="fade-right"
+            >
               <!-- Image -->
               <div class="card-zoom">
                 <img
@@ -74,29 +135,51 @@
                   alt="..."
                 />
               </div>
-
               <!-- Body -->
-              <div class="card-body">
+              <div class="card-body bg-dark">
                 <!-- Shape -->
                 <div
-                  class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  class="shape shape-bottom-100 shape-fluid-x svg-shim text-dark"
                 >
                   {{> curves/curve-1}}
                 </div>
 
                 <!-- Preheading -->
                 <h6 class="text-uppercase mb-1 text-muted">
-                  Therapy Program Director
+                  Mental Health Director
                 </h6>
 
                 <!-- Heading -->
-                <h4 class="mb-0">Joey Sparks</h4>
+                <h3 class="mb-0 text-white section-header">Joey Sparks</h3>
               </div>
             </a>
           </div>
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
+          <div class="col-12 col-md-6 col-lg-7" data-aos="fade-left">
+            <!-- Heading -->
+            <h2 class="fw-bold text-white">
+              Show your friends and family where you've been.
+            </h2>
+            <!-- Text -->
+            <p class="fs-lg text-muted mb-4">
+              Staying connected while traveling can be tough, but Landkit makes
+              it easy by automatically sharing your experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM BIO - TREVOR -->
+    <section class="py-8 py-md-11 bg-gradient-black-dark">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-10 col-sm-8 col-md-5 order-md-2">
             <!-- Card -->
-            <a class="card d-md-none d-lg-flex shadow-light-lg" href="#!">
+            <a
+              class="card mb-6 mb-lg-0 shadow-light-lg ms-2"
+              data-aos="fade-left"
+              href="#!"
+            >
               <!-- Image -->
               <div class="card-zoom">
                 <img
@@ -105,34 +188,46 @@
                   alt="..."
                 />
               </div>
-
               <!-- Body -->
-              <div class="card-body">
+              <div class="card-body bg-black">
                 <!-- Shape -->
                 <div
-                  class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
+                  class="shape shape-bottom-100 shape-fluid-x svg-shim text-black"
                 >
                   {{> curves/curve-1}}
                 </div>
 
                 <!-- Preheading -->
                 <h6 class="text-uppercase mb-1 text-muted">
-                  Director of Opearations
+                  Director of Operations
                 </h6>
 
                 <!-- Heading -->
-                <h4 class="mb-0">Trevor Price</h4>
+                <h3 class="mb-0 text-white section-header">Trevor Price</h3>
               </div>
             </a>
           </div>
+          <div
+            class="col-12 col-md-6 col-lg-7 order-md-1"
+            data-aos="fade-right"
+          >
+            <!-- Heading -->
+            <h2 class="fw-bold text-white">
+              Use your phone number so you're easy to find.
+            </h2>
+            <!-- Text -->
+            <p class="fs-lg text-muted mb-0">
+              Landkit uses your phone number for your account instead of an
+              email or username so you're super easy to find for all your
+              friends.
+            </p>
+          </div>
         </div>
-        <!-- / .row -->
       </div>
-      <!-- / .container -->
     </section>
 
     <!-- FOOTER -->
-    {{> partials/footer classList="bg-white"}}
+    {{> partials/footer classList="bg-dark"}}
 
     <!-- JAVASCRIPT -->
     {{> partials/scripts}}
