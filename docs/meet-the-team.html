@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="./assets/css/theme.bundle.css" />
     
     <!-- Title -->
-    <title>Meet the Team</title>
+    <title>Our Team</title>
   </head>
-  <body>
+  <body style="overflow: visible">
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-togglable fixed-top">
       <div class="container">
         <!-- Brand -->
         <a class="navbar-brand" href=".">
@@ -124,131 +124,267 @@
       </div>
     </nav>
 
-    <section class="py-7 py-md-10 bg-light">
+    <!-- HEADER -->
+    <section class="mt-n11 pt-12 pb-4 pt-md-14 bg-black bg-pattern-2">
       <div class="container">
-        <div class="row align-items-center mb-5">
-          <div class="col-12 col-md">
-            <!-- Heading -->
-            <h2 class="mb-0">Meet the Team</h2>
-
-            <!-- Text -->
-            <p class="mb-0 text-muted">
-              Other goodies that are similar to this one.
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-10 text-center">
+            <h1
+              class="display-2 fw-bold text-white section-header"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              Our <span class="zap-03">Awesome</span> Team
+            </h1>
+            <p
+              class="lead text-gray-500 mb-6 mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              style="max-width: 500px"
+            >
+              We created an easy-to-use set of components for building startup
+              sites and apps.
             </p>
           </div>
-          <div class="col-12 col-md-auto">
-          </div>
         </div>
-        <!-- / .row -->
-        <div class="row">
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-            <!-- Card -->
-            <a class="card mb-6 mb-lg-0 shadow-light-lg" href="#!">
-              <!-- Image -->
-              <div class="card-zoom">
-                <img
-                  class="card-img-top"
-                  src="assets/img/avatars/team-brando.jpg"
-                  alt="..."
-                />
-              </div>
-
-              <!-- Body -->
-              <div class="card-body">
-                <!-- Shape -->
-                <div
-                  class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
-                >
-                  <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/>
-                  </svg>
-                  
-                  <!-- stroke="#df4759" stroke-width="2" -->                </div>
-
-                <!-- Preheading -->
-                <h6 class="text-uppercase mb-1 text-muted">Founder & CEO</h6>
-
-                <!-- Heading -->
-                <h4 class="mb-0">Brandon Gross</h4>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-            <!-- Card -->
-            <a class="card mb-6 mb-lg-0 shadow-light-lg" href="#!">
-              <!-- Image -->
-              <div class="card-zoom">
-                <img
-                  class="card-img-top"
-                  src="assets/img/avatars/team-joey.jpg"
-                  alt="..."
-                />
-              </div>
-
-              <!-- Body -->
-              <div class="card-body">
-                <!-- Shape -->
-                <div
-                  class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
-                >
-                  <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/>
-                  </svg>
-                  
-                          </div>
-
-                <!-- Preheading -->
-                <h6 class="text-uppercase mb-1 text-muted">
-                  Mental Health Director
-                </h6>
-
-                <!-- Heading -->
-                <h4 class="mb-0">Joey Sparks</h4>
-              </div>
-            </a>
-          </div>
-          <div class="col-12 col-md-6 col-lg-4 d-flex">
-            <!-- Card -->
-            <a class="card d-md-none d-lg-flex shadow-light-lg" href="#!">
-              <!-- Image -->
-              <div class="card-zoom">
-                <img
-                  class="card-img-top"
-                  src="assets/img/avatars/team-trevor.jpg"
-                  alt="..."
-                />
-              </div>
-
-              <!-- Body -->
-              <div class="card-body">
-                <!-- Shape -->
-                <div
-                  class="shape shape-bottom-100 shape-fluid-x svg-shim text-white"
-                >
-                  <svg viewBox="0 0 2880 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M0 48h2880V0h-720C1442.5 52 720 0 720 0H0v48z" fill="currentColor"/>
-                  </svg>
-                  
-                  <!-- stroke="#df4759" stroke-width="2" -->                </div>
-
-                <!-- Preheading -->
-                <h6 class="text-uppercase mb-1 text-muted">
-                  Director of Opearations
-                </h6>
-
-                <!-- Heading -->
-                <h4 class="mb-0">Trevor Price</h4>
-              </div>
-            </a>
-          </div>
-        </div>
-        <!-- / .row -->
       </div>
-      <!-- / .container -->
+    </section>
+
+    <!-- TEAM BIO - BRANDO -->
+    <section class="bg-gradient-dark-black">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div
+            class="col-12 col-md-5 pe-4 position-md-sticky d-flex align-items-center vh-md-100"
+            style="top: 0"
+          >
+            <!-- Sidebar -->
+            <aside class="py-8 py-md-10" data-aos="fade-right">
+              <!-- Brand -->
+              <h2 class="section-header mb-0 text-white">Brandon Gross</h2>
+              <!-- Text -->
+              <h6 class="fs-5 text-uppercase mb-4 text-muted">Founder & CEO</h6>
+
+              <a
+                class="d-block"
+                data-bigpicture='{"imgSrc": "assets/img/avatars/team-brando-fun.jpg"}'
+                href="#"
+              >
+                <img
+                  class="img-fluid"
+                  src="assets/img/avatars/team-brando-alt.png"
+                  alt="..."
+                />
+              </a>
+            </aside>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-left" data-aos-delay="50">
+            <section class="pb-8 pt-md-12 pb-md-10">
+              <!-- Text -->
+              <p class="fs-4 text-muted mb-6">
+                Brandon was born and raised in Southern California, where he
+                quickly developed a love of sports and water. At a young age,
+                Brandon jumped into the sport of water polo and quickly fell in
+                love with the game.
+              </p>
+
+              <p class="fs-4 text-muted mb-6">
+                Fast forward several years, Brandon is playing college water
+                polo at California Lutheran University in Thousand Oaks, CA.
+                During his time in college, Brandon decided to give coaching a
+                shot which led to a new passion... teaching!
+              </p>
+
+              <p class="fs-lg text-muted mb-6">
+                Upon graduation, he jumped into the education world and became a
+                7th-grade algebra teacher and athletic director. After a few
+                years of teaching, Brandon took a job as a director at Apex
+                Leadership Co. Apex is a company that contracts with schools
+                throughout the United States to teach a unique program focused
+                on valuable leadership skills for students. Additionally, Apex
+                Leadership offers a service that utilizes its staff and the
+                students who have taken the leadership course, to assist the
+                school in raising contributions from the families and community
+                for the school.
+              </p>
+              <p class="fs-lg text-muted mb-6">
+                Brandon has a love for helping others be their best selves and
+                reach their full potential. While on his honeymoon, Brandon
+                received the heartbreaking news of a mass shooting at a bar in
+                the town he attended college. This news led Brandon to develop
+                the idea of
+                <span class="zap-02 text-nowrap">The Walk Up Effect.</span>
+              </p>
+              <p class="fs-lg text-muted">
+                Brandon brings the vision behind the company that will help
+                provide the youth with the resources and strength they need to
+                overcome mental health struggles.
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM BIO - TREVOR -->
+    <section class="bg-black">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-12 col-md-6" data-aos="fade-left" data-aos-delay="50">
+            <section class="pb-8 pt-md-12 pb-md-10">
+              <!-- Text -->
+              <p class="fs-4 text-muted mb-6">
+                Trevor was born in Seattle, Washington but grew up most of his
+                life in a small, central California farm town. Growing up, he
+                not only had a strong passion for playing sports but also music,
+                which led him to learn how to play the drums. Although he played
+                basketball and did Track & Field, football is where he truly
+                shined and became most passionate eventually leading him to play
+                at the college level at California Lutheran University in
+                Thousand Oaks, CA.
+              </p>
+
+              <p class="fs-4 text-muted mb-6">
+                During his time in college, he got linked up with an incredible
+                organization called Apex Leadership Company, in which he now
+                co-owns and operates, serving elementary and middle school all
+                over the greater Los Angeles and Orange County area.
+              </p>
+
+              <p class="fs-lg text-muted mb-6">
+                Apex Leadership Co. brings young, energetic individuals (many
+                ex-college athletes) who are passionate about empowering youth
+                onto school campuses and teaches students impactful leadership
+                lessons, helps them develop positive character attributes, and
+                raises the school much-needed funds.
+              </p>
+              <p class="fs-lg text-muted mb-6">
+                Trevor is the oldest of 5 siblings whose mother has been taking
+                in foster children through the foster care system for the last
+                15 years. To say he has had a strong heart for young people is
+                an understatement as he has been involved in children's lives
+                who have been in the most unimaginable and tragic of
+                circumstances.
+              </p>
+              <p class="fs-lg text-muted mb-6">
+                For Trevor, that fire for young people burns stronger now than
+                ever knowing there are so many young people struggling with
+                mental health, including family members. Like Brandon, Trevor
+                too was devastated and touched in a major way after receiving
+                the news of the locally-known Thousand Oaks establishment,
+                Borderline Bar and Grill, being the site of a mass shooting.
+                Having friends that were present during this tragedy and losing
+                a couple of classmates was something they never thought they'd
+                experience.
+              </p>
+              <p class="fs-lg text-muted">
+                With
+                <span class="zap-06 text-nowrap">The Walk Up Effect</span>,
+                Trevor hopes to bring awareness to mental health in young
+                people, educate them on how they can help their peers and,
+                provide those struggling with the resources to overcome, and in
+                turn, live a fulfilled life.
+              </p>
+            </section>
+          </div>
+          <div
+            class="col-12 col-md-5 position-md-sticky d-flex align-items-center vh-md-100"
+            style="top: 0"
+          >
+            <!-- Sidebar -->
+            <aside class="py-8 py-md-10" data-aos="fade-right">
+              <!-- Brand -->
+
+              <h2 class="section-header mb-0 text-white">Trevor Price</h2>
+              <!-- Text -->
+              <h6 class="fs-5 text-uppercase mb-4 text-muted">
+                Director of Operations
+              </h6>
+
+              <a
+                class="d-block"
+                data-bigpicture='{"imgSrc": "assets/img/avatars/team-trevor.jpg"}'
+                href="#"
+              >
+                <img
+                  class="img-fluid"
+                  src="assets/img/avatars/team-trevor-alt.png"
+                  alt="..."
+                />
+              </a>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM BIO - JOEY -->
+    <section class="bg-gradient-black-dark">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div
+            class="col-12 col-md-5 position-md-sticky d-flex align-items-center vh-md-100"
+            style="top: 0"
+          >
+            <!-- Sidebar -->
+            <aside class="py-8 py-md-10" data-aos="fade-right">
+              <!-- Brand -->
+
+              <h2 class="section-header mb-0 text-white">Joey Sparks</h2>
+              <!-- Text -->
+              <h6 class="fs-5 text-uppercase mb-4 text-muted">
+                Mental Healh Director
+              </h6>
+
+              <a
+                class="d-block"
+                data-bigpicture='{"imgSrc": "assets/img/avatars/team-joey.jpg"}'
+                href="#"
+              >
+                <img
+                  class="img-fluid"
+                  src="assets/img/avatars/team-joey-alt.png"
+                  alt="..."
+                />
+              </a>
+            </aside>
+          </div>
+          <div class="col-12 col-md-6" data-aos="fade-left" data-aos-delay="50">
+            <!-- Images -->
+            <section class="pb-8 pt-md-12 pb-md-10">
+              <!-- Text -->
+              <p class="fs-4 text-muted mb-6">
+                Joseph Sparks is an Associate Clinical Social Worker
+                specializing in individuals of all ages and fathers of children
+                with substance use disorder. He received his Bachelor of Arts
+                degree in Psychology from California State University Channel
+                Islands. Joey also has his Masters of Social Work degree from
+                the University of Colorado, Denver.
+              </p>
+
+              <p class="fs-4 text-muted mb-6">
+                Joey has the experience and a passion for working with
+                individuals struggling with substance use, anxiety, and
+                depression.
+              </p>
+
+              <p class="fs-lg text-muted mb-6">
+                Over the past decade, Joseph has worked in different
+                levels-of-care for addiction and mental health treatment. Joseph
+                utilizes evidence-based practices including Cognitive Behavioral
+                Therapy (CBT), Dialectical Behavioral Therapy (DBT), Solution
+                Focused Brief Therapy (SFBT), and Motivational Interviewing
+                (MI), to help his clients process emotions, identify their
+                strengths, and overcome challenges.
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="pb-8 pb-md-11 bg-white">
+    <footer class="pb-8 pb-md-11 bg-dark">
       <div class="container">
         <div class="row pt-8 pt-md-11">
           <div class="col-12 col-md-4 col-lg-3">
