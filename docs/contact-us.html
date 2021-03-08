@@ -20,9 +20,10 @@
     <!-- Title -->
     <title>Contact Us</title>
   </head>
+
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-togglable fixed-top">
       <div class="container">
         <!-- Brand -->
         <a class="navbar-brand" href=".">
@@ -104,6 +105,10 @@
                           <!-- Heading -->
                           <h6 class="dropdown-header">Learn More</h6>
     
+                          <a class="dropdown-item" href="./mission.html">
+                            Our Mission</a
+                          >
+    
                           <a
                             class="dropdown-item"
                             href="./meet-the-team.html"
@@ -124,16 +129,253 @@
       </div>
     </nav>
 
-    <!-- WELCOME -->
-    <section class="py-8 py-md-11">
+    <section
+      class="py-12 py-lg-14 bg-black bg-img-gradient-2 jarallax"
+      data-jarallax
+      data-speed=".8"
+    >
       <div class="container">
-        <h1>Contact Us</h1>
-        <div class="row">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <!-- Heading -->
+            <h1 class="display-2 fw-bold text-white">We’re Here to Help.</h1>
+
+            <!-- Text -->
+            <p class="lead text-white-75 mb-0">
+              We always want to hear from you! Let us know how we can best help
+              you and we'll do our very best.
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+
+      <div class="position-absolute right-0 bottom-0 left-0">
+        <!-- Divider -->
+        <div class="bg-dark">
+          <div
+            class="container border-top border-gray-800"
+            style="z-index: auto"
+          ></div>
+        </div>
+
+        <div class="position-absolute center">
+          <a
+            href="#info"
+            class="btn btn-white btn-rounded-circle shadow mt-n11 mt-md-n13"
+            data-scroll
+          >
+            <i class="fe fe-arrow-down"></i>
+          </a>
+        </div>
       </div>
     </section>
 
+    <section class="py-7 py-md-9 bg-dark" id="info">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-4 text-center border-end border-gray-300">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">Message us</h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="#!" class="h4 text-info"> Fill out the form! </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 text-center border-end border-gray-300">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">Call anytime</h6>
+
+            <!-- Link -->
+            <div class="mb-5 mb-md-0">
+              <a href="#!" class="h4 text-info"> (555) 123-4567 </a>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 text-center">
+            <!-- Heading -->
+            <h6 class="text-uppercase text-gray-700 mb-1">Email us</h6>
+
+            <!-- Link -->
+            <a href="#!" class="h4 text-info"> support@thewalkupeffect.org </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section class="pt-8 pt-md-11 pb-8 pb-md-14 bg-gradient-dark-black">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8 text-center">
+            <!-- Heading -->
+            <h2 class="fw-bold text-white">Let us hear from you directly!</h2>
+
+            <!-- Text -->
+            <p class="fs-lg text-muted mb-7 mb-md-9">
+              We always want to hear from you! Let us know how we can best help
+              you and we'll do our very best.
+            </p>
+          </div>
+        </div>
+        <!-- / .row -->
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-12 col-lg-10">
+            <!-- Form -->
+            <form>
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group mb-5">
+                    <!-- Label -->
+                    <label class="form-label text-gray-700" for="contactName">
+                      Full name
+                    </label>
+
+                    <!-- Input -->
+                    <input
+                      class="form-control bg-black border-info"
+                      id="contactName"
+                      type="text"
+                      placeholder="Full name"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="form-group mb-5">
+                    <!-- Label -->
+                    <label class="form-label text-gray-700" for="contactEmail">
+                      Email
+                    </label>
+
+                    <!-- Input -->
+                    <input
+                      class="form-control bg-black border-info"
+                      id="contactEmail"
+                      type="email"
+                      placeholder="hello@gmail.com"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- / .row -->
+
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div class="form-group mb-5">
+                    <!-- Label -->
+                    <label class="form-label text-gray-700" for="schoolName">
+                      School name
+                    </label>
+
+                    <!-- Input -->
+                    <input
+                      class="form-control bg-black border-info"
+                      id="schoolName"
+                      type="text"
+                      placeholder="e.g; Agoura High School"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="form-group mb-5">
+                    <!-- Label -->
+                    <label class="form-label text-gray-700" for="contactEmail">
+                      School city
+                    </label>
+
+                    <!-- Input -->
+                    <input
+                      class="form-control bg-black border-info"
+                      id="contactEmail"
+                      type="email"
+                      placeholder="hello@domain.com"
+                    />
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-2">
+                  <div class="form-group mb-5">
+                    <!-- Label -->
+                    <label class="form-label text-gray-700" for="schoolState">
+                      State
+                    </label>
+
+                    <!-- Input -->
+                    <input
+                      class="form-control bg-black border-info"
+                      id="schoolState"
+                      type="text"
+                      placeholder="CA"
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- / .row -->
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group mb-5">
+                    <!-- Label -->
+                    <label
+                      class="form-label text-gray-700"
+                      for="schoolRelationship"
+                    >
+                      Relationship to school
+                    </label>
+
+                    <!-- Input -->
+                    <input
+                      class="form-control bg-black border-info"
+                      id="schoolRelationship"
+                      type="text"
+                      placeholder="i.e; Teacher, Admin, Parent, PTA..."
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- / .row -->
+
+              <div class="row">
+                <div class="col-12">
+                  <div class="form-group mb-7 mb-md-9">
+                    <!-- Label -->
+                    <label
+                      class="form-label text-gray-700"
+                      for="contactMessage"
+                    >
+                      What can we help you with?
+                    </label>
+
+                    <!-- Input -->
+                    <textarea
+                      class="form-control bg-black border-info"
+                      id="contactMessage"
+                      rows="5"
+                      placeholder="Tell us what we can help you with!"
+                    ></textarea>
+                  </div>
+                </div>
+              </div>
+              <!-- / .row -->
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <!-- Submit -->
+                  <button type="submit" class="btn btn-info text-white lift">
+                    Send message
+                  </button>
+                </div>
+              </div>
+              <!-- / .row -->
+            </form>
+          </div>
+        </div>
+        <!-- / .row -->
+      </div>
+      <!-- / .container -->
+    </section>
+
     <!-- FOOTER -->
-    <footer class="pb-8 pb-md-11 bg-white">
+    <footer class="pb-8 pb-md-11 bg-black">
       <div class="container">
         <div class="row pt-8 pt-md-11">
           <div class="col-12 col-md-4 col-lg-3">
@@ -220,12 +462,5 @@
       </div>
       <!-- / .container -->
     </footer>
-
-    <!-- JAVASCRIPT -->
-    <!-- Vendor JS -->
-    <script src="./assets/js/vendor.bundle.js"></script>
-    
-    <!-- Theme JS -->
-    <script src="./assets/js/theme.bundle.js"></script>
   </body>
 </html>
