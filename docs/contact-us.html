@@ -129,52 +129,36 @@
       </div>
     </nav>
 
-    <section
-      class="py-12 py-lg-14 bg-black bg-img-gradient-2 jarallax"
-      data-jarallax
-      data-speed=".8"
-    >
+    <!-- HEADER -->
+    <section class="mt-n11 pt-12 pb-4 pt-md-14 bg-black bg-pattern-2">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-            <!-- Heading -->
-            <h1 class="display-2 fw-bold text-white">We’re Here to Help.</h1>
-
-            <!-- Text -->
-            <p class="lead text-white-75 mb-0">
-              We always want to hear from you! Let us know how we can best help
-              you and we'll do our very best.
+          <div class="col-12 col-lg-10 text-center">
+            <h1
+              class="display-2 fw-bold text-white section-header"
+              data-aos="fade-up"
+              data-aos-delay="50"
+            >
+              How can we <span class="zap-02">help</span> you?
+            </h1>
+            <p
+              class="lead text-gray-500 mb-6 mx-auto"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              style="max-width: 500px"
+            >
+              We always want to hear from you! Let us know if there is anything
+              that we can help you with.
             </p>
           </div>
         </div>
-        <!-- / .row -->
       </div>
-      <!-- / .container -->
-
     </section>
 
-    <section class="py-7 py-md-9 bg-dark" id="info">
+    <section class="py-2 py-md-4 bg-dark" id="info">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-4 text-center border-end border-gray-300">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-gray-700 mb-1">Message us</h6>
-
-            <!-- Link -->
-            <div class="mb-5 mb-md-0">
-              <a href="#!" class="h4 text-info"> Fill out the form! </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 text-center border-end border-gray-300">
-            <!-- Heading -->
-            <h6 class="text-uppercase text-gray-700 mb-1">Call anytime</h6>
-
-            <!-- Link -->
-            <div class="mb-5 mb-md-0">
-              <a href="#!" class="h4 text-info"> (555) 123-4567 </a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4 text-center">
+        <div class="row pb-8">
+          <div class="col-12 text-center">
             <!-- Heading -->
             <h6 class="text-uppercase text-gray-700 mb-1">Email us</h6>
 
@@ -182,26 +166,35 @@
             <a href="#!" class="h4 text-info"> support@thewalkupeffect.org </a>
           </div>
         </div>
+
+        <!-- Button  -->
+        <div class="position-absolute right-0 bottom-0 left-0">
+          <!-- Divider -->
+          <div class="bg-dark">
+            <div
+              class="container border-top border-gray-800"
+              style="z-index: auto"
+            ></div>
+          </div>
+
+          <div class="position-absolute center">
+            <a
+              class="btn btn-light btn-rounded-circle lift"
+              data-scroll
+              href="#form"
+            >
+              <i class="fe fe-arrow-down"></i>
+            </a>
+          </div>
+        </div>
+        <!-- END Button  -->
       </div>
     </section>
 
     <!-- FORM -->
-    <section class="pt-8 pt-md-11 pb-8 pb-md-14 bg-gradient-dark-black">
+    <section class="pt-6 pt-md-10 pb-8 pb-md-14 bg-gradient-dark-black">
       <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-12 col-md-10 col-lg-8 text-center">
-            <!-- Heading -->
-            <h2 class="fw-bold text-white">Let us hear from you directly!</h2>
-
-            <!-- Text -->
-            <p class="fs-lg text-muted mb-7 mb-md-9">
-              We always want to hear from you! Let us know how we can best help
-              you and we'll do our very best.
-            </p>
-          </div>
-        </div>
-        <!-- / .row -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center" id="form">
           <div class="col-12 col-md-12 col-lg-10">
             <!-- Form -->
             <form>
@@ -215,7 +208,7 @@
 
                     <!-- Input -->
                     <input
-                      class="form-control bg-black border-info"
+                      class="form-control bg-black border-info text-white"
                       id="contactName"
                       type="text"
                       placeholder="Full name"
@@ -231,7 +224,7 @@
 
                     <!-- Input -->
                     <input
-                      class="form-control bg-black border-info"
+                      class="form-control bg-black border-info text-white"
                       id="contactEmail"
                       type="email"
                       placeholder="hello@gmail.com"
@@ -251,7 +244,7 @@
 
                     <!-- Input -->
                     <input
-                      class="form-control bg-black border-info"
+                      class="form-control bg-black border-info text-white"
                       id="schoolName"
                       type="text"
                       placeholder="e.g; Agoura High School"
@@ -261,16 +254,16 @@
                 <div class="col-12 col-md-4">
                   <div class="form-group mb-5">
                     <!-- Label -->
-                    <label class="form-label text-gray-700" for="contactEmail">
+                    <label class="form-label text-gray-700" for="schoolCity">
                       School city
                     </label>
 
                     <!-- Input -->
                     <input
-                      class="form-control bg-black border-info"
-                      id="contactEmail"
-                      type="email"
-                      placeholder="hello@domain.com"
+                      class="form-control bg-black border-info text-white"
+                      id="schoolCity"
+                      type="text"
+                      placeholder="Agoura Hills"
                     />
                   </div>
                 </div>
@@ -284,7 +277,7 @@
 
                     <!-- Input -->
                     <input
-                      class="form-control bg-black border-info"
+                      class="form-control bg-black border-info text-white"
                       id="schoolState"
                       type="text"
                       placeholder="CA"
@@ -306,7 +299,7 @@
 
                     <!-- Input -->
                     <input
-                      class="form-control bg-black border-info"
+                      class="form-control bg-black border-info text-white"
                       id="schoolRelationship"
                       type="text"
                       placeholder="i.e; Teacher, Admin, Parent, PTA..."
@@ -329,7 +322,7 @@
 
                     <!-- Input -->
                     <textarea
-                      class="form-control bg-black border-info"
+                      class="form-control bg-black border-info text-white"
                       id="contactMessage"
                       rows="5"
                       placeholder="Tell us what we can help you with!"
