@@ -14,7 +14,7 @@ $gray-800: #2d3242 !default; // overrides base
 $gray-900: #1e273e !default; // overrides base
 $black: #161c2d !default; // overrides base
 
-$primary: #174291 !default; // overrides base
+$primary: #002d9c !default; // overrides base  -- ibm blue-80
 $secondary: $gray-700 !default;
 $primary-desat: #738dbd !default; // overrides base
 $success: #61fbcf !default;
@@ -27,45 +27,28 @@ $dark: $gray-900 !default;
 $header-color: $dark;
 $sub-header-color: $gray-700;
 
-// Paths
-
-$path-to-img: "../img" !default;
-$path-to-fonts: "../fonts" !default;
-
-// Type overrides
-
-@font-face {
-  font-display: swap;
-  font-family: Metropolis;
-  font-style: normal;
-  font-weight: normal;
-  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Medium.woff2")
-      format("woff2"),
-    url("#{$path-to-fonts}/Metropolis/Metropolis-Medium.woff") format("woff");
-}
-
-@font-face {
-  font-display: swap;
-  font-family: Metropolis;
-  font-style: normal;
-  font-weight: bold;
-  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff2") format("woff2"),
-    url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff") format("woff");
-}
-
-$font-family-header: "Metropolis", sans-serif !default;
-$font-family-base: "Inter", sans-serif;
-
 $font-weight-black: 900 !default;
 $font-weight-bolder: 700 !default;
 $font-weight-medium: 500 !default;
 $font-weight-normal: 400 !default;
 $font-weight-light: 300 !default;
 
+// Paths
+
+$path-to-img: "../img" !default;
+$path-to-fonts: "../fonts" !default;
+
 // Component overrides
 $navbar-nav-link-font-weight: $font-weight-normal !default;
 
 $icon-circle-size: 7.875rem !default;
 $icon-circle-size-sm: 4.1875rem !default;
+$icon-circle-size-xs: 1.875rem !default;
 
 $border-width: 2px !default;
+
+$font-family-metropolis: "Metropolis", "Inter", -apple-system, sans-serif !default;
+$font-family-base: "Inter", -apple-system, sans-serif !default;
+
+$component-active-color: $danger !default;
+$component-active-bg: $info !default;

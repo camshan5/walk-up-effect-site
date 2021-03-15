@@ -1,480 +1,866 @@
 <section class="py-8 py-md-10 bg-black">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row justify-content-center">
-      <div class="col-12 col-md-10 col-lg-8 text-center">
+      <div class="text-center">
         <!-- Heading -->
-        <h2 class="display-3 section-header fw-bold text-white">Our Why</h2>
+        <h2 class="display-3 section-header fw-bold text-white" id="our-why">
+          Our Why
+        </h2>
         <!-- Text -->
-        <p class="fs-lg text-gray-500 mb-4mb-md-6">
+        <p class="fs-lg text-gray-500 mb-4 mb-md-6">
           Take our quiz to
           <span class="text-white zap-04">Learn More</span> about your students
           and mental health.
         </p>
-        <div class="row mt-n7">
-          <!-- CARD 1 -->
 
-          <div class="col-12 col-md-6 col-xl-4 mt-7">
-            <div class="card flip-card bg-black">
-              <input
-                type="checkbox"
-                id="card1"
-                class="more"
-                aria-hidden="true"
-              />
-              <div class="content">
-                <div class="front">
-                  <div class="inner">
-                    <div class="card-body p-5 pb-0 my-auto">
-                      <!-- Image -->
-                      <div
-                        class="icon-circle-sm bg-primary-desat text-white mb-3"
-                      >
-                        {{> feather/meh }}
-                      </div>
-                    </div>
-                    <div class="card-body p-5">
-                      <!-- Text -->
-                      <p class="question-header text-white my-4">
-                        What percent of 12-18 year olds suffer from mental
-                        illness?
-                      </p>
-                      <div class="answer-choices pb-4">
-                        <div
-                          class="img-fluid w-100 svg-shim mx-auto text-muted"
-                        >
-                          {{> answers/card-one-choices }}
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-6 col-xl-4">
+            <!-- CARD 1 -->
+            <div
+              class="card rounded-lg shadow-lg bg-black my-6"
+              style="z-index: 1"
+              data-aos="fade-up"
+            >
+              <!-- Body -->
+              <div class="rotate-container">
+                <input
+                  type="checkbox"
+                  id="card1"
+                  class="more"
+                  aria-hidden="true"
+                />
+                <div class="content">
+                  <!-- Card Front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <div class="row justify-content-center text-white">
+                        <div class="col-12">
+                          <!-- Icon -->
+                          <span
+                            class="badge rounded-pill bg-primary-desat-soft mb-6 mb-md-8"
+                          >
+                            <span class="h6 text-uppercase px-3"
+                              >Question #1</span
+                            >
+                          </span>
+                          <p class="text-center mb-6 mb-md-8">
+                            What percent of 12-18 year olds suffer from mental
+                            illness?
+                          </p>
+                          <div class="row">
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>A</span>
+                              </div>
+
+                              <span>10%</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>B</span>
+                              </div>
+
+                              <span>20%</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>C</span>
+                              </div>
+
+                              <span>30%</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <!-- Badge -->
-
-                      <label
-                        for="card1"
-                        class="badge rounded-pill bg-black button"
-                      >
-                        <span class="h6 text-uppercase px-8">
-                          <i class="fe fe-eye"></i>&nbsp; Answer</span
-                        >
-                      </label>
                     </div>
-                  </div>
-                </div>
-
-                <div class="back">
-                  <div class="d-flex justify-content-around py-8">
-                    <div class="answers">
-                      <span>A) 10%</span>
-                    </div>
-
-                    <div class="answers">
-                      <span class="correct zap-07">B) 20%</span>
-                    </div>
-
-                    <div class="answers">
-                      <span>C) 30%</span>
-                    </div>
-                  </div>
-                  <div class="description pb-8">
-                    <p>
-                      Twenty percent of 12 to 18 year olds suffer from some form
-                      of mental illness.
-                    </p>
-                  </div>
-                  <label
-                    for="card1"
-                    class="badge rounded-pill bg-black button return"
-                    aria-hidden="true"
-                  >
-                    <span class="h6 text-uppercase px-8">
-                      <i class="fe fe-arrow-left"></i>&nbsp; Return</span
+                    <!-- Button -->
+                    <label
+                      class="card-btn btn w-100 btn-lg btn-primary-desat"
+                      for="card1"
                     >
-                  </label>
+                      <i class="fe fe-eye"></i>&nbsp; Answer
+                    </label>
+                  </div>
+
+                  <!-- Card Back -->
+                  <div class="card-back">
+                    <div class="card-body">
+                      <div class="row text-white">
+                        <div class="col-12">
+                          <!-- Badge -->
+                          <span
+                            class="badge rounded-pill bg-primary-desat-soft mb-6 mb-md-8"
+                          >
+                            <span class="h6 text-uppercase px-3">Answer</span>
+                          </span>
+                          <p class="text-center mb-6 mb-md-8">
+                            Twenty percent of 12-18 year olds suffer from some
+                            form of mental illness.
+                          </p>
+                          <div class="row">
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>A</span>
+                              </div>
+
+                              <span>10%</span>
+                            </div>
+                            <!-- correct answer -->
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center zap-03"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-info me-2"
+                              >
+                                <span>B</span>
+                              </div>
+
+                              <span class="text-info">20%</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>C</span>
+                              </div>
+
+                              <span>30%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Button -->
+                    <label
+                      class="card-btn btn w-100 btn-lg btn-primary-desat"
+                      for="card1"
+                    >
+                      <i class="fe fe-arrow-left"></i>&nbsp; Return
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD 2 -->
-          <div class="col-12 col-md-6 col-xl-4 mt-7">
-            <div class="card flip-card bg-black rounded-3">
-              <input
-                type="checkbox"
-                id="card2"
-                class="more"
-                aria-hidden="true"
-              />
-              <div class="content">
-                <div class="front">
-                  <div class="inner">
-                    <div class="card-body p-5 pb-0 my-auto">
-                      <!-- Image -->
-                      <div class="icon-circle-sm bg-info text-white mb-3">
-                        <i class="fe fe-help-circle"></i>
-                      </div>
-                    </div>
-                    <div class="card-body p-5">
-                      <!-- Text -->
-                      <p class="question-header text-white my-4">
-                        What is the average age of the first incident of
-                        self-harm?
-                      </p>
-                      <div class="answer-choices pb-4">
-                        <div
-                          class="img-fluid w-100 svg-shim mx-auto text-muted"
-                        >
-                          {{> answers/card-two-choices }}
+          <div class="col-12 col-md-6 col-xl-4">
+            <!-- CARD 2 -->
+            <div
+              class="card rounded-lg shadow-lg bg-black my-6"
+              style="z-index: 1"
+              data-aos="fade-up"
+            >
+              <!-- Body -->
+              <div class="rotate-container">
+                <input
+                  type="checkbox"
+                  id="card2"
+                  class="more"
+                  aria-hidden="true"
+                />
+                <div class="content">
+                  <!-- Card Front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <div class="row justify-content-center text-white">
+                        <div class="col-12">
+                          <!-- Badge -->
+                          <span
+                            class="badge rounded-pill bg-primary-desat-soft mb-6 mb-md-8"
+                          >
+                            <span class="h6 text-uppercase px-3"
+                              >Question #2</span
+                            >
+                          </span>
+                          <p class="text-center mb-6 mb-md-8">
+                            What is the average age of the first incident of
+                            self-harm?
+                          </p>
+                          <div class="row">
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>A</span>
+                              </div>
+                              <span>13</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>B</span>
+                              </div>
+                              <span>15</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>C</span>
+                              </div>
+                              <span>17</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <!-- Badge -->
-
-                      <label
-                        for="card2"
-                        class="badge rounded-pill bg-black button"
-                      >
-                        <span class="h6 text-uppercase px-8">
-                          <i class="fe fe-eye"></i>&nbsp; Answer</span
-                        >
-                      </label>
                     </div>
-                  </div>
-                </div>
-                <div class="back">
-                  <div class="d-flex justify-content-around py-8">
-                    <div class="answers">
-                      <span class="correct zap-04">A)&nbsp;13</span>
-                    </div>
-
-                    <div class="answers">
-                      <span>B)&nbsp;15</span>
-                    </div>
-
-                    <div class="answers">
-                      <span>C)&nbsp;17</span>
-                    </div>
-                  </div>
-                  <div class="description pb-8">
-                    <p>
-                      The average age of the first incident of self-harm is 13
-                      years old.
-                    </p>
-                  </div>
-                  <label
-                    for="card2"
-                    class="badge rounded-pill bg-black button return"
-                    aria-hidden="true"
-                  >
-                    <span class="h6 text-uppercase px-8">
-                      <i class="fe fe-arrow-left"></i>&nbsp; Return</span
+                    <!-- Button -->
+                    <label
+                      class="card-btn btn w-100 btn-lg btn-primary-desat"
+                      for="card2"
                     >
-                  </label>
+                      <i class="fe fe-eye"></i>&nbsp; Answer
+                    </label>
+                  </div>
+
+                  <!-- Card Back -->
+                  <div class="card-back">
+                    <div class="card-body">
+                      <div class="row text-white">
+                        <div class="col-12">
+                          <!-- Badge -->
+                          <span
+                            class="badge rounded-pill bg-primary-desat-soft mb-6 mb-md-8"
+                          >
+                            <span class="h6 text-uppercase px-3">Answer</span>
+                          </span>
+                          <p class="text-center mb-6 mb-md-8">
+                            The average age of the first incident of self-harm
+                            is 13 years old.
+                          </p>
+                          <div class="row">
+                            <!-- correct answer -->
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center zap-07"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-info me-2"
+                              >
+                                <span>A</span>
+                              </div>
+                              <span class="text-info">13</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>B</span>
+                              </div>
+                              <span>15</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>C</span>
+                              </div>
+                              <span>17</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Button -->
+                    <label
+                      class="card-btn btn w-100 btn-lg btn-primary-desat"
+                      for="card2"
+                    >
+                      <i class="fe fe-arrow-left"></i>&nbsp; Return
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD 3 -->
-          <div class="col-12 col-md-6 col-xl-4 mt-7">
-            <div class="card flip-card bg-black rounded-3">
-              <input
-                type="checkbox"
-                id="card3"
-                class="more"
-                aria-hidden="true"
-              />
-              <div class="content">
-                <div class="front">
-                  <div class="inner">
-                    <div class="card-body p-5 pb-0 my-auto">
-                      <!-- Image -->
-                      <div class="icon-circle-sm bg-danger text-white mb-3">
-                        <i class="fe fe-alert-octagon"></i>
-                      </div>
-                    </div>
-                    <div class="card-body p-5">
-                      <!-- Text -->
-                      <p class="question-header text-white my-4">
-                        What percent of high school students have considered
-                        suicide?
-                      </p>
-                      <div class="answer-choices pb-4">
-                        <div
-                          class="img-fluid w-100 svg-shim mx-auto text-muted"
-                        >
-                          {{> answers/card-three-choices }}
+          <div class="col-12 col-md-6 col-xl-4">
+            <!-- CARD 3 -->
+            <div
+              class="card rounded-lg shadow-lg bg-black my-6"
+              style="z-index: 1"
+              data-aos="fade-up"
+            >
+              <!-- Body -->
+              <div class="rotate-container">
+                <input
+                  type="checkbox"
+                  id="card3"
+                  class="more"
+                  aria-hidden="true"
+                />
+                <div class="content">
+                  <!-- Card Front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <div class="row justify-content-center text-white">
+                        <div class="col-12">
+                          <!-- Icon -->
+                          <span
+                            class="badge rounded-pill bg-primary-desat-soft mb-6 mb-md-8"
+                          >
+                            <span class="h6 text-uppercase px-3"
+                              >Question #3</span
+                            >
+                          </span>
+                          <p class="text-center mb-6 mb-md-8">
+                            What percent of high school students have considered
+                            suicide?
+                          </p>
+                          <div class="row">
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>A</span>
+                              </div>
+                              <span>10%</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>B</span>
+                              </div>
+                              <span>12%</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>C</span>
+                              </div>
+                              <span>17%</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <!-- Badge -->
-                      <label
-                        for="card3"
-                        class="badge rounded-pill bg-black button"
-                      >
-                        <span class="h6 text-uppercase px-8">
-                          <i class="fe fe-eye"></i>&nbsp; Answer</span
-                        >
-                      </label>
                     </div>
-                  </div>
-                </div>
-
-                <div class="back">
-                  <div class="d-flex justify-content-around py-8">
-                    <div class="answers">
-                      <span>A) 7%</span>
-                    </div>
-
-                    <div class="answers">
-                      <span>B) 12%</span>
-                    </div>
-
-                    <div class="answers">
-                      <span class="correct zap-03">C) 17%</span>
-                    </div>
-                  </div>
-                  <div class="description pb-8">
-                    <p>
-                      Seventeen percent of high school students seriously
-                      consider suicide.
-                    </p>
-                  </div>
-                  <label
-                    for="card3"
-                    class="badge rounded-pill bg-black button return"
-                    aria-hidden="true"
-                  >
-                    <span class="h6 text-uppercase px-8">
-                      <i class="fe fe-arrow-left"></i>&nbsp; Return</span
+                    <!-- Button -->
+                    <label
+                      class="card-btn btn w-100 btn-lg btn-primary-desat"
+                      for="card3"
                     >
-                  </label>
+                      <i class="fe fe-eye"></i>&nbsp; Answer
+                    </label>
+                  </div>
+
+                  <!-- Card Back -->
+                  <div class="card-back">
+                    <div class="card-body bg-dark">
+                      <div class="row text-white">
+                        <div class="col-12">
+                          <!-- Badge -->
+                          <span
+                            class="badge rounded-pill bg-primary-desat-soft mb-6 mb-md-8"
+                          >
+                            <span class="h6 text-uppercase px-3">Answer</span>
+                          </span>
+                          <p class="text-center mb-6 mb-md-8">
+                            Seventeen percent of high school students seriously
+                            consider suicide.
+                          </p>
+                          <div class="row">
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>A</span>
+                              </div>
+                              <span>7%</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>B</span>
+                              </div>
+                              <span>12%</span>
+                            </div>
+                            <!-- correct answer -->
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center zap-03"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-info me-2"
+                              >
+                                <span>C</span>
+                              </div>
+                              <span class="text-info">17%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Button -->
+                    <label
+                      class="card-btn btn w-100 btn-lg btn-primary-desat"
+                      for="card3"
+                    >
+                      <i class="fe fe-arrow-left"></i>&nbsp; Return
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD 4 -->
-          <div class="col-12 col-md-6 col-xl-4 mt-7">
-            <div class="card flip-card bg-black rounded-3">
-              <input
-                type="checkbox"
-                id="card4"
-                class="more"
-                aria-hidden="true"
-              />
-              <div class="content">
-                <div class="front">
-                  <div class="inner">
-                    <div class="card-body p-5 pb-0 my-auto">
-                      <!-- Image -->
-                      <div class="icon-circle-sm bg-secondary text-white mb-3">
-                        <i class="fe fe-globe"></i>
-                      </div>
-                    </div>
-                    <div class="card-body p-5">
-                      <!-- Text -->
-                      <p class="question-header text-white my-4">
-                        Suicide ranks where in the leading cause of death
-                        amongst 15-24yr olds?
-                      </p>
-                      <div class="answer-choices pb-4">
-                        <div
-                          class="img-fluid w-100 svg-shim mx-auto text-muted"
-                        >
-                          {{> answers/card-four-choices }}
+          <div class="col-12 col-md-6 col-xl-4">
+            <!-- CARD 4 -->
+            <div
+              class="card rounded-lg shadow-lg bg-black my-6"
+              style="z-index: 1"
+              data-aos="fade-up"
+            >
+              <!-- Body -->
+              <div class="rotate-container">
+                <input
+                  type="checkbox"
+                  id="card4"
+                  class="more"
+                  aria-hidden="true"
+                />
+                <div class="content">
+                  <!-- Card Front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <div class="row justify-content-center text-white">
+                        <div class="col-12">
+                          <!-- Icon -->
+                          <span
+                            class="badge rounded-pill bg-primary-desat-soft mb-6 mb-md-8"
+                          >
+                            <span class="h6 text-uppercase px-3"
+                              >Question #4</span
+                            >
+                          </span>
+                          <p class="text-center mb-6 mb-md-8">
+                            Suicide ranks where in the leading cause of death
+                            amongst 15-24 yr/olds?
+                          </p>
+                          <div class="row">
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>A</span>
+                              </div>
+                              <span>2nd</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>B</span>
+                              </div>
+                              <span>4th</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>C</span>
+                              </div>
+                              <span>8th</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <!-- Badge -->
-                      <label
-                        for="card4"
-                        class="badge rounded-pill bg-black button"
-                      >
-                        <span class="h6 text-uppercase px-8">
-                          <i class="fe fe-eye"></i>&nbsp; Answer</span
-                        >
-                      </label>
                     </div>
-                  </div>
-                </div>
-                <div class="back">
-                  <div class="d-flex justify-content-around py-8">
-                    <div class="answers">
-                      <span class="correct zap-06">A) 2nd</span>
-                    </div>
-
-                    <div class="answers">
-                      <span>B) 4th</span>
-                    </div>
-
-                    <div class="answers">
-                      <span>C) 8th</span>
-                    </div>
-                  </div>
-                  <div class="description pb-8">
-                    <p>
-                      Suicide is the 2nd leading case of death amongst 15-24
-                      year olds.
-                    </p>
-                  </div>
-                  <label
-                    for="card4"
-                    class="badge rounded-pill bg-black button return"
-                    aria-hidden="true"
-                  >
-                    <span class="h6 text-uppercase px-8">
-                      <i class="fe fe-arrow-left"></i>&nbsp; Return</span
+                    <!-- Button -->
+                    <label
+                      class="card-btn btn w-100 btn-lg btn-primary-desat"
+                      for="card4"
                     >
-                  </label>
+                      <i class="fe fe-eye"></i>&nbsp; Answer
+                    </label>
+                  </div>
+
+                  <!-- Card Back -->
+                  <div class="card-back">
+                    <div class="card-body">
+                      <div class="row text-white">
+                        <div class="col-12">
+                          <!-- Badge -->
+                          <span
+                            class="badge rounded-pill bg-primary-desat-soft mb-6 mb-md-8"
+                          >
+                            <span class="h6 text-uppercase px-3">Answer</span>
+                          </span>
+                          <p class="text-center mb-6 mb-md-8">
+                            Suicide is the 2nd leading case of death amongst
+                            15-24 year olds.
+                          </p>
+                          <div class="row">
+                            <!-- correct answer -->
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center zap-04"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-info me-2"
+                              >
+                                <span>A</span>
+                              </div>
+                              <span class="text-info">2nd</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>B</span>
+                              </div>
+                              <span>4th</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>C</span>
+                              </div>
+                              <span>8th</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Button -->
+                    <label
+                      class="card-btn btn w-100 btn-lg btn-primary-desat"
+                      for="card4"
+                    >
+                      <i class="fe fe-arrow-left"></i>&nbsp; Return
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD 5 -->
-          <div class="col-12 col-md-6 col-xl-4 mt-7">
-            <div class="card flip-card bg-black rounded-3">
-              <input
-                type="checkbox"
-                id="card5"
-                class="more"
-                aria-hidden="true"
-              />
-              <div class="content">
-                <div class="front">
-                  <div class="inner">
-                    <div class="card-body p-5 pb-0 my-auto">
-                      <!-- Image -->
-                      <div class="icon-circle-sm bg-primary text-white mb-3">
-                        <i class="fe fe-sun"></i>
-                      </div>
-                    </div>
-                    <div class="card-body p-5">
-                      <!-- Text -->
-                      <p class="question-header text-white my-4">
-                        What percentage of people have success with therapy &
-                        medication?
-                      </p>
-                      <div class="answer-choices pb-4">
-                        <div
-                          class="img-fluid w-100 svg-shim mx-auto text-muted"
-                        >
-                          {{> answers/card-five-choices }}
+          <div class="col-12 col-md-6 col-xl-4">
+            <!-- CARD 5 -->
+            <div
+              class="card rounded-lg shadow-lg bg-black my-6"
+              style="z-index: 1"
+              data-aos="fade-up"
+            >
+              <!-- Body -->
+              <div class="rotate-container">
+                <input
+                  type="checkbox"
+                  id="card5"
+                  class="more"
+                  aria-hidden="true"
+                />
+                <div class="content">
+                  <!-- Card Front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <div class="row justify-content-center text-white">
+                        <div class="col-12">
+                          <!-- Icon -->
+                          <span
+                            class="badge rounded-pill bg-primary-desat-soft mb-6 mb-md-8"
+                          >
+                            <span class="h6 text-uppercase px-3"
+                              >Question #5</span
+                            >
+                          </span>
+                          <p class="text-center mb-6 mb-md-8">
+                            What percent of people have success with therapy and
+                            medication?
+                          </p>
+                          <div class="row">
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>A</span>
+                              </div>
+                              <span>30%</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>B</span>
+                              </div>
+                              <span>50%</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>C</span>
+                              </div>
+                              <span>80%</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <!-- Badge -->
-                      <label
-                        for="card5"
-                        class="badge rounded-pill bg-black button"
-                      >
-                        <span class="h6 text-uppercase px-8">
-                          <i class="fe fe-eye"></i>&nbsp; Answer</span
-                        >
-                      </label>
                     </div>
-                  </div>
-                </div>
-
-                <div class="back">
-                  <div class="d-flex justify-content-around py-8">
-                    <div class="answers">
-                      <span>A) 30%</span>
-                    </div>
-
-                    <div class="answers">
-                      <span>B) 50%</span>
-                    </div>
-
-                    <div class="answers">
-                      <span class="correct zap-07"> C) 80%</span>
-                    </div>
-                  </div>
-                  <div class="description pb-8">
-                    <p>
-                      80 to 90% of people that seek treatment for a mental
-                      illness are successful with therapy & medication.
-                    </p>
-                  </div>
-                  <label
-                    for="card5"
-                    class="badge rounded-pill bg-black button return"
-                    aria-hidden="true"
-                  >
-                    <span class="h6 text-uppercase px-8">
-                      <i class="fe fe-arrow-left"></i>&nbsp; Return</span
+                    <!-- Button -->
+                    <label
+                      class="card-btn btn w-100 btn-lg btn-primary-desat"
+                      for="card5"
                     >
-                  </label>
+                      <i class="fe fe-eye"></i>&nbsp; Answer
+                    </label>
+                  </div>
+
+                  <!-- Card Back -->
+                  <div class="card-back">
+                    <div class="card-body">
+                      <div class="row text-white">
+                        <div class="col-12">
+                          <!-- Badge -->
+                          <span
+                            class="badge rounded-pill bg-primary-desat-soft mb-6 mb-md-8"
+                          >
+                            <span class="h6 text-uppercase px-3">Answer</span>
+                          </span>
+                          <p class="text-center mb-6 mb-md-8">
+                            80 to 90% of people that seek treatment are
+                            successful with therapy and medication.
+                          </p>
+                          <div class="row">
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>A</span>
+                              </div>
+                              <span>30%</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>B</span>
+                              </div>
+                              <span>50%</span>
+                            </div>
+                            <!-- correct answer -->
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center zap-07"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-info me-2"
+                              >
+                                <span>C</span>
+                              </div>
+                              <span class="text-info">80%</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Button -->
+                    <label
+                      class="card-btn btn w-100 btn-lg btn-primary-desat"
+                      for="card5"
+                    >
+                      <i class="fe fe-arrow-left"></i>&nbsp; Return
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD 6 -->
-          <div class="col-12 col-md-6 col-xl-4 mt-7">
-            <div class="card flip-card bg-black rounded-3">
-              <input
-                type="checkbox"
-                id="card6"
-                class="more"
-                aria-hidden="true"
-              />
-              <div class="content">
-                <div class="front">
-                  <div class="inner">
-                    <div class="card-body p-5 pb-0 my-auto">
-                      <!-- Image -->
-                      <div class="icon-circle-sm bg-warning text-white mb-3">
-                        <i class="fe fe-users"></i>
-                      </div>
-                    </div>
-                    <div class="card-body p-5">
-                      <!-- Text -->
-                      <p class="question-header text-white my-4">
-                        How many young people ages 3-17 suffer from anxiety or
-                        depression?
-                      </p>
-                      <div class="answer-choices pb-4">
-                        <div
-                          class="img-fluid w-100 svg-shim mx-auto text-muted"
-                        >
-                          {{> answers/card-six-choices }}
+          <div class="col-12 col-md-6 col-xl-4">
+            <!-- CARD 6 -->
+            <div
+              class="card rounded-lg shadow-lg my-3 bg-black mt-6"
+              style="z-index: 1"
+              data-aos="fade-up"
+            >
+              <!-- Body -->
+              <div class="rotate-container">
+                <input
+                  type="checkbox"
+                  id="card6"
+                  class="more"
+                  aria-hidden="true"
+                />
+                <div class="content">
+                  <!-- Card Front -->
+                  <div class="card-front">
+                    <div class="card-body">
+                      <div class="row justify-content-center text-white">
+                        <div class="col-12">
+                          <!-- Icon -->
+                          <span
+                            class="badge rounded-pill bg-primary-desat-soft mb-6 mb-md-8"
+                          >
+                            <span class="h6 text-uppercase px-3"
+                              >Question #6</span
+                            >
+                          </span>
+                          <p class="text-center mb-md-8">
+                            How many young people ages 3-17 suffer from anxiety
+                            or depression?
+                          </p>
+                          <div class="row">
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>A</span>
+                              </div>
+                              <span>3.5</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>B</span>
+                              </div>
+                              <span>5.6</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>C</span>
+                              </div>
+                              <span>6.3</span>
+                            </div>
+                          </div>
                         </div>
                       </div>
-                      <!-- Badge -->
-                      <label
-                        for="card6"
-                        class="badge rounded-pill bg-black button"
-                      >
-                        <span class="h6 text-uppercase px-8">
-                          <i class="fe fe-eye"></i>&nbsp; Answer</span
-                        >
-                      </label>
                     </div>
-                  </div>
-                </div>
-
-                <div class="back">
-                  <div class="d-flex justify-content-around py-8">
-                    <div class="answers">
-                      <span>A) 3.5</span>
-                    </div>
-                    <div class="answers">
-                      <span>B) 5.6</span>
-                    </div>
-                    <div class="answers">
-                      <span class="correct zap-02">C)6.3</span>
-                    </div>
-                  </div>
-                  <div class="description pb-8">
-                    <p>
-                      6.3 million young people aged 3-17 suffer from anxiety or
-                      depression.
-                    </p>
-                  </div>
-                  <label
-                    for="card6"
-                    class="badge rounded-pill bg-black button return"
-                    aria-hidden="true"
-                  >
-                    <span class="h6 text-uppercase px-8">
-                      <i class="fe fe-arrow-left"></i>&nbsp; Return</span
+                    <!-- Button -->
+                    <label
+                      class="card-btn btn w-100 btn-lg btn-primary-desat"
+                      for="card6"
                     >
-                  </label>
+                      <i class="fe fe-eye"></i>&nbsp; Answer
+                    </label>
+                  </div>
+
+                  <!-- Card Back -->
+                  <div class="card-back">
+                    <div class="card-body">
+                      <div class="row text-white">
+                        <div class="col-12">
+                          <!-- Badge -->
+                          <span
+                            class="badge rounded-pill bg-primary-desat-soft mb-6 mb-md-8"
+                          >
+                            <span class="h6 text-uppercase px-3">Answer</span>
+                          </span>
+                          <p class="text-center mb-6 mb-md-8">
+                            6.3 million young people aged 3-17 suffer from
+                            anxiety or depression.
+                          </p>
+                          <div class="row">
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>A</span>
+                              </div>
+                              <span>3.5</span>
+                            </div>
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-primary-desat me-2"
+                              >
+                                <span>B</span>
+                              </div>
+                              <span>5.6</span>
+                            </div>
+                            <!-- correct answer -->
+                            <div
+                              class="col-sm d-flex p-sm-2 justify-content-center zap-02"
+                            >
+                              <div
+                                class="badge badge-lg badge-rounded-circle bg-info me-2"
+                              >
+                                <span>C</span>
+                              </div>
+                              <span class="text-info">6.3</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Button -->
+                    <label
+                      class="card-btn btn w-100 btn-lg btn-primary-desat"
+                      for="card6"
+                    >
+                      <i class="fe fe-arrow-left"></i>&nbsp; Return
+                    </label>
+                  </div>
                 </div>
               </div>
             </div>

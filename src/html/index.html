@@ -8,10 +8,6 @@
     {{> partials/modals}}
 
     <!-- NAVBAR -->
-    {{!-- {{> partials/navbar classList="navbar-dark bg-black fixed-top"
-    container="container"}} --}}
-
-    <!-- NAVBAR -->
     {{> partials/navbar classList="navbar-dark navbar-togglable fixed-top"
     container="container"}}
 
@@ -25,7 +21,7 @@
           <div class="col-12 col-lg-10 text-center" style="max-width: 768px">
             <!-- Heading -->
             <h1
-              class="display-2 fw-bold text-white section-header"
+              class="display-1 fw-bold text-white section-header"
               data-aos="fade-up"
               data-aos-delay="50"
             >
@@ -38,29 +34,40 @@
               class="lead text-gray-500 mb-6 mx-auto"
               data-aos="fade-up"
               data-aos-delay="100"
-              style="max-width: 500px"
+              style="max-width: 600px"
             >
-              We created an easy-to-use set of components for building startup
-              sites and apps.
+              Help us normalize the conversation behind mental health
             </p>
 
-            <!-- Button -->
             <p class="mb-3 mb-md-6" data-aos="fade-up" data-aos-delay="150">
               <a class="btn btn-info shadow lift" href="#!">
-                Get involved <i class="fe fe-arrow-right ms-3"></i>
+                Donate <i class="fe fe-arrow-right ms-3"></i>
               </a>
             </p>
           </div>
         </div>
-        <!-- / .row -->
       </div>
-      <!-- / .container -->
-    </section>
 
-    <!-- BORDER -->
-    <div class="bg-dark">
-      <div class="container border-top border-gray-800"></div>
-    </div>
+      <div class="position-absolute right-0 bottom-0 left-0">
+        <!-- Divider -->
+        <div class="bg-dark">
+          <div
+            class="container border-top border-gray-800"
+            style="z-index: auto"
+          ></div>
+        </div>
+
+        <div class="position-absolute center">
+          <a
+            class="btn btn-light btn-rounded-circle lift"
+            data-scroll
+            href="#what-we-do"
+          >
+            <i class="fe fe-arrow-down"></i>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- WHAT WE DO -->
     {{> sections/what-we-do }}
@@ -70,10 +77,10 @@
 
     <!-- IMAGE -->
     <section
-      class="py-14 py-lg-16 overlay overlay-black overlay-30 jarallax"
+      class="py-14 py-lg-16 overlay overlay-black overlay-10 jarallax"
       data-jarallax
       data-speed=".8"
-      style="background-image: url(assets/img/covers/cover-1.jpg)"
+      style="background-image: url(assets/img/covers/cover-1-min.jpg)"
     >
       <!-- Shape -->
       <div class="shape shape-top shape-fluid-x svg-shim text-black">

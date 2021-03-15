@@ -1,0 +1,78 @@
+@import "animations";
+
+// moving waves animation
+.waves {
+  position: $waves-position;
+  width: $waves-width;
+  height: $waves-height;
+  margin-bottom: $waves-margin-bottom;
+  /*Fix for safari gap*/
+  min-height: $waves-min-height;
+  max-height: $waves-max-height;
+
+  &.waves-sm {
+    height: $waves-height-sm;
+    min-height: $waves-min-height-sm;
+  }
+
+  &.no-animation {
+    .moving-waves > use {
+      animation: none;
+    }
+  }
+}
+
+.wave-rotate {
+  transform: $waves-rotate;
+}
+/* Animation for the waves */
+.moving-waves > use {
+  animation: $moving-waves-animation;
+}
+
+.moving-waves > use:nth-child(1) {
+  animation-delay: $moving-waves-child-1-delay;
+  animation-duration: $moving-waves-child-1-duration;
+}
+
+.moving-waves > use:nth-child(2) {
+  animation-delay: $moving-waves-child-2-delay;
+  animation-duration: $moving-waves-child-2-duration;
+}
+
+.moving-waves > use:nth-child(3) {
+  animation-delay: $moving-waves-child-3-delay;
+  animation-duration: $moving-waves-child-3-duration;
+}
+
+.moving-waves > use:nth-child(4) {
+  animation-delay: $moving-waves-child-4-delay;
+  animation-duration: $moving-waves-child-4-duration;
+}
+
+.moving-waves > use:nth-child(5) {
+  animation-delay: $moving-waves-child-5-delay;
+  animation-duration: $moving-waves-child-5-duration;
+}
+
+.moving-waves > use:nth-child(6) {
+  animation-delay: $moving-waves-child-6-delay;
+  animation-duration: $moving-waves-child-6-duration;
+}
+@keyframes move-forever {
+  0% {
+    transform: $moving-waves-keyframe-0;
+  }
+
+  100% {
+    transform: $moving-waves-keyframe-100;
+  }
+}
+
+/*Shrinking for mobile*/
+@include media-breakpoint-down(md) {
+  .waves {
+    height: $waves-mobile-height;
+    min-height: $waves-mobile-height;
+  }
+}

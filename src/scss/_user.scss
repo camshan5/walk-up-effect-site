@@ -14,33 +14,8 @@
   }
 }
 
-.font-900 {
-  font-family: $font-family-base;
-  font-weight: $font-weight-black;
-  font-style: normal;
-}
-
-.font-700 {
-  font-family: $font-family-base;
-  font-weight: $font-weight-bolder;
-  font-style: normal;
-}
-
-.font-500 {
-  font-family: $font-family-base;
-  font-weight: $font-weight-medium;
-  font-style: normal;
-}
-
-.font-300 {
-  // Light
-  font-family: $font-family-base;
-  font-weight: $font-weight-light;
-  font-style: normal;
-}
-
 .section-header {
-  font-family: $font-family-header;
+  font-family: $font-family-metropolis;
   font-weight: $font-weight-bold;
   font-style: normal;
 }
@@ -54,16 +29,13 @@
 
 .row-grid {
   p {
-    font-weight: $font-weight-light;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-sm; // 15px
   }
 
   // @x-small, @small: <768px
   @include media-breakpoint-down(md) {
     h4 {
-      font-size: 1.3125rem !important; // (21px)
-    }
-
-    p {
       font-size: 1.1875rem !important; // 19px (lead)
     }
   }
@@ -72,14 +44,10 @@
     h4 {
       font-size: 1.0625rem !important; // (17px)
     }
-    p {
-      font-size: 0.875rem !important; // 14px
-    }
   }
 }
 
 // Patterns
-
 .bg-pattern-2 {
   background-image: linear-gradient(to bottom, transparent 0%, $dark 100%),
     url("#{$path-to-img}/patterns/pattern-2.png");
@@ -90,8 +58,17 @@
     url("#{$path-to-img}/covers/cover-19.jpg");
 }
 
+.bg-img-gradient-2 {
+  background-image: linear-gradient(to bottom, transparent 0%, $dark 100%),
+    url("#{$path-to-img}/covers/cover-4.jpg");
+}
+
 .bg-gradient-to-dark {
   background-image: linear-gradient(to bottom, transparent 0%, $dark 100%);
+}
+
+.bg-gradient-black-dark {
+  background-image: linear-gradient(to bottom, $black 0%, $dark 100%);
 }
 
 .bg-gradient-light-white {
@@ -111,12 +88,12 @@
 .bg-gradient-multicolor {
   background-image: conic-gradient(
     from 52deg at 50% 50%,
-    $primary 0deg,
+    $danger 0deg,
     $info 33deg,
     $info 222deg,
     $warning 264deg,
     $danger 295deg,
-    $primary 360deg
+    $danger 360deg
   );
 }
 
@@ -133,6 +110,19 @@
   justify-content: center;
   width: $icon-circle-size-sm;
   height: $icon-circle-size-sm;
+  border-radius: 50%;
+
+  > .fe {
+    font-size: $icon-circle-font-size;
+  }
+}
+
+.icon-circle-xs {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: $icon-circle-size-xs;
+  height: $icon-circle-size-xs;
   border-radius: 50%;
 
   > .fe {
@@ -162,4 +152,206 @@
 .navbar-brand-img {
   max-height: 1.6rem;
   width: auto;
+}
+
+.font-900 {
+  font-family: $font-family-base;
+  font-weight: $font-weight-black;
+  font-style: normal;
+}
+
+.font-700 {
+  font-family: $font-family-base;
+  font-weight: $font-weight-bolder;
+  font-style: normal;
+}
+
+.font-500 {
+  font-family: $font-family-base;
+  font-weight: $font-weight-medium;
+  font-style: normal;
+}
+
+.font-300 {
+  // Light
+  font-family: $font-family-base;
+  font-weight: $font-weight-light;
+  font-style: normal;
+}
+
+// *** Metropolis Font Family *** //
+@font-face {
+  font-display: swap;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Medium.woff2")
+      format("woff2"),
+    url("#{$path-to-fonts}/Metropolis/Metropolis-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 600;
+  src: url("#{$path-to-fonts}/Metropolis/Metropolis-SemiBold.woff2")
+      format("woff2"),
+    url("#{$path-to-fonts}/Metropolis/Metropolis-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 700;
+  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff2") format("woff2"),
+    url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 800;
+  src: url("#{$path-to-fonts}/Metropolis/Metropolis-ExtraBold.woff2")
+      format("woff2"),
+    url("#{$path-to-fonts}/Metropolis/Metropolis-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 900;
+  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Black.woff2")
+      format("woff2"),
+    url("#{$path-to-fonts}/Metropolis/Metropolis-Black.woff") format("woff");
+}
+
+// *** Inter Font Family *** //
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter/Inter-Thin.woff2?v=3.15") format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-Thin.woff?v=3.15") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter/Inter-ExtraLight.woff2?v=3.15")
+      format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-ExtraLight.woff?v=3.15") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter/Inter-Light.woff2?v=3.15") format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-Light.woff?v=3.15") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter/Inter-Regular.woff2?v=3.15") format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-Regular.woff?v=3.15") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter/Inter-Italic.woff2?v=3.15") format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-Italic.woff?v=3.15") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter-Medium.woff2?v=3.15") format("woff2"),
+    url("#{$path-to-fonts}/Inter-Medium.woff?v=3.15") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter-MediumItalic.woff2?v=3.15") format("woff2"),
+    url("#{$path-to-fonts}/Inter-MediumItalic.woff?v=3.15") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter/Inter-SemiBold.woff2?v=3.15")
+      format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-SemiBold.woff?v=3.15") format("woff");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter/Inter-SemiBoldItalic.woff2?v=3.15")
+      format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-SemiBoldItalic.woff?v=3.15")
+      format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter/Inter-Bold.woff2?v=3.15") format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-Bold.woff?v=3.15") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter/Inter-ExtraBold.woff2?v=3.15")
+      format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-ExtraBold.woff?v=3.15") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter/Inter-Black.woff2?v=3.15") format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-Black.woff?v=3.15") format("woff");
+}
+
+// Flickity Button Style Overrides
+.flickity-prev-next-button {
+  background-color: $gray-800;
+  border: 1px solid $primary;
+  box-shadow: 10px -20px 90px rgba($info, 0.9);
+}
+
+.flickity-prev-next-button:hover {
+  background-color: $gray-900;
+  border: 1px solid $primary-desat;
+  box-shadow: 10px -20px 90px rgba($primary-desat, 0.9);
 }

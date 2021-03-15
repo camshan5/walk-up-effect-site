@@ -44,7 +44,7 @@ $theme-colors: (
   // NEW
   "black": $black,
   // NEW
-  "white": $white // NEW,,,,,,,,,,,,,,
+  "white": $white // NEW,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
@@ -273,7 +273,7 @@ $display-font-sizes: (
   // 61px
   3: 3rem,
   // 48px
-  4: 2.6875rem // 43px,,
+  4: 2.6875rem // 43px,,,,,,,,,,
 ) !default;
 
 $display-font-weight: $font-weight-normal !default;
@@ -798,6 +798,7 @@ $utilities: (
       25: 25%,
       50: 50%,
       75: 75%,
+      85: 85%,
       100: 100%,
       110: 110%,
       120: 120%,
@@ -815,6 +816,7 @@ $utilities: (
       25: 25%,
       50: 50%,
       75: 75%,
+      85: 85%,
       100: 100%,
       110: 110%,
       120: 120%,
@@ -831,6 +833,7 @@ $utilities: (
       25: 25vw,
       50: 50vw,
       75: 75vw,
+      85: 85vw,
       100: 100vw,
       110: 110vw,
       120: 120vw,
@@ -847,6 +850,8 @@ $utilities: (
       25: 25%,
       50: 50%,
       75: 75%,
+      85: 85%,
+      90: 90%,
       100: 100%,
       110: 110%,
       120: 120%,
@@ -864,6 +869,8 @@ $utilities: (
       25: 25vh,
       50: 50vh,
       75: 75vh,
+      85: 85vh,
+      90: 90vh,
       100: 100vh,
       110: 110vh,
       120: 120vh,
