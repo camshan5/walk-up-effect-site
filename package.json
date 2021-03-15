@@ -7,6 +7,7 @@
     "build": "del-cli dist && webpack --mode production"
   },
   "dependencies": {
+    "@carbon/icons-handlebars": "^10.27.0",
     "@popperjs/core": "^2.6.0",
     "aos": "^3.0.0-beta.6",
     "bigpicture": "^2.5.3",
