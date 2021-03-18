@@ -12,7 +12,6 @@
   border-color: transparent !important;
 }
 
-
 // Sizing
 
 .btn-xs {
@@ -20,6 +19,9 @@
   font-size: $input-btn-font-size-xs;
 }
 
+.btn-lg {
+  font-size: 17px;
+}
 
 // Custom colors
 
@@ -27,7 +29,8 @@
   background-color: $white;
   color: $primary;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $white;
     color: darken($primary, 5%);
   }
@@ -50,16 +53,17 @@
 }
 
 .btn-gray-300-20 {
-  background-color: rgba($gray-300, .2);
+  background-color: rgba($gray-300, 0.2);
   color: $white;
 
-  &:hover, &:focus {
-    background-color: rgba($gray-300, .25);
+  &:hover,
+  &:focus {
+    background-color: rgba($gray-300, 0.25);
     color: $white;
   }
 
   &.active {
-    background-color: rgba($gray-300, .25);
+    background-color: rgba($gray-300, 0.25);
     color: $white;
   }
 }
@@ -68,7 +72,8 @@
   background-color: $gray-400;
   color: $white;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: darken($gray-400, 5%);
     color: darken($white, 5%);
   }
@@ -80,16 +85,17 @@
 }
 
 .btn-gray-400-10 {
-  background-color: rgba($gray-400, .1);
+  background-color: rgba($gray-400, 0.1);
   color: $white;
 
-  &:hover, &:focus {
-    background-color: rgba($gray-400, .15);
+  &:hover,
+  &:focus {
+    background-color: rgba($gray-400, 0.15);
     color: $white;
   }
 
   &.active {
-    background-color: rgba($gray-400, .15);
+    background-color: rgba($gray-400, 0.15);
     color: $white;
   }
 }
@@ -98,7 +104,8 @@
   border-color: $gray-300;
   color: $body-color;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: darken($white, 5%);
     border-color: $gray-400;
     color: $body-color;
@@ -115,7 +122,8 @@
   border-color: $gray-300;
   color: $primary;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $primary;
     border-color: $primary;
     color: $white;
@@ -128,7 +136,6 @@
   }
 }
 
-
 // Soft variants
 
 @each $color, $value in $theme-colors {
@@ -137,13 +144,11 @@
   }
 }
 
-
 // Pill
 
 .btn-pill {
   border-radius: $border-radius-pill;
 }
-
 
 // Rounded circle
 
