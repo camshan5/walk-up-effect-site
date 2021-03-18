@@ -44,7 +44,7 @@ $theme-colors: (
   // NEW
   "black": $black,
   // NEW
-  "white": $white // NEW,,,,,,,,,,,,,,,,,,,,,,
+  "white": $white // NEW,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 );
 
 // The contrast ratio to reach against white, to determine if color changes from "light" to "dark". Acceptable values for WCAG 2.0 are 3, 4.5 and 7.
@@ -229,7 +229,7 @@ $component-active-bg: $primary !default;
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-base: "HKGroteskPro", serif !default;
+$font-family-base: "Inter", -apple-system, sans-serif !default;
 
 $font-size-base: 1.0625rem !default; // 17px
 $font-size-xs: 0.75rem !default; // 12px NEW
@@ -273,12 +273,12 @@ $display-font-sizes: (
   // 61px
   3: 3rem,
   // 48px
-  4: 2.6875rem // 43px,,,,,,,,,,
+  4: 2.6875rem // 43px,,,,,,,,,,,,,,,,
 ) !default;
 
 $display-font-weight: $font-weight-normal !default;
 
-$lead-font-size: 1.3125rem !default;
+$lead-font-size: 1.3125rem !default; // 21px
 $lead-font-weight: $font-weight-normal !default;
 
 $small-font-size: 88.2% !default;

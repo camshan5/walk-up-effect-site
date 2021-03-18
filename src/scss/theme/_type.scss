@@ -6,140 +6,179 @@
 // Font
 
 @font-face {
-  font-family: "HKGroteskPro";
+  font-family: "Inter";
   font-weight: 400;
-  src: url("#{$path-to-fonts}/HK%20Grotesk%20Pro/HKGroteskPro-Regular.woff2") format("woff2"),
-  url("#{$path-to-fonts}/HK%20Grotesk%20Pro/HKGroteskPro-Regular.woff") format("woff");
+  src: url("#{$path-to-fonts}/Inter/Inter-Regular.woff2?v=3.15") format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-Regular.woff?v=3.15") format("woff");
 }
 
 @font-face {
-  font-family: "HKGroteskPro";
+  font-family: "Inter";
   font-weight: 600;
-  src: url("#{$path-to-fonts}/HK%20Grotesk%20Pro/HKGroteskPro-Medium.woff2") format("woff2"),
-  url("#{$path-to-fonts}/HK%20Grotesk%20Pro/HKGroteskPro-Medium.woff") format("woff");
+  src: url("#{$path-to-fonts}/Inter/Inter-SemiBold.woff2?v=3.15")
+      format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-SemiBold.woff?v=3.15") format("woff");
 }
 
 @font-face {
-  font-family: "HKGroteskPro";
+  font-family: "Inter";
   font-weight: 700;
-  src: url("#{$path-to-fonts}/HK%20Grotesk%20Pro/HKGroteskPro-Bold.woff2") format("woff2"),
-  url("#{$path-to-fonts}/HK%20Grotesk%20Pro/HKGroteskPro-Bold.woff") format("woff");
+  src: url("#{$path-to-fonts}/Inter/Inter-Bold.woff2?v=3.15") format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-Bold.woff?v=3.15") format("woff");
 }
-
 
 // Feather icons
 
 @font-face {
-  font-family: 'Feather';
-  src: url('#{$path-to-fonts}/Feather/Feather.ttf?sdxovp') format('truetype'), url('#{$path-to-fonts}/Feather/Feather.woff?sdxovp') format('woff'), url('#{$path-to-fonts}/Feather/Feather.svg?sdxovp#Feather') format('svg');
+  font-family: "Feather";
+  src: url("#{$path-to-fonts}/Feather/Feather.ttf?sdxovp") format("truetype"),
+    url("#{$path-to-fonts}/Feather/Feather.woff?sdxovp") format("woff"),
+    url("#{$path-to-fonts}/Feather/Feather.svg?sdxovp#Feather") format("svg");
   font-weight: 400;
   font-style: normal;
 }
 
-
 // Headings
 
-h1, h2, .h1, .h2 {
+h1,
+h2,
+.h1,
+.h2 {
   margin-bottom: 1rem;
 }
 
-h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4 {
   letter-spacing: $headings-letter-spacing;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   line-height: $h1-line-height;
+  font-size: 37px;
 
   @include media-breakpoint-down(lg) {
-    font-size: $h1-font-size-md;
+    font-size: 30px; // $h1-font-size-md;
   }
 }
 
-h2, .h2 {
+h2,
+.h2 {
   line-height: $h2-line-height;
+  font-size: 31px;
 
   @include media-breakpoint-down(lg) {
-    font-size: $h2-font-size-md;
+    font-size: 24px; // $h2-font-size-md;
   }
 }
 
-h3, .h3 {
+h3,
+.h3 {
   line-height: $h3-line-height;
+  font-size: 21px;
 
   @include media-breakpoint-down(lg) {
-    font-size: $h3-font-size-md;
+    font-size: 18px; // $h3-font-size-md;
   }
 }
 
-h4, .h4 {
+h4,
+.h4 {
   line-height: $h4-line-height;
+  font-size: 19px;
 
   @include media-breakpoint-down(lg) {
-    font-size: $h4-font-size-md;
+    font-size: 17px; // $h4-font-size-md;
   }
 }
 
-h5, .h5 {
+h5,
+.h5 {
   line-height: $h5-line-height;
+  font-size: 17px;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   line-height: $h6-line-height;
+  font-size: 12px;
 
   &.text-uppercase {
-    letter-spacing: .08em;
+    letter-spacing: 0.08em;
   }
 }
-
 
 // Display
 
-.display-1, .display-2, .display-3, .display-4 {
+.display-1,
+.display-2,
+.display-3,
+.display-4 {
   letter-spacing: $display-letter-spacing;
 }
 
 .display-1 {
   line-height: $display-line-height;
+  font-size: 61px;
 
   @include media-breakpoint-down(lg) {
-    font-size: $display1-font-size-md;
+    font-size: 48px; // $display1-font-size-md;
   }
 }
 
 .display-2 {
   line-height: $display-line-height;
+  font-size: 53px;
 
   @include media-breakpoint-down(lg) {
-    font-size: $display2-font-size-md;
+    font-size: 38px; // $display2-font-size-md;
   }
 }
 
 .display-3 {
   line-height: $display-line-height;
+  font-size: 48px;
 
   @include media-breakpoint-down(lg) {
-    font-size: $display3-font-size-md;
+    font-size: 36px; // $display3-font-size-md;
   }
 }
 
 .display-4 {
   line-height: $display-line-height;
+  font-size: 38px;
 
   @include media-breakpoint-down(lg) {
-    font-size: $display4-font-size-md;
+    font-size: 32px; // $display4-font-size-md;
   }
 }
-
 
 // Lead
 
 .lead {
+  font-size: 21px;
 
   @include media-breakpoint-down(lg) {
-    font-size: $lead-font-size-md;
+    font-size: 19px; // $lead-font-size-md;;
   }
 }
 
+// Paragraph
+p,
+.p {
+  font-size: 17px;
+}
+
+label {
+  line-height: 19px;
+  font-size: 17px;
+}
 
 // Blockquote
 
@@ -157,14 +196,12 @@ h6, .h6 {
   }
 }
 
-
 // Social list
 
 .list-social-icon {
   max-width: 1.25rem;
   height: auto;
 }
-
 
 // Dividers
 
@@ -178,13 +215,11 @@ h6, .h6 {
 
 .hr-md {
   width: 100px;
-  ;
 }
 
 .hr-md:not([size]) {
   height: $border-width * 2;
 }
-
 
 // Code
 
