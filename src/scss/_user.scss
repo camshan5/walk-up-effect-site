@@ -303,3 +303,11 @@
 .pill-border {
   border: 1px solid $info !important;
 }
+
+.card-front > .card-body {
+  min-height: 285px;
+}
+
+.card-back > .card-body {
+  min-height: 285px;
+}
