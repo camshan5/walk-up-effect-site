@@ -7,24 +7,80 @@
 
 @font-face {
   font-family: "Inter";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter/Inter-Light.woff2?v=3.15") format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-Light.woff?v=3.15") format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: url("#{$path-to-fonts}/Inter/Inter-Regular.woff2?v=3.15") format("woff2"),
     url("#{$path-to-fonts}/Inter/Inter-Regular.woff?v=3.15") format("woff");
 }
 
 @font-face {
   font-family: "Inter";
-  font-weight: 600;
-  src: url("#{$path-to-fonts}/Inter/Inter-SemiBold.woff2?v=3.15")
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("#{$path-to-fonts}/Inter/Inter-Medium.woff2?v=3.15") format("woff2"),
+    url("#{$path-to-fonts}/Inter/Inter-Medium.woff?v=3.15") format("woff");
+}
+
+// *** Metropolis Font Family *** //
+
+@font-face {
+  font-display: swap;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 500;
+  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Medium.woff2")
       format("woff2"),
-    url("#{$path-to-fonts}/Inter/Inter-SemiBold.woff?v=3.15") format("woff");
+    url("#{$path-to-fonts}/Metropolis/Metropolis-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Inter";
+  font-display: swap;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 600;
+  src: url("#{$path-to-fonts}/Metropolis/Metropolis-SemiBold.woff2")
+      format("woff2"),
+    url("#{$path-to-fonts}/Metropolis/Metropolis-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Metropolis;
+  font-style: normal;
   font-weight: 700;
-  src: url("#{$path-to-fonts}/Inter/Inter-Bold.woff2?v=3.15") format("woff2"),
-    url("#{$path-to-fonts}/Inter/Inter-Bold.woff?v=3.15") format("woff");
+  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff2") format("woff2"),
+    url("#{$path-to-fonts}/Metropolis/Metropolis-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 800;
+  src: url("#{$path-to-fonts}/Metropolis/Metropolis-ExtraBold.woff2")
+      format("woff2"),
+    url("#{$path-to-fonts}/Metropolis/Metropolis-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Metropolis;
+  font-style: normal;
+  font-weight: 900;
+  src: url("#{$path-to-fonts}/Metropolis/Metropolis-Black.woff2")
+      format("woff2"),
+    url("#{$path-to-fonts}/Metropolis/Metropolis-Black.woff") format("woff");
 }
 
 // Feather icons
@@ -36,6 +92,7 @@
     url("#{$path-to-fonts}/Feather/Feather.svg?sdxovp#Feather") format("svg");
   font-weight: 400;
   font-style: normal;
+  font-display: swap;
 }
 
 // Headings
