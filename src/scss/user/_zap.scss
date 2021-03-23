@@ -30,8 +30,4 @@ $zap-count: (
     @include zap("#{$path-to-img}/icons/zaps/zap-#{$val}.svg");
     // font-weight: $font-weight-bold;
   }
-
-  // .card-back > .zap-#{$val} {
-  //   width: 0.25rem;
-  // }
 }

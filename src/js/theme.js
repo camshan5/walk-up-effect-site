@@ -9,6 +9,7 @@ import "jarallax"
 // Theme
 import "./aos"
 import "./bigpicture"
+import "./choices"
 import "./countup"
 import "./highlight"
 import "./isotope"
@@ -25,3 +26,4 @@ import "./typed"
 // User
 import "./user.js"
 import "./user/rotating-card"
+import "./user/sweet-alerts"
